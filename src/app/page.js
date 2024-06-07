@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ExampleComponent from "@/components/exampleComponent/ExampleComponent";
 import Link from 'next/link';
+import FooComponent from "@/components/fooComponent/FooComponent";
 
 export default function Home() {
   return (
@@ -113,7 +114,7 @@ export default function Home() {
       </div>
       <ExampleComponent/>
       <Link href = "/sampleRoute" className="bg-blue-400 p-3">Link!</Link>
-
+      <FooComponent/>
     </main>
   );
 }
