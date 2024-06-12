@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const FooComponent = () => {
-  return (
-    <div>fooCompo  hvnen</div>
-  )
-}
-
-export default FooComponent
+  return <div className="text-green-500">fooCo n</div>;
+};
+//check protectionss
+export default FooComponent;
