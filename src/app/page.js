@@ -1,14 +1,13 @@
 import Image from "next/image";
-import ExampleComponent from "@/components/exampleComponent/ExampleComponent";
-import Link from 'next/link';
+import CountDown from "@/components/countdown/Countdown";
+import AboutUs from "@/components/aboutUs/AboutUs";
 
 export default function Home() {
   return (
-    <div>
-      <ExampleComponent/>
-      <Link href = "/sampleRoute" className="bg-blue-400 p-3">Link!</Link>
-    </div>
-      
-
-  );
+    <main>
+      <section className="w-screen h-screen bg-webdev-temp"></section>
+      <CountDown />
+      {/* <AboutUs /> */}
+    </main>
+  )
 }

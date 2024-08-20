@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import logo from "../../public/logopupleBlue.png"
-import Image from "next/image";
-import Link from "next/link";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,21 +13,11 @@ export default function RootLayout({ children }) {
   // console.log(logo)
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* maybe make this a component */}
-        <div className="px-20 py-4">
-          <div className="text-black bg-yellowy grid grid-cols-6 justify-items-center items-center py-2 rounded-4xl"> 
-            <Image src="/logo.png" alt="SF Hacks logo" width={40} height={40}/>
-            <Link href="">Team</Link>
-            <Link href="">FAQs</Link>
-            <Link href="">Sponsors</Link>
-            <Link href="">Alumni</Link>
-            <div> 
-              <button className="bg-login-button py-1 px-4 rounded-4xl">Log In</button>
-            </div>
-          </div>
+      <body className={`${inter.className} `}>
+        <div className="flex justify-center">
+          <Navbar />
         </div>
-        {children}
+        { children }
       </body>
     </html>
   );
