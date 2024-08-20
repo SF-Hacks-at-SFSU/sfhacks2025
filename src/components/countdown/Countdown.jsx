@@ -6,7 +6,7 @@ export default function CountDown() {
 
 	const Ref = useRef(null);
 
-    var countDownDate = new Date("Apr 5, 2024 00:00:00");
+    var countDownDate = new Date("Apr 5, 2025 00:00:00");
 
 	const total = Date.parse(countDownDate) - Date.parse(new Date());
 	const seconds = Math.floor((total / 1000) % 60);
@@ -58,20 +58,20 @@ export default function CountDown() {
     }
 
 	return (
-		<div className="flex flex-row w-auto justify-between items-center gap-[5vw] m-5">
-            <div className="flex flex-col gap-[auto] items-center text-[#FFF5D9] text-center text-xl not-italic font-[575] leading-[normal]">
+		<div className="flex flex-row w-auto justify-between gap-[5vw] m-5">
+            <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[575] leading-[normal]">
                 <h1>Days</h1>
 			    <p className="text-[40px]">{timer.days > 9 ? timer.days : '0' + timer.days}</p>
             </div>
-            <div className="flex flex-col gap-[auto] items-center text-[#FFF5D9] text-center text-xl not-italic font-[575] leading-[normal]">
+            <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[575] leading-[normal]">
                 <h1>Hours</h1>
                 <p className="text-[40px]">{timer.hours > 9 ? timer.hours : '0' + timer.hours}</p>
             </div>
-            <div className="flex flex-col gap-[auto] items-center text-[#FFF5D9] text-center text-xl not-italic font-[575] leading-[normal]">
+            <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[575] leading-[normal]">
                 <h1>Minutes</h1>
                 <p className="text-[40px]">{timer.minutes > 9 ? timer.minutes : '0' + timer.minutes}</p>
             </div>
-            <div className="flex flex-col gap-[auto] items-center text-[#FFF5D9] text-center text-xl not-italic font-[575] leading-[normal]">
+            <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[575] leading-[normal]">
                 <h1>Seconds</h1>    
                 <p className="text-[40px]">{timer.seconds > 9 ? timer.seconds : '0' + timer.seconds}</p>
             </div>
