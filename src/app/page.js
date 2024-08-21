@@ -6,11 +6,9 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <main>
-      {/* <section className="w-screen h-screen bg-webdev-temp flex flex-col gap-8">
-        <div className="">
-          <Navbar />
-        </div>
-        <div className="grid grid-cols-2 px-40 justify-between  flex-1">
+      <section className="w-screen h-screen bg-webdev-temp flex flex-col gap-20">
+        <Navbar />
+        <div className="grid justify-items-center ">
           <Image src="/logo.png" alt="logo" 
             width={0}
             height={0}
@@ -19,12 +17,8 @@ export default function Home() {
           />
           <CountDown />
         </div>
-        
-
-      </section> */}
-      {/* <AboutUs /> */}
-      <Navbar />
-
+      </section>
+      <AboutUs />
     </main>
   )
 }

@@ -32,9 +32,9 @@ export default function Navbar() {
     return (
         <div className="flex justify-end ">
             <div className={`${isOpen ? 'hidden' : 'block' } px-4 py-2`}>
-                <Menu size={55} onClick={handleToggle} className="text-red-700"/>
+                <Menu size={55} onClick={handleToggle} className="text-black"/>
             </div>
-            <div className={`${isOpen ? 'block' : 'hidden' } bg-slate-300 w-5/6 h-screen flex flex-col gap-20`}>
+            <div className={`${isOpen ? 'block' : 'hidden' } bg-sfyellow w-5/6 h-screen flex flex-col gap-20`}>
                 <div className="flex justify-end  px-2 ">
                     <X onClick={handleToggle} size={70} className="text-black"/>
                 </div>
