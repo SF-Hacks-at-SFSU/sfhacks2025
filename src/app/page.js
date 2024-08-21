@@ -11,18 +11,19 @@ export default function Home() {
           <Navbar />
         </div>
         <div className="grid grid-cols-2 px-40 justify-between  flex-1">
-          <Image src="/logo.png" alt="logo" 
+          {/* <Image src="/logo.png" alt="logo" 
             width={0}
             height={0}
             sizes="100vw"
             style={{ width: '50%', height: 'auto' }} 
-          />
+          /> */}
+          {/* <img src="/logo.png" alt="logo"/> */}
           <CountDown />
         </div>
         
 
       </section>
-      <AboutUs />
+      {/* <AboutUs /> */}
     </main>
   )
 }
