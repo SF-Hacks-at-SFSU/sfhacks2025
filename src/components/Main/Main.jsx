@@ -17,7 +17,7 @@ export default function Main() {
         <div className="md:px-24 md:py-4 ">
           <Navbar isOpen={isOpen} handleToggle={handleToggle} />
         </div>
-        <div className="grid justify-items-center translate-y-16 md:-translate-y-4 scale-[90%] md:scale-100 self-center ">
+        <div className="grid justify-items-center translate-y-16 md:-translate-y-16   lg:-translate-y-4 scale-[90%] md:scale-[85%] lg:scale-100 self-center ">
           <Image
             src="/logo.png"
             alt="logo"
