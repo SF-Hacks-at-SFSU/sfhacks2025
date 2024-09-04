@@ -13,11 +13,11 @@ export default function Main() {
   };
   return (
     <div>
-      <section className="w-screen h-screen bg-webdev-temp  flex flex-col gap-4 md:gap-12  ">
+      <div className="w-screen h-screen bg-webdev-temp  flex flex-col gap-4 md:gap-12  ">
         <div className="md:px-24 md:py-4 ">
           <Navbar isOpen={isOpen} handleToggle={handleToggle} />
         </div>
-        <div className="grid justify-items-center translate-y-16 md:-translate-y-16   lg:-translate-y-4 scale-[90%] md:scale-[85%] lg:scale-100 self-center ">
+        <div className="grid justify-items-center translate-y-16 md:-translate-y-16  lg:-translate-y-4 scale-[90%] md:scale-[80%] lg:scale-90 self-center ">
           <Image
             src="/logo.png"
             alt="logo"
@@ -34,7 +34,7 @@ export default function Main() {
             </button>
           </a>
         </div>
-      </section>
+      </div>
       <AboutUs />
     </div>
   );

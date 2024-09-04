@@ -60,7 +60,7 @@ export default function CountDown() {
   }
 
   return (
-    <div className="flex flex-row w-auto justify-between gap-[5vw] m-5 bg-sfyellow p-3 rounded-xl">
+    <div className="flex flex-row w-auto justify-between gap-[5vw] m-5 bg-sfyellow p-3 rounded-xl ">
       <div className="flex flex-col gap-[auto] items-center text-black  text-center text-xl not-italic font-[300] leading-[normal]">
         <h1>Days</h1>
         <p className="text-[50px]">
