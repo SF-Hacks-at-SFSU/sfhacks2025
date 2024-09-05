@@ -15,8 +15,8 @@ export default function Main() {
     <div>
       {/* bg-webdev-temp */}
       {/* gap-4 md:gap-12 */}
-      <div className="w-95vw h-screen bg-webdev-temp items-center align-contents-center flex flex-col">  
-        <div className="md:px-24 md:py-4">
+      <div className="w-95vw h-screen bg-webdev-temp items-center align-contents-center flex flex-col md-gap-6">  
+        <div className="md:px-24 md:py-4 w-screen">
           <Navbar isOpen={isOpen} handleToggle={handleToggle} />
         </div>
         <div className="flex flex-col gap-2 w-1/3 h-max items-center">
