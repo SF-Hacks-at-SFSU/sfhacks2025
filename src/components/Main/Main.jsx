@@ -17,7 +17,7 @@ export default function Main() {
         <div className="md:px-24 md:py-4 ">
           <Navbar isOpen={isOpen} handleToggle={handleToggle} />
         </div>
-        <div className="grid justify-items-center translate-y-16 md:-translate-y-16  lg:-translate-y-4 scale-[90%] md:scale-[80%] lg:scale-90 self-center xl:scale-[60%] xl:-translate-y-60  ">
+        <div className="grid justify-items-center translate-y-16 md:-translate-y-16  lg:-translate-y-60 scale-[90%] md:scale-[60%] lg:scale-[55%] self-center xl:scale-[60%] xl:-translate-y-60 z:scale-[70%] z:-translate-y-44 k:scale-[60%] k:-translate-y-44 bruh:scale-[70%] bruh:-translate-y-20 ok:scale-[70%] ok:-translate-y-36">
           <Image
             src="/logo.png"
             alt="logo"
@@ -28,7 +28,7 @@ export default function Main() {
           />
           <CountDown />
           <a href="https://discord.gg/P5PsDR6G7W" target="_blank">
-            <button className="bg-sfPink w-40 h-12 text-xl text-black rounded-full">
+            <button className="bg-sfPink w-40 h-12 text-xl text-black rounded-full ">
               {" "}
               Discord{" "}
             </button>

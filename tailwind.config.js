@@ -29,7 +29,13 @@ module.exports = {
         "4xl" : "2rem"
       },
       screens: {
-        'xl': '1280px'
+        'xl': '1920px',
+        'bruh': '600px',
+        'z' : '1366px',
+        'k' : '1280px',
+        'ok' : '500px'
+        
+        
       }
     },
   },
