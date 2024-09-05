@@ -60,28 +60,28 @@ export default function CountDown() {
   }
 
   return (
-    <div className="flex flex-row w-auto justify-between gap-[5vw] m-5 bg-sfyellow p-3 rounded-xl ">
-      <div className="flex flex-col gap-[auto] items-center text-black  text-center text-xl not-italic font-[300] leading-[normal]">
+    <div className="flex flex-row w-auto justify-between gap-[5vw] bg-sfyellow p-3 rounded-xl ">
+      <div className="flex flex-col gap-[auto] items-center text-black  text-center text-xl not-italic font-[200] leading-[normal]">
         <h1>Days</h1>
-        <p className="text-[50px]">
+        <p className="text-[25px]">
           {timer.days > 9 ? timer.days : "0" + timer.days}
         </p>
       </div>
-      <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[300] leading-[normal]">
+      <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[200] leading-[normal]">
         <h1>Hours</h1>
-        <p className="text-[50px]">
+        <p className="text-[25px]">
           {timer.hours > 9 ? timer.hours : "0" + timer.hours}
         </p>
       </div>
-      <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[300] leading-[normal]">
+      <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[200] leading-[normal]">
         <h1>Minutes</h1>
-        <p className="text-[50px]">
+        <p className="text-[25px]">
           {timer.minutes > 9 ? timer.minutes : "0" + timer.minutes}
         </p>
       </div>
-      <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[300] leading-[normal]">
+      <div className="flex flex-col gap-[auto] items-center text-black text-center text-xl not-italic font-[200] leading-[normal]">
         <h1>Seconds</h1>
-        <p className="text-[50px]">
+        <p className="text-[25px]">
           {timer.seconds > 9 ? timer.seconds : "0" + timer.seconds}
         </p>
       </div>

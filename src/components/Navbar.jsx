@@ -8,7 +8,7 @@ const NavLinks = () => {
   return (
     <div
       className="text-2xl grid items-center gap-4 font-semibold justify-items-center text-black 
-            md:grid md:grid-cols-6 md:justify-items-center 
+            md:grid md:grid-cols-6 md:justify-items-center
             md:items-center md:px-8 md:py-2 md:gap-12 md:text-xl md:bg-sfyellow md:rounded-4xl lg:text-lg lg:gap-20"
     >
       <Link href="/" className="hidden md:block">
@@ -68,7 +68,7 @@ export default function Navbar({ isOpen, handleToggle }) {
         </div>
         <NavLinks />
       </div>
-      <div className="hidden  md:flex md:justify-center ">
+      <div className="hidden md:flex md:justify-center ">
         <NavLinks />
       </div>
     </div>
