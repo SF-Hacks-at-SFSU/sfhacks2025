@@ -13,8 +13,6 @@ export default function Main() {
   };
   return (
     <div>
-      {/* bg-webdev-temp */}
-      {/* gap-4 md:gap-12 */}
       <div className="w-95vw h-screen bg-webdev-temp items-center align-contents-center flex flex-col md-gap-6">  
         <div className="md:px-24 md:py-4 md:w-[98vw] w-screen">
           <Navbar isOpen={isOpen} handleToggle={handleToggle} />
