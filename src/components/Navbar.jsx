@@ -24,6 +24,12 @@ const NavLinks = () => {
       <Link href="/" className="md:hidden">
         Home
       </Link>
+      <Link href="" className="md:hover:underline">
+        Sponsors
+      </Link>
+      <Link href="" className="md:hover:underline">
+        Alumni <span className="md:hidden">Wall</span>
+      </Link>
       <Link href="" className="hidden md:block md:hover:underline">
         Team
       </Link>
@@ -33,18 +39,12 @@ const NavLinks = () => {
       <Link href="" className="md:hidden">
         Meet the Officers
       </Link>
-      <Link href="" className="md:hover:underline">
-        Sponsors
-      </Link>
-      <Link href="" className="md:hover:underline">
-        Alumni <span className="md:hidden">Wall</span>
-      </Link>
       <div className="">
         <button
           className="hidden md:block md:bg-login-button md:px-4 md:py-2 
               md:rounded-4xl"
         >
-          Register
+          Reg. Soon
         </button>
       </div>
     </div>
