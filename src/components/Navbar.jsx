@@ -27,13 +27,13 @@ const NavLinks = () => {
       <Link href="" className="md:hover:underline">
         Sponsors
       </Link>
-      <Link href="" className="md:hover:underline">
-        Alumni <span className="md:hidden">Wall</span>
+      <Link href="/comebackOct1" target = '_blank'className="md:hover:underline">
+        Code Jams! <span className="md:hidden">Wall</span>
       </Link>
       <Link href="" className="hidden md:block md:hover:underline">
         Team
       </Link>
-      <Link href="" className="md:hover:underline">
+      <Link href="/faqpage" className="md:hover:underline">
         FAQs
       </Link>
       <Link href="" className="md:hidden">

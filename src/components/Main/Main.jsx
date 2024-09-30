@@ -17,14 +17,14 @@ export default function Main() {
         <div className="md:px-24 md:py-4 md:w-[98vw] w-screen">
           <Navbar isOpen={isOpen} handleToggle={handleToggle} />
         </div>
-        <div className="flex flex-col gap-2 w-1/3 h-max items-center">
+        <div className="flex flex-col gap-2 w-1/3 h-max items-center ">
           <Image
             src="/logo.png"
             alt="logo"
             width={0}
             height={0}
             sizes="100vh"
-            className={`w-[300px] h-fit ${isOpen ? "hidden" : "block"}`}
+            className={`w-[300px] h-fit ${isOpen ? "hidden" : "block"}`} 
           />
           <CountDown />
           <a href="https://discord.gg/P5PsDR6G7W" target="_blank">
