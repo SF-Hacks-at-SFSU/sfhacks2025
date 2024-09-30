@@ -28,7 +28,7 @@ const NavLinks = () => {
         Sponsors
       </Link>
       <Link href="/comebackOct1" target = '_blank'className="md:hover:underline">
-        Code Jams! <span className="md:hidden">Wall</span>
+        Code Jams! <span className="md:hidden"></span>
       </Link>
       <Link href="" className="hidden md:block md:hover:underline">
         Team
