@@ -27,7 +27,7 @@ const NavLinks = () => {
       <Link href="" className="md:hover:underline">
         Sponsors
       </Link>
-      <Link href="/comebackOct1" target = '_blank'className="md:hover:underline">
+      <Link href="https://tally.so/r/woOWKN" target = '_blank'className="md:hover:underline">
         Code Jams! <span className="md:hidden"></span>
       </Link>
       <Link href="" className="hidden md:block md:hover:underline">
