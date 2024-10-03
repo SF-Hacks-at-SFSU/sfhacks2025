@@ -22,7 +22,7 @@ function FAQ() {
 
 
   return (
-    <div className = "h-full">
+    <div className = "h-full bg-sfDarkPurp pt-6">
       <div className='faq-banner'>
         <h2 className='faq-banner-text'>Frequently Asked Questions!</h2>
       </div>
@@ -38,7 +38,7 @@ function FAQ() {
                 <li className='faq-ques' >{item.question} <span>+</span></li>
               </ul>
             </div>
-            {open === i && <div className='answer-visible bg-blue-950 p-3 rounded-md'>{item.answer}</div>}
+            {open === i && <div className='answer-visible bg-sfDarkPurp p-3 rounded-md'>{item.answer}</div>}
           </div>
         ))}
       </div>
