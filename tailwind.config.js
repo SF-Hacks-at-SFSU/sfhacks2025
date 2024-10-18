@@ -20,10 +20,19 @@ module.exports = {
         sfGreyBlue : '#838FBA',
 				sfDarkBlue : '#132A3E',
 				sfDarkerBlue: '#132330',
-				sfPink: '#FFD6EC',
+				sfPink: '#ffc2e2',
 				sfLightBlue: '#2b455c',
-        sfTan: "#FFF5D9",
-        sfBloo: "#254d70"
+        sfTan: "#fff5d9",
+        sfBloo: "#16133d",
+        sfDarkPurp: "#9882ba",
+        sfPurp: "#edc6fa",
+
+        
+
+        
+        
+        
+        
       },
       borderRadius: {
         "4xl" : "2rem"
