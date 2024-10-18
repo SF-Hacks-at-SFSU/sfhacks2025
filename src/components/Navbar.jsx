@@ -24,7 +24,7 @@ const NavLinks = () => {
       <Link href="/" className="md:hidden">
         Home
       </Link>
-      <Link href="" className="md:hover:underline">
+      <Link href="/sponsors" className="md:hover:underline">
         Sponsors
       </Link>
       <Link href="/comebackOct1" target = '_blank'className="md:hover:underline">

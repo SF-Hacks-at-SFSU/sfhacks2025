@@ -1,0 +1,18 @@
+.sponsorsContainer {
+    height: fit-content;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 8px;
+}
+
+.sponsorItem {
+    width: 256px;
+    height: 185px;
+
+    border-radius: 7px;
+    background-color: magenta;
+
+}
