@@ -26,6 +26,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+footer {
+    background-color: #9882ba;
+    padding: 16px;
+    display: flex;
+}
+
+footer > * {
+    justify-self: start;
+    flex: 1;
+}
+
 /*
 @layer utilities {
   .text-balance {
