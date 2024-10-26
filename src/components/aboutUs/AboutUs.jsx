@@ -2,140 +2,134 @@
 
 import React from "react";
 import Person from "./Person";
+import { Button } from "../ui/button";
+import { useState } from "react";
+import {
+  Card, CardContent, CardDescription, 
+  CardFooter, CardHeader, CardTitle, 
+} from "@/components/ui/card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
+import Image from "next/image";
+
 
 const AboutUs = () => {
-  const people = [
+ 
+  const [filter, setFilter] = useState("Design");
+  const [people, setPeople] = useState([])
+  const teams = [
     {
-      name: "Odera",
-      position: "Co-President",
-      img: "/team/od.jpg",
+      team: "Design",
+      members: [
+        { name: "Gabby", img: "/team/gabby.jpg" },
+        { name: "Justine", img: "/team/justine.jpg" },
+        { name: "Louella", img: "/team/louella.jpg" },
+        { name: "Hillary", img: "/team/hillary.jpg" },
+        { name: "Michelle", img: "/team/michelle.png" },
+        { name: "Declan", img: "/team/declan.jpg" },
+      ]
     },
     {
-      name: "Arianna",
-      position: "Co-President",
-      img: "/team/ari.jpg",
+      team: "Engagement",
+      members: [
+        { name: "Caedyn", img: "/team/caedyn.jpg" },
+      ]
     },
     {
-      name: "Marco",
-      position: "Vice President",
-      img: "/team/marco.jpg",
+      team: "Executive", 
+      members: [
+        { name: "Marco", img: "/team/marco.jpg" },
+        { name: "Ashley", img: "/team/ashley.jpg" },
+        { name: "Ria", img: "/team/ria.jpg" },
+        { name: "Kurt", img: "/team/kurt.jpg" },
+      ]
     },
     {
-      name: "Huy",
-      position: "Administrator",
-      img: "/team/huy.jpg",
+      team: "Finance",
+      members: [
+        { name: "Vireak", img: "/team/v.JPG" },
+        { name: "Brandon", img: "/team/brandon.jpg" },
+        { name: "Matthew", img: "/team/matthew.jpg" },
+      ]
     },
     {
-      name: "Mark",
-      position: "Treasurer",
-      img: "/team/mark.jpg",
+      team: "Logistics",
+      members: [
+        { name: "Gavin", img: "/team/gavin.jpg" },
+        { name: "Adan", img: "/team/adan.jpg" },
+        { name: "Grishma", img: "/team/grishma.jpg" },
+        { name: "Christian", img: "/team/christian.jpg" },
+        { name: "Stella", img: "/team/stella.jpg" },
+      ]
     },
     {
-      name: "Omar",
-      position: "Tech Operations",
-      img: "/team/omar.jpg",
+      team: "Marketing",
+      members: [
+        { name: "John", img: "/team/john.jpg" },
+        // { name: "Trish", img: "/team/trish.jpg" },
+        { name: "William", img: "/team/william.jpg" },
+      ]
     },
     {
-      name: "Akim",
-      position: "Tech Operations",
-      img: "/team/akim.jpg",
+      team: "Outreach",
+      members: [
+      ]
     },
     {
-      name: "Avinh",
-      position: "Tech Operations",
-      img: "/team/avinh.png",
+      team: "Publicity",
+      members: [
+        { name: "Maxwell", img: "/team/maxwell.jpg" },
+        { name: "Jim", img: "/team/jim.jpg" },
+        { name: "James", img: "/team/james.jpg" },
+      ]
     },
     {
-      name: "Lakshyaa",
-      position: "Tech Operations",
-      img: "/team/lakshyaa.png",
-    },
-    {
-      name: "Angelo",
-      position: "Tech Operations",
-      img: "/team/angelo.jpg",
-    },
-    {
-      name: "Gabby",
-      position: "Design",
-      img: "/team/gabby.jpg",
-    },
-    {
-      name: "Michelle",
-      position: "Design",
-      img: "/team/michelle.jpg",
-    },
-    {
-      name: "Japneet",
-      position: "Social Engagement",
-      img: "/team/japneet.jpg",
-    },
-    {
-      name: "Ria",
-      position: "Marketing Director",
-      img: "/team/ria.jpg",
-    },
-    {
-      name: "John",
-      position: "Marketing",
-      img: "/team/john.jpg",
-    },
-    {
-      name: "Anh",
-      position: "Marketing",
-      img: "/team/anh.jpg",
-    },
-    {
-      name: "Laeli",
-      position: "Marketing",
-      img: "/team/laeli.jpg",
-    },
-    {
-      name: "Shriya",
-      position: "Outreach",
-      img: "/team/shriya.jpg",
-    },
-    {
-      name: "Ashley",
-      position: "Logistics",
-      img: "/team/ashley.jpg",
-    },
-    {
-      name: "Keith",
-      position: "Outreach",
-      img: "/team/keith.jpg",
-    },
-    {
-      name: "Sukrit",
-      position: "Logistics",
-      img: "/team/sukrit.jpg",
-    },
-    {
-      name: "Alex",
-      position: "Logistics",
-      img: "/team/alex.jpg",
-    },
-  ];
-  return (
-    <div className="mt-10 ">
-      <p className="text-center text-7xl text-white">About Us</p>
+      team: "Tech",
+      members: [
+        { name: "Akim", img: "/team/akim.jpg" },
+        { name: "Avinh", img: "/team/avinh.png" },
+      ]
+    }
+  ]
 
-      <p className="text-center text-2xl text-white p-6 ">
+  const handleFilter = (team) => {
+    setFilter(team);
+  }
+  return (
+    <div className=" bg-sfPink grid gap-8 pb-20">
+      <p className="text-center text-6xl mt-12 md:text-7xl text-black">About Us</p>
+      
+      <p className="text-center text-2xl text-black p-6 ">
         SF Hacks is more than just an event, we are a team of passionate
         individuals dedicated to hosting this hackathon. Our diverse team spans
         across logistics, design, tech operations, social engagement, marketing,
         and outreach.
       </p>
-      <p className="text-center text-white text-5xl">Meet Our Team</p>
-      <div className="grid grid-rows-2 grid-flow-col md:grid-cols-3 md:grid-flow-row-dense place-items-center gap-6 p-10 overflow-x-scroll no-scrollbar">
-        {people.map((person, index) => (
-          <Person
-            name={person.name}
-            position={person.position}
-            img={person.img}
-            key={index}
-          />
-        ))}
+      <p className="text-center text-black text-5xl">Meet Our Team</p>
+      <div className="grid justify-items-center gap-10 mx-4">
+        <div className="flex max-w-full snap-x snap-mandatory space-x-3 overflow-x-scroll no-scrollbar
+          rounded-full bg-sfDarkPurp gap-4 py-2 px-4 pr-20 ">
+            {teams.map((department, i) => (
+              <Button
+              onClick={() => setFilter(department.team)}
+              key={i}
+              variant="outline"
+              className="bg-white inline-block hover:scale-105 shrink-0 
+              snap-start scroll-ml-4 w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7"
+            >
+              {department.team}
+            </Button>
+            ))}
+        </div>
+        <div className="flex gap-20 justify-center flex-wrap">
+          { teams.map((team, i) => {
+            if (team.team === filter) {
+              return team.members.map((person, i) => (
+                <Person name={person.name} img={person.img} key={i} />
+              ));
+            }
+          })}
+        </div>
       </div>
     </div>
   );
