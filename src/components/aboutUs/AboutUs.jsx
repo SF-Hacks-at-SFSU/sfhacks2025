@@ -121,7 +121,7 @@ const AboutUs = () => {
             </Button>
             ))}
         </div>
-        <div className="flex gap-20 flex-wrap">
+        <div className="flex gap-20 justify-center flex-wrap">
           { teams.map((team, i) => {
             if (team.team === filter) {
               return team.members.map((person, i) => (
