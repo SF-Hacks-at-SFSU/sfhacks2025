@@ -4,19 +4,11 @@ import React from "react";
 import Person from "./Person";
 import { Button } from "../ui/button";
 import { useState } from "react";
-import {
-  Card, CardContent, CardDescription, 
-  CardFooter, CardHeader, CardTitle, 
-} from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-import Image from "next/image";
-
-
+// change the pictures of the team members make sure its centered correctly
 const AboutUs = () => {
  
   const [filter, setFilter] = useState("Design");
-  const [people, setPeople] = useState([])
   const teams = [
     {
       team: "Design",
@@ -66,7 +58,7 @@ const AboutUs = () => {
       team: "Marketing",
       members: [
         { name: "John", img: "/team/john.jpg" },
-        // { name: "Trish", img: "/team/trish.jpg" },
+        { name: "Trish", img: "/team/trish.png" },
         { name: "William", img: "/team/william.jpg" },
       ]
     },
@@ -92,13 +84,9 @@ const AboutUs = () => {
     }
   ]
 
-  const handleFilter = (team) => {
-    setFilter(team);
-  }
   return (
     <div className=" bg-sfPink grid gap-8 pb-20">
       <p className="text-center text-6xl mt-12 md:text-7xl text-black">About Us</p>
-      
       <p className="text-center text-2xl text-black p-6 ">
         SF Hacks is more than just an event, we are a team of passionate
         individuals dedicated to hosting this hackathon. Our diverse team spans
@@ -114,8 +102,9 @@ const AboutUs = () => {
               onClick={() => setFilter(department.team)}
               key={i}
               variant="outline"
-              className="bg-white inline-block hover:scale-105 shrink-0 
-              snap-start scroll-ml-4 w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7"
+              className={`inline-block hover:scale-105 shrink-0 hover:bg-sfPink hover:border-sfPink
+              snap-start scroll-ml-4 w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7 
+              ${filter === department.team ? "bg-sfPink border-sfPink" : "bg-white border-white"}`}
             >
               {department.team}
             </Button>
