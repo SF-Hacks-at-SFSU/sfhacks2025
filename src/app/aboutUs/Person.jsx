@@ -3,7 +3,7 @@ import React from "react";
 
 const Person = ({ name, position, img }) => {
   return (
-    <div className="w-40 h-auto rounded-2xl ">
+    <div className="w-36 h-auto rounded-2xl ">
       <Image
         src={img}
         width={200}
