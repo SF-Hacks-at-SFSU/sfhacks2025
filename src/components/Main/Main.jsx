@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import CountDown from "@/components/countdown/Countdown";
-import AboutUs from "@/components/aboutUs/AboutUs";
+import AboutUs from "@/app/aboutUs/AboutUs";
 import Navbar from "@/components/Navbar";
 
 export default function Main() {
@@ -35,7 +35,6 @@ export default function Main() {
           </a>
         </div>
       </div>
-      <AboutUs />
     </div>
   );
 }

@@ -2,12 +2,16 @@
 
 import React from "react";
 import Person from "./Person";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
 
 // change the pictures of the team members make sure its centered correctly
 const AboutUs = () => {
- 
+  const [isOpen, setIsOpen] = useState(false);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
   const [filter, setFilter] = useState("Design");
   const teams = [
     {
@@ -85,8 +89,12 @@ const AboutUs = () => {
   ]
 
   return (
-    <div className=" bg-sfPink grid gap-8 pb-20">
-      <p className="text-center text-6xl mt-12 md:text-7xl text-black">About Us</p>
+    <div className=" bg-sfPink flex flex-col gap-8 pb-20 items-center">
+      <div className="md:px-24 md:py-4 md:w-[98vw] w-screen">
+          <Navbar isOpen={isOpen} handleToggle={handleToggle} />
+        </div>
+
+      <p className="text-center text-6xl mt-4 md:text-7xl text-black">About Us</p>
       <p className="text-center text-2xl text-black p-6 ">
         SF Hacks is more than just an event, we are a team of passionate
         individuals dedicated to hosting this hackathon. Our diverse team spans
@@ -94,7 +102,7 @@ const AboutUs = () => {
         and outreach.
       </p>
       <p className="text-center text-black text-5xl">Meet Our Team</p>
-      <div className="grid justify-items-center gap-10 mx-4">
+      <div className="grid justify-items-center gap-12 md:gap-16 lg:gap-20 mx-4">
         <div className="flex max-w-full snap-x snap-mandatory space-x-3 overflow-x-scroll no-scrollbar
           rounded-full bg-sfDarkPurp gap-4 py-2 px-4 pr-20 ">
             {teams.map((department, i) => (
@@ -110,7 +118,7 @@ const AboutUs = () => {
             </Button>
             ))}
         </div>
-        <div className="flex gap-20 flex-wrap">
+        <div className="flex gap-20 flex-wrap justify-center">
           { teams.map((team, i) => {
             if (team.team === filter) {
               return team.members.map((person, i) => (

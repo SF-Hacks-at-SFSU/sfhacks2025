@@ -30,7 +30,7 @@ const NavLinks = () => {
       <Link href="https://tally.so/r/woOWKN" target = '_blank'className="md:hover:underline">
         Code Jams! <span className="md:hidden"></span>
       </Link>
-      <Link href="" className="hidden md:block md:hover:underline">
+      <Link href="/aboutUs" className="md:hover:underline">
         Team
       </Link>
       <Link href="/faqpage" className="md:hover:underline">
