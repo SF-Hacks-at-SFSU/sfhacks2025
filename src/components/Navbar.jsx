@@ -36,10 +36,8 @@ const NavLinks = () => {
       <Link href="/faqpage" className="md:hover:underline">
         FAQs
       </Link>
-      <Link href="" className="md:hidden">
-        Meet the Officers
-      </Link>
-      <div className="">
+      
+      <div className="/aboutUs">
         <button
           className="hidden md:block md:bg-login-button md:px-4 md:py-2 
               md:rounded-4xl"
