@@ -2,21 +2,17 @@
 
 import React from "react";
 import Person from "./Person";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import { useState } from "react";
-import {
-  Card, CardContent, CardDescription, 
-  CardFooter, CardHeader, CardTitle, 
-} from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Navbar from "@/components/Navbar";
 
-import Image from "next/image";
-
-
+// change the pictures of the team members make sure its centered correctly
 const AboutUs = () => {
- 
+  const [isOpen, setIsOpen] = useState(false);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
   const [filter, setFilter] = useState("Design");
-  const [people, setPeople] = useState([])
   const teams = [
     {
       team: "Design",
@@ -66,7 +62,7 @@ const AboutUs = () => {
       team: "Marketing",
       members: [
         { name: "John", img: "/team/john.jpg" },
-        // { name: "Trish", img: "/team/trish.jpg" },
+        { name: "Trish", img: "/team/trish.png" },
         { name: "William", img: "/team/william.jpg" },
       ]
     },
@@ -92,13 +88,13 @@ const AboutUs = () => {
     }
   ]
 
-  const handleFilter = (team) => {
-    setFilter(team);
-  }
   return (
-    <div className=" bg-sfPink grid gap-8 pb-20">
-      <p className="text-center text-6xl mt-12 md:text-7xl text-black">About Us</p>
-      
+    <div className=" bg-sfPink flex flex-col gap-8 pb-20 items-center">
+      <div className="md:px-24 md:py-4 md:w-[98vw] w-screen">
+          <Navbar isOpen={isOpen} handleToggle={handleToggle} />
+        </div>
+
+      <p className="text-center text-6xl mt-4 md:text-7xl text-black">About Us</p>
       <p className="text-center text-2xl text-black p-6 ">
         SF Hacks is more than just an event, we are a team of passionate
         individuals dedicated to hosting this hackathon. Our diverse team spans
@@ -106,7 +102,7 @@ const AboutUs = () => {
         and outreach.
       </p>
       <p className="text-center text-black text-5xl">Meet Our Team</p>
-      <div className="grid justify-items-center gap-10 mx-4">
+      <div className="grid justify-items-center gap-12 md:gap-16 lg:gap-20 mx-4">
         <div className="flex max-w-full snap-x snap-mandatory space-x-3 overflow-x-scroll no-scrollbar
           rounded-full bg-sfDarkPurp gap-4 py-2 px-4 pr-20 ">
             {teams.map((department, i) => (
@@ -114,14 +110,15 @@ const AboutUs = () => {
               onClick={() => setFilter(department.team)}
               key={i}
               variant="outline"
-              className="bg-white inline-block hover:scale-105 shrink-0 
-              snap-start scroll-ml-4 w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7"
+              className={`inline-block hover:scale-105 shrink-0 hover:bg-sfPink hover:border-sfPink
+              snap-start scroll-ml-4 w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7 
+              ${filter === department.team ? "bg-sfPink border-sfPink" : "bg-white border-white"}`}
             >
               {department.team}
             </Button>
             ))}
         </div>
-        <div className="flex gap-20 justify-center flex-wrap">
+        <div className="flex gap-20 flex-wrap justify-center">
           { teams.map((team, i) => {
             if (team.team === filter) {
               return team.members.map((person, i) => (
