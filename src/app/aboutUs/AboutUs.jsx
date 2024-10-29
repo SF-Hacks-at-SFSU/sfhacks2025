@@ -69,6 +69,13 @@ const AboutUs = () => {
     {
       team: "Outreach",
       members: [
+        { name: "Keith", img: "/team/keith.jpg" },
+        { name: "Malhar", img: "/team/malhar.jpg" },
+        { name: "Nalia", img: "/team/nalia.jpg" },
+        { name: "Rishita", img: "/team/rishita.jpg" },
+        { name: "Said", img: "/team/said.png" },
+        { name: "Sukrit", img: "/team/sukrit.png" },
+        { name: "Trenton", img: "/team/trenton.jpg" },
       ]
     },
     {

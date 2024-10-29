@@ -9,7 +9,7 @@ const Person = ({ name, position, img }) => {
         width={200}
         height={200}
         alt="Picture of the author"
-        className="aspect-square object-cover object-center rounded-full border-4 border-sfPink object-crop"
+        className="aspect-square object-cover object-top rounded-full border-4 border-sfPink object-crop"
       />
 
       <p className="text-black text-center text-xl p-2">{name}</p>
