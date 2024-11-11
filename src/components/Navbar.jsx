@@ -39,10 +39,10 @@ const NavLinks = () => {
       
       <div className="/aboutUs">
         <button
-          className="hidden md:block md:bg-login-button md:px-4 md:py-2 
+          className="md:bg-login-button md:px-4 md:py-2 
               md:rounded-4xl"
         >
-          Reg. Soon
+          <a href="https://tally.so/r/3lRZjk" target="_blank">Register</a>
         </button>
       </div>
     </div>
