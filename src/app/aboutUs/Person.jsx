@@ -12,7 +12,7 @@ const Person = ({ name, position, img }) => {
         className="aspect-square object-cover object-top rounded-full border-4 border-sfPink object-crop"
       />
 
-      <p className="text-black text-center text-xl p-2">{name}</p>
+      <p className="text-white text-center text-xl p-2">{name}</p>
       {/* <p className="text-white text-center">{position}</p> */}
     </div>
   );
