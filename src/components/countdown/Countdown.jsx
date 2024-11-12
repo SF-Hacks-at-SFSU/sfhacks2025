@@ -1,90 +1,67 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-export default function CountDown() {
-	const Ref = useRef(null);
+const CountDown = ({ targetDate = "Apr 5, 2025 00:00:00" }) => {
+  const [timeRemaining, setTimeRemaining] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
-	var countDownDate = new Date("Apr 5, 2025 00:00:00");
+  const [isHydrated, setIsHydrated] = useState(false);
 
-	const total = Date.parse(countDownDate) - Date.parse(new Date());
-	const seconds = Math.floor((total / 1000) % 60);
-	const minutes = Math.floor((total / 1000 / 60) % 60);
-	const hours = Math.floor((total / 1000 / 60 / 60) % 24);
-	const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  useEffect(() => {
+    setIsHydrated(true);
 
-	const [timer, setTimer] = useState({ days, hours, minutes, seconds });
+    const calculateTime = () => {
+      const now = new Date().getTime();
+      const target = new Date(targetDate).getTime();
+      const total = target - now;
 
-	const getTimeRemaining = (e) => {
-		const total = Date.parse(e) - Date.parse(new Date());
-		const seconds = Math.floor((total / 1000) % 60);
-		const minutes = Math.floor((total / 1000 / 60) % 60);
-		const hours = Math.floor((total / 1000 / 60 / 60) % 24);
-		const days = Math.floor(total / (1000 * 60 * 60 * 24));
-		return {
-			total,
-			days,
-			hours,
-			minutes,
-			seconds,
-		};
-	};
+      if (total <= 0) {
+        setTimeRemaining({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+        return;
+      }
 
-	const startTimer = (e) => {
-		let { total, days, hours, minutes, seconds } = getTimeRemaining(e);
+      setTimeRemaining({
+        days: Math.floor(total / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((total / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((total / 1000 / 60) % 60),
+        seconds: Math.floor((total / 1000) % 60),
+      });
+    };
 
-		if (total >= 0) {
-			setTimer({ days, hours, minutes, seconds });
-		}
-	};
+    calculateTime();
+    const intervalId = setInterval(calculateTime, 1000);
+    return () => clearInterval(intervalId);
+  }, [targetDate]);
 
-	const clearTimer = (e) => {
-		if (Ref.current) clearInterval(Ref.current);
-		const id = setInterval(() => {
-			startTimer(e);
-		}, 1000);
-		Ref.current = id;
-	};
+  const TimeUnit = ({ value, label }) => (
+    <div className="text-center">
+      <div className="text-4xl font-bold text-white mb-2">
+        {value > 9 ? value : `0${value}`}
+      </div>
+      <div className="text-sm text-gray-300">{label}</div>
+    </div>
+  );
 
-	useEffect(() => {
-		clearTimer(countDownDate);
-	}, []);
+  if (!isHydrated) return null;
 
-	// Returns null on first render, so the client and server match
-	const [hydrated, setHydrated] = useState(false);
-	useEffect(() => {
-		setHydrated(true);
-	}, []);
-	if (!hydrated) {
-		return null;
-	}
+  return (
+    <div className="flex justify-center gap-8 p-6 bg-[#14153F] rounded-xl max-w-xl mx-auto">
+      <TimeUnit value={timeRemaining.days} label="Days" />
+      <TimeUnit value={timeRemaining.hours} label="Hours" />
+      <TimeUnit value={timeRemaining.minutes} label="Minutes" />
+      <TimeUnit value={timeRemaining.seconds} label="Seconds" />
+    </div>
+  );
+};
 
-	return (
-		// old tailwind
-		// <div className="flex flex-row w-auto justify-between gap-[5vw] bg-sfyellow p-3 rounded-xl ">
-		//   <div className="flex flex-col gap-[auto] items-center text-black  text-center text-xl not-italic font-[200] leading-[normal]">
-		//     <h1>Days</h1>
-		//     <p className="text-[25px]">
-		//       {timer.days > 9 ? timer.days : "0" + timer.days}
-		//     </p>
-		<table className="countdown">
-			{/* <caption>Time until event</caption> */}
-			<thead>
-				<tr>
-					<th>Days</th>
-					<th>Hours</th>
-					<th>Minutes</th>
-					<th>Seconds</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>{timer.days > 9 ? timer.days : "0" + timer.days}</td>
-					<td>{timer.days > 9 ? timer.hours : "0" + timer.hours}</td>
-					<td>{timer.days > 9 ? timer.minutes : "0" + timer.minutes}</td>
-					<td>{timer.days > 9 ? timer.seconds : "0" + timer.seconds}</td>
-				</tr>
-			</tbody>
-		</table>
-	);
-}
+export default CountDown;
