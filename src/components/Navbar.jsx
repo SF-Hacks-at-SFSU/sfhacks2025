@@ -12,7 +12,7 @@ const NAV_LINKS = [
   },
   {
     name: "Code Jams!",
-    href: "https://tally.so/r/woOWKN",
+    href: "https://sfhacks-code-jams-2024.devpost.com/project-gallery",
   },
   {
     name: "Team",
