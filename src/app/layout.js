@@ -8,7 +8,7 @@ import { useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-	const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
