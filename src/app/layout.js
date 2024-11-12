@@ -15,10 +15,21 @@ export default function RootLayout({ children }) {
   };
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <Navbar isOpen={isOpen} handleToggle={handleToggle} />
-        <main className="pt-24 bg-webdev-temp">{children}</main>
-      </body>
+			<body className={`${inter.className}`} style={{backgroundColor: "#16133d"}}>
+				<Navbar isOpen={isOpen} handleToggle={handleToggle} />
+				<main
+					className="pt-24 pb-24 bg-webdev-temp"
+					style={{
+						minHeight: "100vh",
+						height: "max-content",
+            backgroundSize: "auto 100vh",
+            backgroundPosition: "top left",
+            backgroundRepeat: "no-repeat"
+					}}
+				>
+					{children}
+				</main>
+			</body>
     </html>
   );
 }

@@ -13,7 +13,7 @@ export default function Main() {
   };
   return (
     <div>
-      <div className="w-95vw h-screen items-center align-contents-center flex flex-col md-gap-6">
+      <div className="w-95vw items-center align-contents-center flex flex-col md-gap-6">
         <div className="mainLandingPage flex flex-col gap-2 w-1/3 h-max items-center ">
           <hgroup>
             <h2>
