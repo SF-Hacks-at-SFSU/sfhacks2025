@@ -15,6 +15,10 @@ export default function RootLayout({ children }) {
   };
   return (
     <html lang="en">
+      <head>
+        {/* Should Replace this with a metadata object in the future */}
+        <title>SF Hacks</title>
+      </head>
 			<body className={`${inter.className}`} style={{backgroundColor: "#16133d"}}>
 				<Navbar isOpen={isOpen} handleToggle={handleToggle} />
 				<main
@@ -23,7 +27,7 @@ export default function RootLayout({ children }) {
 						minHeight: "100vh",
 						height: "max-content",
             backgroundSize: "auto 100vh",
-            backgroundPosition: "top left",
+            backgroundPosition: "top",
             backgroundRepeat: "no-repeat"
 					}}
 				>
