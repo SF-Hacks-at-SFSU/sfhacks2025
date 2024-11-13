@@ -10,18 +10,22 @@ const NAV_LINKS = [
   {
     name: "2024 Projects",
     href: "https://sfhacks-2024.devpost.com/project-gallery",
+    newTab: true
   },
   {
     name: "Code Jams!",
     href: "https://sfhacks-code-jams-2024.devpost.com/project-gallery",
+    newTab: true
   },
   {
     name: "Team",
     href: "/aboutUs",
+    newTab: false
   },
   {
     name: "FAQs",
     href: "/faqpage",
+    newTab: false
   },
 ];
 
@@ -31,13 +35,25 @@ const REGISTER_LINK = {
   href: "https://tally.so/r/3lRZjk",
 };
 
-const NavLink = ({ href, children, className = "", onClick }) => {
+const NavLink = ({ href, children, className = "", onClick, newTab }) => {
+  if (newTab) {
+    
+    return (
+      <a
+        href={href}
+        className={`transition-colors duration-200 hover:text-purple-200 ${className}`}
+        onClick={onClick}
+        target="_blank"
+        rel="noopener noreferrer" 
+      >
+        {children}
+      </a>
+    );
+  }
+
+  
   return (
-    <Link
-      href={href}
-      className={`transition-colors duration-200 hover:text-purple-200 ${className}`}
-      onClick={onClick}
-    >
+    <Link href={href} className={`transition-colors duration-200 hover:text-purple-200 ${className}`} onClick={onClick}>
       {children}
     </Link>
   );
@@ -59,7 +75,7 @@ const NavLinks = () => {
       {/* Navigation Links */}
       <div className="flex items-center gap-8 md:gap-12">
         {NAV_LINKS.map((link) => (
-          <NavLink key={link.name} href={link.href}>
+          <NavLink key={link.name} href={link.href} newTab = {link.newTab}>
             {link.name}
           </NavLink>
         ))}
@@ -68,6 +84,7 @@ const NavLinks = () => {
       {/* Register Button */}
       <NavLink
         href={REGISTER_LINK.href}
+        newTab = {true}
         className="px-6 py-2 text-white transition-all duration-200 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-purple-500/25 hover:scale-105 active:scale-95"
       >
         {REGISTER_LINK.name}
@@ -110,6 +127,7 @@ const MobileMenu = ({ isOpen, handleToggle }) => {
                 href={link.href}
                 className="transition-colors hover:text-purple-500"
                 onClick={handleToggle}
+                newTab = {link.newTab}
               >
                 {link.name}
               </NavLink>
@@ -120,6 +138,7 @@ const MobileMenu = ({ isOpen, handleToggle }) => {
               href={REGISTER_LINK.href}
               className="px-8 py-3 mt-4 text-white transition-all duration-200 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-purple-500/25 hover:scale-105 active:scale-95"
               onClick={handleToggle}
+              newTab={true}
             >
               {REGISTER_LINK.name}
             </NavLink>
