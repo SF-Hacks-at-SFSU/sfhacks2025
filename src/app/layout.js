@@ -19,14 +19,8 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <main
-          className="pt-24 pb-24 bg-webdev-temp"
-          style={{
-            minHeight: "100vh",
-            height: "max-content",
-            backgroundSize: "auto 100vh",
-            backgroundPosition: "top",
-            backgroundRepeat: "no-repeat",
-          }}
+          className="pt-24 pb-24 bg-webdev-temp min-h-[100vh] h-max bg-[auto_100vh] bg-top bg-no-repeat"
+          
         >
           {children}
         </main>
