@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 // Set menu links here
 const NAV_LINKS = [
@@ -129,7 +130,13 @@ const MobileMenu = ({ isOpen, handleToggle }) => {
   );
 };
 
-export default function Navbar({ isOpen, handleToggle }) {
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-center p-4">
       <div className="hidden md:block">
