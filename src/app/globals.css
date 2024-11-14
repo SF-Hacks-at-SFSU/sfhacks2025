@@ -37,6 +37,32 @@ footer > * {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .scrollbar::-webkit-scrollbar {
+    scrollbar-width: thin;
+    width: 50%;
+    height: 0.5rem;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    /* background: red; */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 100vh;
+    width: 50%;
+    border: 1px solid white;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #ffc2e2;
+    border: 1px solid #ffc2e2;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:tap {
+    background: #ffc2e2;
+    border: 1px solid #ffc2e2;
+  }
 }
 
 /*

@@ -106,7 +106,7 @@ const AboutUs = () => {
       <p className="text-center text-black text-5xl">Meet Our Team</p>
       <div className="grid justify-items-center gap-12 md:gap-16 lg:gap-20 mx-4">
         <div
-          className="flex max-w-full snap-x snap-mandatory space-x-3 overflow-x-scroll no-scrollbar
+          className="flex max-w-full snap-x snap-mandatory space-x-3 overflow-x-scroll scrollbar
           rounded-full bg-sfDarkPurp gap-4 py-2 px-4 pr-20 "
         >
           {teams.map((department, i) => (
