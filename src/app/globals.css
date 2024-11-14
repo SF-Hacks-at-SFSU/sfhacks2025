@@ -207,3 +207,31 @@ td {
 .discordButton:hover {
   background-color: #5865f2;
 }
+
+main {
+  min-height: 100vh;
+  height: 100%;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.rootBackground {
+  background-image: linear-gradient(
+      #16133d00 90vh,
+      #16133d80 97vh,
+      #16133dff 100vh
+    ),
+    url("/webdevCityBackground-01.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 100vh;
+}
+
+/* Background will try to fill along width if the screen is too wide instead */
+/* The ratio comes from the viewbox dimensions of the svg file */
+@media (min-aspect-ratio: 1920/1028) {
+  .rootBackground {
+    background-size: 100vw auto;
+  }
+}
