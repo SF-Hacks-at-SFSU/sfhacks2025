@@ -192,8 +192,7 @@ main {
 	min-height: 100vh;
 	height: 100%;
 
-	padding-top: 6rem;
-	padding-bottom: 6rem;
+	padding: 6rem 2rem;
 }
 
 .rootBackground {
