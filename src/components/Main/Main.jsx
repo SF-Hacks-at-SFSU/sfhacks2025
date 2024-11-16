@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import CountDown from "@/components/countdown/Countdown";
-import AboutUs from "@/components/aboutUs/AboutUs";
-import Navbar from "@/components/Navbar";
+import AboutUs from "@/app/aboutUs/AboutUs";
+import "./styles.css";
 
 export default function Main() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,29 +13,45 @@ export default function Main() {
   };
   return (
     <div>
-      <section className="w-screen h-screen bg-webdev-temp  flex flex-col gap-4 md:gap-12  ">
-        <div className="md:px-24 md:py-4 ">
-          <Navbar isOpen={isOpen} handleToggle={handleToggle} />
-        </div>
-        <div className="grid justify-items-center translate-y-16 md:-translate-y-16   lg:-translate-y-4 scale-[90%] md:scale-[85%] lg:scale-100 self-center ">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className={`w-1/2 h-auto md:w-1/2 ${isOpen ? "hidden" : "block"}`}
-          />
-          <CountDown />
-          <a href="https://discord.gg/P5PsDR6G7W" target="_blank">
-            <button className="bg-sfPink w-40 h-12 text-xl text-black rounded-full">
-              {" "}
-              Discord{" "}
-            </button>
+      <div className="w-95vw items-center align-contents-center flex flex-col md-gap-6">
+        <div className="mainLandingPage flex flex-col gap-2 w-1/3 h-max items-center ">
+          <hgroup>
+            <h2>
+              <Image
+                src="/logoNew-horizontal.png"
+                alt="SF Hacks Logo"
+                width={272 * 2}
+                height={92 * 2}
+                style={{
+                  backgroundColor: "#fff5d980",
+                  backdropFilter: "blur(4px)",
+                  borderRadius: "16px",
+                }}
+
+                // ?????
+                // className={`w-[300px] h-fit ${
+                //     isOpen ? "hidden" : "block"
+                // }`}
+              />
+            </h2>
+            <CountDown />
+            {/* old discord button */}
+            {/* <button  className="bg-sfPink w-40 h-12 text-xl text-black rounded-full">
+                        {" "}
+                        <a href="https://discord.gg/P5PsDR6G7W" target="_blank">
+                        Discord{" "}
+                        </a>
+                        </button> */}
+          </hgroup>
+          <a
+            className="discordButton"
+            href="https://discord.gg/P5PsDR6G7W"
+            target="_blank"
+          >
+            Discord{" "}
           </a>
         </div>
-      </section>
-      <AboutUs />
+      </div>
     </div>
   );
 }
