@@ -1,48 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-16133d   
-9882ba  
-edc6fa  
-ffc2e2  
-fff5d9
- */
-:root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-
-  --palette-1: #16133d;
-  --palette-2: #9882ba;
-  --palette-3: #edc6fa;
-  --palette-4: #ffc2e2;
-  --palette-5: #fff5d9;
-
-  --background-opacity: 0.675;
-  --background-color-solid: rgb(from var(--palette-1) r g b);
-  --background-color: rgb(from var(--palette-1) r g b / var(--background-opacity));
-
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
-}
-
-footer {
-	background-color: #9882ba;
-	padding: 16px;
-	display: flex;
-}
-
-footer > * {
-	justify-self: start;
-	flex: 1;
-}
 
 @layer utilities {
 	/* Hide scrollbar for Chrome, Safari and Opera */
@@ -128,87 +86,43 @@ footer > * {
 		@apply bg-background text-foreground;
 	}
 }
-/* 16133d   9882ba  edc6fa  ffc2e2  fff5d9 */
-/* className="bg-sfPink w-40 h-12 text-xl text-black rounded-full " */
-.mainLandingPage {
-	width: 100%;
-	height: 100%;
-	text-align: center;
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
-.mainLandingPage > * {
-	margin: 4em 0 0 0;
+/* 
+16133d   
+9882ba  
+edc6fa  
+ffc2e2  
+fff5d9
+ */
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+
+  --border-radius: 0.75rem;
+
+	--palette-1: #16133d;
+	--palette-2: #9882ba;
+	--palette-3: #edc6fa;
+	--palette-4: #ffc2e2;
+	--palette-5: #fff5d9;
+
+	--background-opacity: 0.675;
+	--background-color-solid: rgb(from var(--palette-1) r g b);
+	--background-color: rgb(
+		from var(--palette-1) r g b / var(--background-opacity)
+	);
 }
 
-.mainLandingPage hgroup {
-	contain: content;
-
-	width: 544px;
-}
-
-.mainLandingPage hgroup > * {
-	margin: 0.5em 0;
-}
-
-/* .mainLandingPage > hgroup {
-
-} */
-
-.countdown {
-	table-layout: fixed;
-	border-collapse: collapse;
-	contain: content;
-
-	background-color: #16133d41;
-	border-radius: 8px;
-	/* blur not needed with current background */
-	/* backdrop-filter: blur(4px); */
-
-	color: #ffffff;
-
-	width: 100%;
-}
-
-.countdown thead th,
-td {
-	padding: 0 0.5em;
-	width: 3em;
-}
-
-.countdown thead th {
-	background-color: #16133d;
-	font-size: normal;
-	font-weight: normal;
-}
-
-.countdown tbody td {
-	font-size: 2.8em;
-	font-weight: bolder;
-}
-
-.discordButton {
-	border-radius: 1em;
-	font-size: x-large;
-
-	padding: 0.25em 1em;
-
-	background-color: #16133d;
-	color: #ffffff;
-	transition: background-color 0.15s ease-out;
-}
-
-.discordButton:hover {
-	background-color: #5865f2;
-}
-
-main {
-	min-height: 100vh;
-	height: 100%;
-
-	padding: 6rem 2rem;
-}
-
-.rootBackground {
+body {
 	background-image: linear-gradient(
 			#16133d00 90vh,
 			#16133d80 97vh,
@@ -218,12 +132,101 @@ main {
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: auto 100vh;
-}
 
-/* Background will try to fill along width if the screen is too wide instead */
+  /* Background will try to fill along width if the screen is too wide instead */
 /* The ratio comes from the viewbox dimensions of the svg file */
 @media (min-aspect-ratio: 1920/1028) {
-	.rootBackground {
-		background-size: 100vw auto;
+  background-size: 100vw auto;
+}
+
+}
+
+footer {
+	background-color: #9882ba;
+	padding: 16px;
+	display: flex;
+}
+
+footer > * {
+	justify-self: start;
+	flex: 1;
+}
+
+main {
+	display: flex;
+  flex-direction: column;
+
+	min-height: 100vh;
+	height: 100%;
+
+	padding: 6rem 2rem;
+}
+
+main > * {
+	max-width: 90rem;
+
+	margin: 2rem auto;
+
+  border-radius: var(--border-radius);
+
+	background-color: var(--background-color);
+
+	color: #ffffff;
+}
+
+hgroup {
+	contain: content;
+
+	max-width: 544px;
+	/* width auto is needed so that it works on release version for some reason */
+	width: auto;
+
+	background: unset;
+
+	& > * {
+		margin: 0.5em 0;
 	}
 }
+
+h1,
+h2,
+h3 {
+	max-width: fit-content;
+
+	padding: 1rem;
+	margin: 0 auto;
+
+	text-align: center;
+	font-weight: bold;
+	color: #ffffff;
+
+	background-color: var(--background-color-solid);
+}
+
+h1 {
+	max-width: 544px;
+
+	margin-top: 4rem;
+
+	font-size: xxx-large;
+}
+
+h2 {
+	font-size: xx-large;
+}
+
+h3 {
+	font-size: x-large;
+}
+
+p {
+	contain: content;
+
+	padding: 1rem;
+
+	font-size: large;
+	text-indent: 2em;
+
+	backdrop-filter: blur(4px);
+}
+

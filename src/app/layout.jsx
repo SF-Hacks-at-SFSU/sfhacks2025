@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
 			>
 				<Navbar />
         {/* renamed Huy's bg-webdev-temp to rootBackground */}
-				<main className="rootBackground">{children}</main>
+        {children}
+				{/* <main className="rootBackground">{children}</main> */}
 			</body>
 		</html>
 	);

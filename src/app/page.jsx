@@ -4,11 +4,9 @@ import "./styles.css";
 
 export default function Home() {
 	return (
-		<div>
-			<div className="w-95vw items-center align-contents-center flex flex-col md-gap-6">
-				<div className="mainLandingPage flex flex-col gap-2 w-1/3 h-max items-center ">
-					<hgroup>
-						<h2>
+		<main className="mainLandingPage">
+      <hgroup>
+						<h2 className="logo">
 							<Image
 								src="/logoNew-horizontal.png"
 								alt="SF Hacks Logo"
@@ -42,8 +40,11 @@ export default function Home() {
 					>
 						Discord{" "}
 					</a>
+			{/* <div className="w-95vw items-center align-contents-center flex flex-col md-gap-6">
+				<div className="mainLandingPage flex flex-col gap-2 w-1/3 h-max items-center ">
+					
 				</div>
-			</div>
-		</div>
+			</div> */}
+		</main>
 	);
 }

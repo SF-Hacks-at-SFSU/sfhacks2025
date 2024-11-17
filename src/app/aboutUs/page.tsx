@@ -132,7 +132,7 @@ const teams: aboutUsTypes.team[] = [
 
 export default function Page() {
 	return (
-		<div className="aboutUs">
+		<main className="aboutUs">
       <h1>About Us</h1>
       <p>
         SF Hacks is more than just an event, we are a team of passionate
@@ -142,6 +142,6 @@ export default function Page() {
       </p>
       <h2>Meet Our Team</h2>
 			<Teams teams={teams} members={members}/>
-		</div>
+		</main>
 	);
 };
