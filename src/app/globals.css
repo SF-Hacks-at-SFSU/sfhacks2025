@@ -1,11 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
+16133d   
+9882ba  
+edc6fa  
+ffc2e2  
+fff5d9
+ */
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
+
+  --palette-1: #16133d;
+  --palette-2: #9882ba;
+  --palette-3: #edc6fa;
+  --palette-4: #ffc2e2;
+  --palette-5: #fff5d9;
+
+  --background-opacity: 0.675;
+  --background-color-solid: rgb(from var(--palette-1) r g b);
+  --background-color: rgb(from var(--palette-1) r g b / var(--background-opacity));
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,11 +64,7 @@ footer > * {
 }
 */
 /* src/app/globals.css */
-.bg-webdev-temp {
-	background-image: url("/webdevCityBackground-01.svg");
-	background-size: cover;
-	background-position: center;
-}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
