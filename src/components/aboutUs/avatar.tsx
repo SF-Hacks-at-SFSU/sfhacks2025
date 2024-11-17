@@ -14,7 +14,7 @@ export const Avatar = ({ member }: { member: aboutUsTypes.member }) => {
 				/>
 			</div>
 
-			<p>{member.name}</p>
+			<div>{member.name}</div>
 		</div>
 	);
 };
