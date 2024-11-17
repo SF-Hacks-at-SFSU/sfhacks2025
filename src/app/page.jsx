@@ -1,14 +1,8 @@
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 import CountDown from "../components/countdown/Countdown";
 import "./styles.css";
 
 export default function Home() {
-	const [isOpen, setIsOpen] = useState(false);
-	const handleToggle = () => {
-		setIsOpen(!isOpen);
-	};
 	return (
 		<div>
 			<div className="w-95vw items-center align-contents-center flex flex-col md-gap-6">
