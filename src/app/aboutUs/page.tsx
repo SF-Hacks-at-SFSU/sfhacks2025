@@ -3,7 +3,6 @@ import Teams from "../../components/aboutUs/teams";
 import "./styles.css";
 import type * as aboutUsTypes from "../../components/aboutUs/types";
 
-
 const members: aboutUsTypes.member[] = [
 	{ name: "Gabby", img: "/team/gabby.jpg" },
 	{ name: "Justine", img: "/team/justine.jpg" },
@@ -39,109 +38,155 @@ const members: aboutUsTypes.member[] = [
 	{ name: "James", img: "/team/james.jpg" },
 	{ name: "Akim", img: "/team/akim.jpg" },
 	{ name: "Avinh", img: "/team/avinh.png" },
+	{ name: "Kushvi", img: "/team/kushvi" }, //needs image
+	{ name: "Om", img: "/team/om" }, //needs image
+	{ name: "Krrish", img: "/team/krrish" }, //needs image
+	{ name: "Kunj", img: "/team/kunj" }, //needs image
 ];
 
-enum membersEnum {Gabby, 
-  Justine, 
-  Louella, 
-  Hillary, 
-  Michelle, 
-  Declan, 
-  Caedyn, 
-  Marco, 
-  Ashley, 
-  Ria, 
-  Kurt, 
-  Vireak, 
-  Brandon, 
-  Matthew, 
-  Gavin, 
-  Adan, 
-  Grishma, 
-  Christian, 
-  Stella, 
-  John, 
-  Trish, 
-  William, 
-  Keith, 
-  Malhar, 
-  Nalia, 
-  Rishita, 
-  Said, 
-  Sukrit, 
-  Trenton, 
-  Maxwell, 
-  Jim, 
-  James, 
-  Akim, 
-  Avinh
-  
+enum membersEnum {
+	Gabby,
+	Justine,
+	Louella,
+	Hillary,
+	Michelle,
+	Declan,
+	Caedyn,
+	Marco,
+	Ashley,
+	Ria,
+	Kurt,
+	Vireak,
+	Brandon,
+	Matthew,
+	Gavin,
+	Adan,
+	Grishma,
+	Christian,
+	Stella,
+	John,
+	Trish,
+	William,
+	Keith,
+	Malhar,
+	Nalia,
+	Rishita,
+	Said,
+	Sukrit,
+	Trenton,
+	Maxwell,
+	Jim,
+	James,
+	Akim,
+	Avinh,
+	Kushvi,
+	Om,
+	Krrish,
+	Kunj,
 }
 
 const teams: aboutUsTypes.team[] = [
 	{
 		name: "Design",
-		membersIndex: [
+		memberIndices: [
 			membersEnum.Gabby,
-			membersEnum.Justine,
-			membersEnum.Louella,
-			membersEnum.Hillary,
-			membersEnum.Michelle,
 			membersEnum.Declan,
-		],
+			membersEnum.Louella,
+			membersEnum.Michelle,
+			membersEnum.Hillary,
+			membersEnum.Justine,
+		], //
 	},
-	{ name: "Engagement", membersIndex: [membersEnum.Caedyn] },
+	{
+		name: "Engagement",
+		memberIndices: [
+			membersEnum.Ria,
+			membersEnum.Caedyn,
+			// membersEnum.Om
+		],
+	}, //
 	{
 		name: "Executive",
-		membersIndex: [membersEnum.Marco, membersEnum.Ashley, membersEnum.Ria, membersEnum.Kurt],
+		memberIndices: [
+			membersEnum.Keith,
+			membersEnum.Ria,
+			membersEnum.Marco,
+			membersEnum.Ashley,
+			membersEnum.Kurt,
+		],
 	},
 	{
 		name: "Finance",
-		membersIndex: [membersEnum.Vireak, membersEnum.Brandon, membersEnum.Matthew],
+		memberIndices: [
+			membersEnum.Kurt,
+			membersEnum.Matthew,
+			membersEnum.Krrish,
+			membersEnum.Grishma,
+			membersEnum.Brandon,
+			membersEnum.Vireak,
+		], //
 	},
 	{
 		name: "Logistics",
-		membersIndex: [
+		memberIndices: [
 			membersEnum.Gavin,
 			membersEnum.Adan,
-			membersEnum.Grishma,
 			membersEnum.Christian,
+			membersEnum.Kunj,
 			membersEnum.Stella,
+			membersEnum.Krrish,
+			membersEnum.Grishma,
 		],
-	},
+	}, //
 	{
 		name: "Marketing",
-		membersIndex: [membersEnum.John, membersEnum.Trish, membersEnum.William],
+		memberIndices: [membersEnum.John, membersEnum.Trish, membersEnum.William],
 	},
 	{
 		name: "Outreach",
-		membersIndex: [
+		memberIndices: [
 			membersEnum.Keith,
 			membersEnum.Malhar,
 			membersEnum.Nalia,
 			membersEnum.Rishita,
-			membersEnum.Said,
+			// membersEnum.Said,
 			membersEnum.Sukrit,
 			membersEnum.Trenton,
-		],
+		], //
 	},
-	{ name: "Publicity", membersIndex: [membersEnum.Maxwell, membersEnum.Jim, membersEnum.James] },
-	{ name: "Tech", membersIndex: [membersEnum.Akim, membersEnum.Avinh] },
+	{
+		name: "Publicity",
+		memberIndices: [
+			membersEnum.Maxwell,
+			membersEnum.Jim,
+			membersEnum.James,
+			membersEnum.Kushvi,
+		],
+	}, //
+	{
+		name: "Tech",
+		memberIndices: [
+			membersEnum.Akim,
+			membersEnum.John,
+			membersEnum.Avinh,
+			membersEnum.Vireak,
+			membersEnum.Brandon,
+		], //
+	},
 ];
-
 
 export default function Page() {
 	return (
 		<main className="aboutUs">
-      <h1>About Us</h1>
-      <p>
-        SF Hacks is more than just an event, we are a team of passionate
-        individuals dedicated to hosting this hackathon. Our diverse team spans
-        across logistics, design, tech operations, social engagement, marketing,
-        and outreach.
-      </p>
-      <h2>Meet Our Team</h2>
-			<Teams teams={teams} members={members}/>
+			<h1>About Us</h1>
+			<p>
+				SF Hacks is more than just an event, we are a team of passionate
+				individuals dedicated to hosting this hackathon. Our diverse team spans
+				across logistics, design, tech operations, social engagement, marketing,
+				and outreach.
+			</p>
+			<h2>Meet Our Team</h2>
+			<Teams teams={teams} members={members} />
 		</main>
 	);
-};
+}

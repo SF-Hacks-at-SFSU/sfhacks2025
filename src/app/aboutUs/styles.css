@@ -91,7 +91,7 @@
 
 	transition: scale 0.1s ease-out;
 
-	& > div:first-child {
+	& > *:first-child {
 		contain: strict;
 		position: relative;
 
@@ -106,7 +106,7 @@
 		object-position: top;
 	}
 
-	& > div:last-child {
+	& > *:last-child {
     margin-top: 0.5em;
     
 		font-size: large;

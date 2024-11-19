@@ -5,5 +5,5 @@ export type member = {
 
 export type team = {
 	name: string;
-	membersIndex: number[];
+	memberIndices: number[];
 };

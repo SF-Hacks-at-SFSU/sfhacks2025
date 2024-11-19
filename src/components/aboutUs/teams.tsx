@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Attributes } from "react";
-import { Avatar } from "./avatar";
+import Avatar from "./avatar";
 import { useState } from "react";
 import type * as aboutUsTypes from "./types";
 
@@ -23,7 +23,7 @@ export default function Teams({ teams, members }: { teams: aboutUsTypes.team[], 
 				))}
 			</div>
 			<div className="members">
-				{teams[activeTab].membersIndex.map((memberIndex, i) => (
+				{teams[activeTab].memberIndices.map((memberIndex, i) => (
 					<Avatar member={members[memberIndex]} key={i} />
 				))}
 			</div>
