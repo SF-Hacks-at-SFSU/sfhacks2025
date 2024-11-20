@@ -120,7 +120,7 @@ const teams: aboutUsTypes.team[] = [
 		memberIndices: [
 			membersEnum.Kurt,
 			membersEnum.Matthew,
-			membersEnum.Krrish,
+			// membersEnum.Krrish,
 			membersEnum.Grishma,
 			membersEnum.Brandon,
 			membersEnum.Vireak,
@@ -132,15 +132,20 @@ const teams: aboutUsTypes.team[] = [
 			membersEnum.Gavin,
 			membersEnum.Adan,
 			membersEnum.Christian,
-			membersEnum.Kunj,
+			// membersEnum.Kunj,
 			membersEnum.Stella,
-			membersEnum.Krrish,
+			// membersEnum.Krrish,
 			membersEnum.Grishma,
 		],
 	}, //
 	{
 		name: "Marketing",
-		memberIndices: [membersEnum.John, membersEnum.Trish, membersEnum.William],
+		memberIndices: [
+			//
+			membersEnum.John,
+			membersEnum.Trish,
+			membersEnum.William,
+		],
 	},
 	{
 		name: "Outreach",
@@ -160,7 +165,7 @@ const teams: aboutUsTypes.team[] = [
 			membersEnum.Maxwell,
 			membersEnum.Jim,
 			membersEnum.James,
-			membersEnum.Kushvi,
+			// membersEnum.Kushvi,
 		],
 	}, //
 	{
