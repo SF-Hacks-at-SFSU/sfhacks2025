@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
 			>
 				<Navbar />
         {/* renamed Huy's bg-webdev-temp to rootBackground */}
-				<main className="rootBackground">{children}</main>
+        {children}
+				{/* <main className="rootBackground">{children}</main> */}
 			</body>
 		</html>
 	);
