@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 // Set menu links here
 const NAV_LINKS = [
   {
-    name: "2024 Projects",
-    href: "https://sfhacks-2024.devpost.com/project-gallery",
+    name: "Sponsors",
+    href: "/sponsors",
   },
   {
     name: "Code Jams!",

@@ -1,58 +1,30 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import "./sponsors.css";
-import { SponsorsContainer, SponsorsElement, EventImages, SponsorUsButton, WhySponsorParagraph } from "@/components/sponsors";
-import sponsorsData from "./sponsorsPageData.json";
+import "./styles.css";
+import {
+	SponsorsContainer,
+	SponsorsElement,
+	EventImages,
+	SponsorUsButton,
+	WhySponsorParagraph,
+} from "@/components/sponsors/server";
 
 export default function Sponsors() {
 	const [isOpen, setIsOpen] = useState(false);
 	const handleToggle = () => {
 		setIsOpen(!isOpen);
 	};
-	const sponsorsElements = sponsorsData.sponsors.map((obj) => (
-		<SponsorsElement
-			sponsorObject={obj}
-			key={obj.name}
-		></SponsorsElement>
-	));
 
 	return (
 		<div className="sponsorsBackground">
-			<div
-				className="md:px-24 md:py-4 md:w-[98vw] w-screen"
-				style={{
-					margin: "auto",
-					// position: "sticky",
-					// top: 0,
-				}}
-			>
-				<Navbar
-					isOpen={isOpen}
-					handleToggle={handleToggle}
-				/>
-			</div>
-
 			<main className="sponsorsMain">
-				<div
-                style={{
-                    // containerType: "size"
-                }}>
-					<hgroup className="overlay">
-						<h2>Our Amazing Sponsors!</h2>
-						<a href="#contacts">Sponsor Us!</a>
-					</hgroup>
-
-					<EventImages
-						imageData={sponsorsData.eventImages}
-						width={600}
-						height={200}
-					></EventImages>
-				</div>
-
-				<SponsorsContainer>{sponsorsElements}</SponsorsContainer>
+				<h2>Our Amazing Sponsors!</h2>
+				<hgroup className="overlay">
+					{/* <a href="#contacts">Sponsor Us!</a> */}
+				</hgroup>
+				<SponsorsContainer></SponsorsContainer>
+				<SponsorsContainer></SponsorsContainer>
 				{/* deprecated */}
 				{/* <hgroup>
 					<h2 id="sponsorUsTarget">Why Sponsor</h2>
@@ -109,59 +81,6 @@ export default function Sponsors() {
 				</WhySponsorParagraph>
 				The navbar link will be the same for this “Why Sponsor Us?” and the Sponsors wall */}
 			</main>
-			<footer>
-				<address id="contacts">
-					<ul>
-						<li>
-							Email: <a href="mailto:sfhacksteam@gmail.com">sfhacksteam@gmail.com</a>
-						</li>
-						<li>
-							Linkedin:{" "}
-							<a
-								href="https://www.linkedin.com/company/sf-hacks-sfsu/"
-								target="_blank"
-								rel="author"
-							>
-								SF Hacks at SFSU
-							</a>
-						</li>
-						<li>
-							Discord:{" "}
-							<a
-								href="https://discord.gg/sxQjq7SjjW"
-								target="_blank"
-								rel="author"
-							>
-								SF Hacks at SFSU
-							</a>
-						</li>
-					</ul>
-				</address>
-				<div>
-					<ul>
-						<li>
-							Instagram:{" "}
-							<a
-								href="https://www.instagram.com/sf.hacks/?hl=en"
-								target="_blank"
-								rel="author"
-							>
-								sf.hacks
-							</a>
-						</li>
-						<li>
-							TikTok:{" "}
-							<a
-								href="https://www.tiktok.com/@sfhacks"
-								target="_blank"
-								rel="author"
-							>
-								sfhacks
-							</a>
-						</li>
-					</ul>
-				</div>
-			</footer>
 		</div>
 	);
 }
