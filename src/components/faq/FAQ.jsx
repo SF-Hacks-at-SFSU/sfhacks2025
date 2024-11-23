@@ -25,9 +25,9 @@ function FAQ() {
   };
 
   return (
-    <div className="h-full pt-6">
+    <main>
+        <h1 className="faq-banner-text">Frequently Asked Questions!</h1>
       <div className="faq-banner">
-        <h2 className="faq-banner-text">Frequently Asked Questions!</h2>
       </div>
       <div className="faq-main">
         {data.map((item, i) => (
@@ -49,7 +49,7 @@ function FAQ() {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 
