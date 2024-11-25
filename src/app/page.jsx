@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CountDown from "../components/countdown/Countdown";
+import CountDown from "./components/Countdown";
 import "./styles.css";
 
 export default function Home() {

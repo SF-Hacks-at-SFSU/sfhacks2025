@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { Suspense } from "react";
-import type * as aboutUsTypes from "./types";
+import type * as aboutUsTypes from "../types";
 
 export default function Avatar({
 	member,

@@ -1,9 +1,9 @@
 "use client";
 
 import React, { Attributes } from "react";
-import Avatar from "./avatar";
+import Avatar from "./Avatar";
 import { useState } from "react";
-import type * as aboutUsTypes from "./types";
+import type * as aboutUsTypes from "../types";
 
 export default function Teams({ teams, members }: { teams: aboutUsTypes.team[], members: aboutUsTypes.member[] }) {
 	const [activeTab, updateActiveTab] = useState(0);

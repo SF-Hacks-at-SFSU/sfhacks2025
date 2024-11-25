@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "./FAQ.css";
+import "../styles.css";
 
 function FAQ() {
   // Added a default value to the `open` state variable.

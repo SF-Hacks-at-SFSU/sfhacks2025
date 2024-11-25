@@ -1,5 +1,5 @@
-import type * as aboutUsTypes from "./types";
-import Avatar from "./avatar";
+import type * as aboutUsTypes from "../types";
+import Avatar from "./Avatar";
 
 // This component is not used anywhere, it is just an alternative design for the aboutus page
 export function teamSections({

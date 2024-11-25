@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import * as sponsorData from "@/components/sponsors/sponsorsPageData";
+import * as sponsorData from "@/app/sponsors/sponsorsPageData";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const sponsors = sponsorData.sponsors;

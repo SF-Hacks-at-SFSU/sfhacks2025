@@ -19,12 +19,12 @@ const NAV_LINKS = [
   },
   {
     name: "Team",
-    href: "/aboutUs",
+    href: "/about-us",
     newTab: false
   },
   {
     name: "FAQs",
-    href: "/faqpage",
+    href: "/faqs",
     newTab: false
   },
 ];
