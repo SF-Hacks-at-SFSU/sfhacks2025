@@ -1,7 +1,7 @@
 import React from "react";
-import Teams from "../../components/aboutUs/teams";
+import Teams from "./components/Teams";
 import "./styles.css";
-import type * as aboutUsTypes from "../../components/aboutUs/types";
+import type * as aboutUsTypes from "./types";
 
 const members: aboutUsTypes.member[] = [
 	{ name: "Gabby", img: "/team/gabby.jpg" },

@@ -1,4 +1,4 @@
-import SponsorMosaic from "@/components/sponsors/SponsorGrid";
+import SponsorMosaic from "./components/SponsorGrid";
 
 export default function SponsorsPage() {
   return (

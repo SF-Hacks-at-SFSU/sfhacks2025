@@ -1,11 +1,16 @@
 "use client";
 
 import React, { Attributes } from "react";
-import Avatar from "./avatar";
+import Avatar from "./Avatar";
 import { useState } from "react";
-import type * as aboutUsTypes from "./types";
+import type * as aboutUsTypes from "../types";
 
-export default function Teams({ teams, members }: { teams: aboutUsTypes.team[], members: aboutUsTypes.member[] }) {
+interface TeamsProps {
+	teams: aboutUsTypes.team[];
+	members: aboutUsTypes.member[];
+}
+
+export default function Teams({ teams, members }: TeamsProps) {
 	const [activeTab, updateActiveTab] = useState(0);
 
 	return (
@@ -16,7 +21,7 @@ export default function Teams({ teams, members }: { teams: aboutUsTypes.team[], 
 						teamIndex={i}
 						activeIndex={activeTab}
 						handleClick={updateActiveTab}
-            key={i}
+						key={i}
 					>
 						{team.name}
 					</TeamTab>
@@ -24,14 +29,17 @@ export default function Teams({ teams, members }: { teams: aboutUsTypes.team[], 
 			</div>
 			<div className="members">
 				{teams[activeTab].memberIndices.map((memberIndex, i) => (
-					<Avatar member={members[memberIndex]} key={i} />
+					<Avatar
+						member={members[memberIndex]}
+						key={i}
+					/>
 				))}
 			</div>
 		</div>
 	);
 }
 
-interface tabAttributes {
+interface TeamTabProps {
 	children: React.ReactNode;
 	teamIndex: number;
 	activeIndex: number;
@@ -43,7 +51,7 @@ function TeamTab({
 	activeIndex,
 	handleClick,
 	children,
-}: tabAttributes) {
+}: TeamTabProps) {
 	const isActive = teamIndex == activeIndex;
 	return (
 		<button
@@ -52,8 +60,8 @@ function TeamTab({
 			key={teamIndex}
 			disabled={isActive}
 		>
-      {/* The first div is for background purposes */}
-      <div></div> 
+			{/* The first div is for background purposes */}
+			<div></div>
 			<div>{children}</div>
 		</button>
 	);

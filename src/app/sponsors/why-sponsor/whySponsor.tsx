@@ -1,12 +1,23 @@
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+"use client"
 
-export function SponsorsContainer({ children }) {
+import Image from "next/image";
+import React, { Component, useEffect, useRef, useState } from "react";
+import type * as sponsorsPageDataTypes from "@/app/sponsors/sponsorsPageData";
+import type { Property } from "csstype";
+interface SponsorsContainerProps {
+	children: React.ReactNode;
+}
+
+export function SponsorsContainer({ children }: SponsorsContainerProps) {
 	// CSS must use className instead of the styles tag
 	return <div className="sponsorsContainer">{children}</div>;
 }
 
-export function SponsorsElement({ sponsorObject }) {
+interface SponsorsElementProps {
+	sponsorObject: sponsorsPageDataTypes.sponsorType;
+}
+
+export function SponsorsElement({ sponsorObject }: SponsorsElementProps) {
 	return (
 		<div className="sponsorItem">
 			<img
@@ -17,7 +28,13 @@ export function SponsorsElement({ sponsorObject }) {
 	);
 }
 
-export function EventImages({ imageData, width, height }) {
+interface EventImagesProps {
+	imageData: sponsorsPageDataTypes.eventImageType[];
+	width: number;
+	height: number;
+}
+
+export function EventImages({ imageData, width, height }: EventImagesProps) {
 	const [focusIndex, setFocusIndex] = useState(imageData.length - 2);
 	const images = useRef(
 		imageData.map((imageDatum, i) => (
@@ -41,16 +58,17 @@ export function EventImages({ imageData, width, height }) {
 
 	const domRef = useRef(null);
 
-	function handleChildElementOnClick(clickedIndex) {
+	function handleChildElementOnClick(clickedIndex: number) {
 		setFocusIndex(clickedIndex);
 
-		domRef.current.children[clickedIndex].scrollIntoView({
-			behavior: "smooth",
-			block: "center",
-			inline: "center",
-		});
+    const domElement = domRef.current as unknown as HTMLElement;
+    domElement.children[clickedIndex].scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
 	}
-
+  
 	return (
 		<div
 			ref={domRef}
@@ -61,7 +79,21 @@ export function EventImages({ imageData, width, height }) {
 	);
 }
 
-function EventImage({ imageIndex, imageData, onClick, width, height }) {
+interface EventImageProps {
+	imageIndex: number;
+	imageData: sponsorsPageDataTypes.eventImageType;
+	onClick: (index: number) => void;
+	width: number;
+	height: number;
+}
+
+function EventImage({
+	imageIndex,
+	imageData,
+	onClick,
+	width,
+	height,
+}: EventImageProps) {
 	const index = imageIndex;
 
 	return (
@@ -79,7 +111,12 @@ function EventImage({ imageIndex, imageData, onClick, width, height }) {
 	);
 }
 
-export function SponsorUsButton({ targetID }) { //deprecated
+interface SponsorUsButtonProps {
+	targetID: string;
+}
+
+export function SponsorUsButton({ targetID }: SponsorUsButtonProps) {
+	//deprecated
 	return (
 		<div className="sponsorUsButton">
 			<a href={`#${targetID}`}>Sponsor Us!</a>
@@ -87,13 +124,25 @@ export function SponsorUsButton({ targetID }) { //deprecated
 	);
 }
 
-export function WhySponsorParagraph({ children, img = undefined, width = 256, float = "none" }) {
+interface WhySponsorParagraphProps {
+	img?: sponsorsPageDataTypes.eventImageType;
+	width?: number;
+	float?: Property.Float; //Don't bother asking me how long it took me to figure this out
+	children?: React.ReactNode;
+}
+
+export function WhySponsorParagraph({
+	children,
+	img = undefined,
+	width = 256,
+	float = "none",
+}: WhySponsorParagraphProps) {
 	if (img)
 		return (
 			<p
 				className="WhySponsorParagraph"
 				style={{
-                    display: "inline-block",
+					display: "inline-block",
 					overflow: "scroll",
 				}}
 			>
