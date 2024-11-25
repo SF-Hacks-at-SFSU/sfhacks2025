@@ -1,4 +1,10 @@
-export const sponsors = [
+export type sponsorType = {
+  name: string,
+  logoPath: string,
+  tier: "first" | "second" | "third"
+}
+
+export const sponsors: sponsorType[] = [
   {
     name: "Cisco",
     logoPath: "/sponsor-logos/large-logos/Cisco_logo.png",
@@ -82,7 +88,13 @@ export const sponsors = [
     tier: "third",
   },
 ];
-export const eventImages = [
+
+export type eventImageType = {
+  alt: string,
+  filePath: string
+}
+
+export const eventImages: eventImageType[] = [
   {
     alt: "Open AI",
     filePath: "/event-pictures/SF_HACKS_24_O-070.jpg",
