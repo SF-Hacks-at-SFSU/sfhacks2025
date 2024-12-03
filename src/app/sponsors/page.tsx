@@ -1,12 +1,36 @@
-import SponsorMosaic from "./components/SponsorGrid";
+// import LogoAtlas from "./components/logoAtlas";
+import Logos from "./components/Logos";
+import sponsorsData from "@/custom-img-loader/sponsor-logos/data.json";
+import { SponsorsDatum } from "./types";
+
+const currentSponsors = (sponsorsData as SponsorsDatum[]).filter(
+	({ isCurrent }) => isCurrent
+);
+const pastSponsors = (sponsorsData as SponsorsDatum[]).filter(
+	({ isCurrent }) => !isCurrent
+);
 
 export default function SponsorsPage() {
-  return (
-    <main className="min-h-screen">
-      <h2 className="text-[#fff5d9] text-4xl font-bold text-center mb-12 font-sans drop-shadow-[0_0.1em_0.5em_#16133d] mt-10">
-        Our Sponsors
-      </h2>
-      <SponsorMosaic />
-    </main>
-  );
+	return (
+		<main>
+			<h1>Our Sponsors</h1>
+			<Logos
+				logoData={currentSponsors}
+				outputOptions={{
+					outputFileName: "current-sponsors",
+					outputDir: "/logo-atlases",
+				}}
+			></Logos>
+
+			<h2>Past Sponsors</h2>
+			<Logos
+				className="pastSponsors"
+				logoData={pastSponsors}
+				outputOptions={{
+					outputFileName: "past-sponsors",
+					outputDir: "/logo-atlases",
+				}}
+			></Logos>
+		</main>
+	);
 }
