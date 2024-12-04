@@ -230,3 +230,31 @@ p {
 	backdrop-filter: blur(4px);
 }
 
+.button {
+	border-radius: 1em;
+	font-size: x-large;
+
+	padding: 0.25em 1em;
+
+	background-color: #16133d;
+
+  font-weight: bold;
+	color: #ffffff;
+	transition: 0.15s ease-out;
+  transition-property: background-color, scale, color;
+}
+
+.button:hover {
+  background-color: #59558f;
+  scale: 1.1
+}
+
+.specialButton {
+  background-image: linear-gradient(-60deg,  var(--palette-2) 10%, #bb94cd 40%  , var(--palette-2) 70%);
+  filter: saturate(1.75);  
+}
+
+.specialButton:hover {
+  /* translate: 0 -0.5em; */
+  animation: 2s ease-in-out .25s infinite alternate hover;
+}
