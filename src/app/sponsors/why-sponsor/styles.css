@@ -1,0 +1,18 @@
+.customGridContainer {
+	padding: unset;
+	background-color: unset;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--rootChildMargin);
+
+	& > * {
+		padding: var(--rootPadding);
+		background-color: var(--background-color);
+	}
+}
+
+@media (max-width: 768px) {
+	.customGridContainer {
+		grid-template-columns: 1fr;
+	}
+}

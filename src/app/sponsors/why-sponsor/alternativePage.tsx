@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { Component, useEffect, useRef, useState } from "react";
 import type * as sponsorsPageDataTypes from "@/app/sponsors/sponsorsPageData";
+import type { SponsorsDatum } from "../types";
 import type { Property } from "csstype";
 interface SponsorsContainerProps {
 	children: React.ReactNode;
@@ -14,14 +15,14 @@ export function SponsorsContainer({ children }: SponsorsContainerProps) {
 }
 
 interface SponsorsElementProps {
-	sponsorObject: sponsorsPageDataTypes.sponsorType;
+	sponsorObject: SponsorsDatum;
 }
 
 export function SponsorsElement({ sponsorObject }: SponsorsElementProps) {
 	return (
 		<div className="sponsorItem">
 			<img
-				src={sponsorObject.logoPath}
+				src={sponsorObject.path}
 				alt={sponsorObject.name}
 			></img>
 		</div>

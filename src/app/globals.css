@@ -107,7 +107,7 @@ fff5d9
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
 
-  --border-radius: 0.75rem;
+	--border-radius: 0.75rem;
 
 	--palette-1: #16133d;
 	--palette-2: #9882ba;
@@ -120,6 +120,9 @@ fff5d9
 	--background-color: rgb(
 		from var(--palette-1) r g b / var(--background-opacity)
 	);
+
+	--rootPadding: 1rem;
+	--rootChildMargin: 1rem;
 }
 
 body {
@@ -133,12 +136,11 @@ body {
 	background-position: top;
 	background-size: auto 100vh;
 
-  /* Background will try to fill along width if the screen is too wide instead */
-/* The ratio comes from the viewbox dimensions of the svg file */
-@media (min-aspect-ratio: 1920/1028) {
-  background-size: 100vw auto;
-}
-
+	/* Background will try to fill along width if the screen is too wide instead */
+	/* The ratio comes from the viewbox dimensions of the svg file */
+	@media (min-aspect-ratio: 1920/1028) {
+		background-size: 100vw auto;
+	}
 }
 
 footer {
@@ -154,24 +156,27 @@ footer > * {
 
 main {
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 
 	min-height: 100vh;
 	height: 100%;
 
 	padding: 6rem 2rem;
-}
 
-main > * {
-	max-width: 90rem;
+	& > * {
+		max-width: 60rem;
 
-	margin: 2rem auto;
+		margin: var(--rootChildMargin) auto;
+		padding: var(--rootPadding);
 
-  border-radius: var(--border-radius);
+		background-color: var(--background-color);
 
-	background-color: var(--background-color);
+		color: #ffffff;
+	}
 
-	color: #ffffff;
+	& * {
+		border-radius: var(--border-radius);
+	}
 }
 
 hgroup {
@@ -181,7 +186,7 @@ hgroup {
 	/* width auto is needed so that it works on release version for some reason */
 	width: auto;
 
-	background: unset;
+	background: none;
 
 	& > * {
 		margin: 0.5em 0;
@@ -194,7 +199,7 @@ h3 {
 	max-width: fit-content;
 
 	padding: 1rem;
-	margin: 0 auto;
+	margin-inline: auto;
 
 	text-align: center;
 	font-weight: bold;
@@ -222,11 +227,42 @@ h3 {
 p {
 	contain: content;
 
-	padding: 1rem;
-
 	font-size: large;
-	text-indent: 2em;
+	text-align: center;
 
 	backdrop-filter: blur(4px);
 }
 
+.button {
+	border-radius: 1em;
+	font-size: x-large;
+
+	padding: 0.25em 1em;
+
+	background-color: #16133d;
+
+	font-weight: bold;
+	color: #ffffff;
+	transition: 0.15s ease-out;
+	transition-property: background-color, scale, color;
+}
+
+.button:hover {
+	background-color: #59558f;
+	scale: 1.1;
+}
+
+.specialButton {
+	background-image: linear-gradient(
+		-60deg,
+		var(--palette-2) 10%,
+		#bb94cd 40%,
+		var(--palette-2) 70%
+	);
+	filter: saturate(1.75);
+}
+
+.specialButton:hover {
+	/* translate: 0 -0.5em; */
+	animation: 2s ease-in-out 0.25s infinite alternate hover;
+}
