@@ -2,6 +2,7 @@
 import Logos from "./components/Logos";
 import sponsorsData from "@/custom-img-loader/sponsor-logos/data.json";
 import { SponsorsDatum } from "./types";
+import Link from "next/link";
 
 const currentSponsors = (sponsorsData as SponsorsDatum[]).filter(
 	({ isCurrent }) => isCurrent
@@ -22,6 +23,12 @@ export default function SponsorsPage() {
 				}}
 			></Logos>
 
+			<Link
+				href="/sponsors/why-sponsor"
+				className="button"
+			>
+				Sponsor Us!
+			</Link>
 			<h2>Past Sponsors</h2>
 			<Logos
 				className="pastSponsors"
