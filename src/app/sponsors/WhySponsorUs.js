@@ -56,7 +56,7 @@ const WhySponsorUs = () => {
             Contact us today to learn how you can contribute to SF Hacks 2025 and make a lasting impact.
           </p>
           <a
-            href="mailto:sfhacksteam@gmail.com"
+            href="https://tally.so/r/3qj57g" target = "_blank"
             className="inline-block px-6 py-3 bg-sfDarkPurp text-white hover:scale-105 font-semibold rounded-lg shadow  transition"
           >
             Sponsor Us
