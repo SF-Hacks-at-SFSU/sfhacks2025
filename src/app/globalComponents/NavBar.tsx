@@ -18,6 +18,11 @@ const NAV_LINKS = [
 		newTab: true,
 	},
 	{
+		name: "SF Hacks 2024",
+		href: "https://sfhacks-2024.devpost.com",
+		newTab: true
+	},
+	{
 		name: "Team",
 		href: "/about-us",
 		newTab: false,
