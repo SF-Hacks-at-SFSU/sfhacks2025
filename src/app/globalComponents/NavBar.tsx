@@ -17,6 +17,11 @@ const NAV_LINKS = [
     href: "https://sfhacks-code-jams-2024.devpost.com/project-gallery",
     newTab: true,
   },
+	{
+    name: "SF Hacks 2024",
+    href: "https://sfhacks-2024.devpost.com",
+    newTab: true,
+  },
   {
     name: "Team",
     href: "/about-us",
