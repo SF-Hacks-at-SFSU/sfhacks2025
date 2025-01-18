@@ -19,7 +19,7 @@ export default async function Logos({
 
 	return (
 		<div
-			className={`logo ${className}`}
+			className={`sponsorLogo ${className}`}
 			style={{ contain: "content", width: "100%" }}
 		>
 			{atlases.map((atlas, index) => (
