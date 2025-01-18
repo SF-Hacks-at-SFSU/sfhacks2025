@@ -46,7 +46,7 @@ function LogoRow({
 		<div
 			className="logoRow"
 			style={{
-				overflow: "scroll hidden",
+				// overflow: "scroll hidden",
 				backgroundImage: `url(${atlasFilePath})`,
 				backgroundSize: "auto 100px",
 				animationDuration: `${(width / height) * 15}s`,
@@ -54,13 +54,6 @@ function LogoRow({
 				backgroundPositionX: `${width}px`,
 			}}
 		>
-			{/* <img
-				key={atlasFilePath}
-				height={height}
-				width={width}
-				src={atlasFilePath}
-				style={{ objectFit: "cover", width: "max-content", maxWidth: "unset", height: "100%" }}
-			></img> */}
 		</div>
 	);
 }
