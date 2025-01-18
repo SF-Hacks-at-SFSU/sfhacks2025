@@ -25,10 +25,9 @@
 }
 
 .overlay {
-    position: absolute;
-    inset-inline: 0;
-    backdrop-filter: blur(2px);
-    
+	position: absolute;
+	inset-inline: 0;
+	backdrop-filter: blur(2px);
 }
 
 .sponsorsContainer {
@@ -64,9 +63,9 @@
 a[href^="#"] {
 	/*Do not use text-align, we are trying to move the whole element. text align moves the text but the element is sitll the whole line*/
 	float: inline-end;
-    clear: both;
-    margin: 0.5em 0 0;
-    
+	clear: both;
+	margin: 0.5em 0 0;
+
 	padding: 0.25em 1em;
 	border-radius: 0.25em; /* using relative radius so that the radius scales by text size */
 	background-color: #fff5d9;
@@ -75,8 +74,6 @@ a[href^="#"] {
 
 	font-size: 24px;
 }
-
-
 
 .eventImages > * {
 	border-radius: 7px;
@@ -97,7 +94,8 @@ a[href^="#"] {
 :target {
 	border: 0.1em solid #00000000;
 	border-radius: 7px;
-	animation: 1.5s cubic-bezier(0.2, 0, 0, 1) 0.5s 2 alternate none highlightTarget;
+	animation: 1.5s cubic-bezier(0.2, 0, 0, 1) 0.5s 2 alternate none
+		highlightTarget;
 }
 
 @keyframes highlightTarget {

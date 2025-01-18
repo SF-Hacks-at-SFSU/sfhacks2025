@@ -1,35 +1,29 @@
 import React from "react";
 import Image from "next/image";
-import * as sponsorData from "@/app/sponsors/sponsorsPageData";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import sponsorsData from "@/custom-img-loader/sponsor-logos/data.json";
+import type { SponsorsDatum, Tier } from "../types";
 
-const sponsors = sponsorData.sponsors;
-
-interface sponsorProp {
-	name: string;
-	logoPath: string;
-	tier: string;
-}
-
-function SponsorGrid() {
+async function SponsorGrid() {
 	// Group sponsors by tier
-	const firstTier = sponsors.filter((sponsor) => sponsor.tier === "first");
-	const secondTier = sponsors.filter((sponsor) => sponsor.tier === "second");
-	const thirdTier = sponsors.filter((sponsor) => sponsor.tier === "third");
+	const firstTier = sponsorsData.filter(
+		(sponsor) => sponsor.tier === "first"
+	) as SponsorsDatum[];
+	const secondTier = sponsorsData.filter(
+		(sponsor) => sponsor.tier === "second"
+	) as SponsorsDatum[];
+	const thirdTier = sponsorsData.filter(
+		(sponsor) => sponsor.tier === "third"
+	) as SponsorsDatum[];
 
-	// const getGridConfig = (tier: string) => {
-	// 	return {
-	// 	}[tier];
-	// };
-	const gridConfig: Record<string, { maxCols: number; size: number }> = {
+	const gridConfig: Record<Tier, { maxCols: number; size: number }> = {
 		first: { maxCols: 2, size: 400 },
 		second: { maxCols: 3, size: 300 },
 		third: { maxCols: 4, size: 240 },
 	};
 
 	interface TierGridProps {
-		sponsors: sponsorProp[];
-		tier: string;
+		sponsors: SponsorsDatum[];
+		tier: Tier;
 	}
 
 	function TierGrid({ sponsors, tier }: TierGridProps) {
@@ -61,21 +55,21 @@ function SponsorGrid() {
 							getRowGridClass[row.length]
 						} gap-8 lg:gap-12 items-center justify-center`}
 					>
-						{row.map((sponsor: { name: string; logoPath: string }) => (
+						{row.map((sponsor: SponsorsDatum) => (
 							<div
 								key={sponsor.name}
 								className="relative w-full aspect-[3/2] transition-transform duration-300 hover:scale-105"
 								style={{ maxWidth: `${size}px` }}
 							>
-								{sponsor.logoPath?.endsWith(".svg") ? (
+								{sponsor.path?.endsWith(".svg") ? (
 									<img
-										src={sponsor.logoPath}
+										src={sponsor.path}
 										alt={`${sponsor.name} logo`}
 										className="w-full h-full object-contain"
 									/>
 								) : (
 									<Image
-										src={sponsor.logoPath}
+										src={sponsor.path}
 										alt={`${sponsor.name} logo`}
 										fill
 										className="object-contain"

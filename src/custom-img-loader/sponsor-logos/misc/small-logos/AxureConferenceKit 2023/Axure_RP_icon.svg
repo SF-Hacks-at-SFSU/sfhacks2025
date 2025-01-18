@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Axure_RP_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#E3E8E9" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0.299932668" y="0.299932668" width="143.367815" height="143.367815" rx="21.8595825"></rect>
+        <filter x="-2.8%" y="-2.8%" width="107.0%" height="107.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="-0.0124927521%" y1="50.0005033%" x2="100%" y2="50.0005033%" id="linearGradient-4">
+            <stop stop-color="#6764AD" offset="0%"></stop>
+            <stop stop-color="#5F69B1" offset="4%"></stop>
+            <stop stop-color="#407BBF" offset="21%"></stop>
+            <stop stop-color="#2789CA" offset="38%"></stop>
+            <stop stop-color="#1693D2" offset="57%"></stop>
+            <stop stop-color="#0B99D6" offset="76%"></stop>
+            <stop stop-color="#089BD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Axure_RP_icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(1.960784, 1.960784)">
+            <g id="Asset-5">
+                <g id="Group" opacity="0.3" style="mix-blend-mode: multiply;">
+                    <rect id="Rectangle" fill="#231F20" fill-rule="nonzero" x="0.299932668" y="0.299932668" width="143.367815" height="143.367815" rx="21.8595825"></rect>
+                    <rect id="Rectangle" stroke="#231F20" stroke-width="0.607210626" x="0.299932668" y="0.299932668" width="143.367815" height="143.367815" rx="21.8595825"></rect>
+                </g>
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <g id="Asset-1" transform="translate(30.392157, 23.529412)" fill-rule="nonzero">
+                <path d="M79.6099071,3.18309142 L79.6099071,3.18309142 C78.8001356,1.5535667 77.1108331,0.555657622 75.2991302,0.636618284 L67.780628,0.636618284 C65.5935427,0.636618284 63.9770013,1.5215177 63.1021672,3.11306341 L51.9828984,19.5059842 L61.7138434,32.9449962 L78.7477517,8.33969952 C80.6178682,6.05423988 79.9712517,3.98523046 79.6099071,3.18309142 Z" id="Path" fill="#75BB43"></path>
+                <path d="M20.8438744,2.9284441 L20.8438744,2.9284441 C19.7542188,1.41817371 17.9828782,0.557449296 16.1273773,0.636618284 L8.77369895,0.636618284 C7.02526142,0.560418548 5.38470688,1.4852827 4.53899455,3.02393685 C3.70853605,4.57728546 3.90505676,6.44894321 5.03346602,8.18054495 L32.2927908,46.1993888 L0.950906678,90.1960784 C-0.132579261,91.6618103 -0.297072115,93.6169504 0.526168362,95.2444614 C1.37407386,96.780927 3.01315366,97.7049598 4.76087277,97.63178 L12.2857143,97.63178 C14.1441347,97.6626498 15.8678695,96.6612516 16.7676544,95.0280112 L51.8434321,46.377642 L20.8438744,2.9284441 Z" id="Path" fill="url(#linearGradient-4)"></path>
+                <path d="M83.3501401,90.5780494 L61.4919652,60.376878 L51.875129,73.745862 L69.1626124,96.9760632 L69.6127082,97.1734148 C70.2984142,97.4846121 71.0410175,97.6493693 71.7934542,97.6572447 L79.1471325,97.6572447 C80.8141645,97.7145518 82.3876698,96.8845451 83.2867463,95.473644 C84.1708128,93.9685141 84.1949339,92.1057563 83.3501401,90.5780494 L83.3501401,90.5780494 Z" id="Path" fill="#EB2385"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -34,7 +34,7 @@ export default function Home() {
                         </button> */}
 			</hgroup>
 			<a
-				className="discordButton"
+				className="button discord"
 				href="https://discord.gg/P5PsDR6G7W"
 				target="_blank"
 			>
