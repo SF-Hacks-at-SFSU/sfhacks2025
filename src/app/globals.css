@@ -126,6 +126,10 @@ fff5d9
 }
 
 body {
+	min-height: 100vh;
+	min-width: 100vw;
+
+	
 	background-image: linear-gradient(
 			#16133d00 90vh,
 			#16133d80 97vh,
@@ -154,14 +158,17 @@ footer > * {
 	flex: 1;
 }
 
+nav {
+	padding: 1rem;
+}
+
 main {
 	display: flex;
 	flex-direction: column;
 
-	min-height: 100vh;
 	height: 100%;
 
-	padding: 6rem 2rem;
+	padding: 2rem 1rem;
 
 	& > * {
 		max-width: 60rem;
