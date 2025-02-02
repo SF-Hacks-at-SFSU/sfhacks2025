@@ -142,8 +142,8 @@
 	},
 	{
 		"name": "StandOut Stickers",
-		"path": "/sponsor-logos/past/stand-out-stickers-logo.png",
-		"isCurrent": false
+		"path": "/sponsor-logos/current/stand-out-stickers-logo.png",
+		"isCurrent": true
 	},
 	{
 		"name": "Sticker Mule",
@@ -178,6 +178,16 @@
 	{
 		"name": "Association for Computing Machinery",
 		"path": "/sponsor-logos/current/ACM.svg",
+		"isCurrent": true
+	},
+	{
+		"name": "Innovation & Entrepreneurship at San Francisco State University",
+		"path": "/sponsor-logos/current/IE.png",
+		"isCurrent": true
+	},
+	{
+		"name": "Lam Family College Of Business at San Francisco State University",
+		"path": "/sponsor-logos/current/lamFamily.png",
 		"isCurrent": true
 	}
 ]
