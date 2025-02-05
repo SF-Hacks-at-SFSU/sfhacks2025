@@ -2,6 +2,19 @@
 	backdrop-filter: blur(4px);
 }
 
+.button {
+
+	border-radius: 1em;
+	font-size: x-large;
+
+	padding: 0.25em 1em;
+
+	background-color: #ffc2e2;
+	color: #ffffff;
+	transition: background-color 0.15s ease-out;
+
+}
+
 .logoRow {
 	margin: 1.75rem 0;
 	max-width: 100%;

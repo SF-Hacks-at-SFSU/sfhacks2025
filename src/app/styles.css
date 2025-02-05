@@ -11,9 +11,18 @@
 	
 }
 
-.discord:hover {
-  filter: unset;
-  color: white;
+.discordButton {
+	border-radius: 1em;
+	font-size: x-large;
+
+	padding: 0.25em 1em;
+
+	background-color: #16133d;
+	color: #ffffff;
+	transition: background-color 0.15s ease-out;
+}
+
+.discordButton:hover {
 	background-color: #5865f2;
 }
 
