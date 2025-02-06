@@ -1,5 +1,5 @@
 // import LogoAtlas from "./components/logoAtlas";
-import Logos from "./components/Logos";
+import LogoContainer from "./components/LogoContainer";
 import sponsorsData from "@/custom-img-loader/sponsor-logos/data.json";
 import { SponsorsDatum } from "./types";
 import Link from "next/link";
@@ -15,13 +15,13 @@ export default function SponsorsPage() {
 	return (
 		<main>
 			<h1>Our Sponsors</h1>
-			<Logos
+			<LogoContainer
 				logoData={currentSponsors}
 				outputOptions={{
 					outputFileName: "current-sponsors",
 					outputDir: "/logo-atlases",
 				}}
-			></Logos>
+			></LogoContainer>
 
 			<Link
 				href="/sponsors/why-sponsor"
@@ -30,14 +30,14 @@ export default function SponsorsPage() {
 				Sponsor Us!
 			</Link>
 			<h2>Past Sponsors</h2>
-			<Logos
+			<LogoContainer
 				className="pastSponsors"
 				logoData={pastSponsors}
 				outputOptions={{
 					outputFileName: "past-sponsors",
 					outputDir: "/logo-atlases",
 				}}
-			></Logos>
+			></LogoContainer>
 		</main>
 	);
 }
