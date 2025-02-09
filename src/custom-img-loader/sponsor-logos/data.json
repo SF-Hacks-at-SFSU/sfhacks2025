@@ -93,7 +93,7 @@
 	{
 		"name": "Management Leadership for Tomorrow",
 		"path": "/sponsor-logos/past/Colored_MLT_Logo.png",
-		"isCurrent": false
+		"isCurrent": true
 	},
 	{
 		"name": "Desmos",
@@ -188,6 +188,11 @@
 	{
 		"name": "Lam Family College Of Business at San Francisco State University",
 		"path": "/sponsor-logos/current/lamFamily.png",
+		"isCurrent": true
+	},
+	{
+		"name": "Dead Eye Coffee Bar",
+		"path": "/sponsor-logos/current/DeadEye.svg",
 		"isCurrent": true
 	}
 ]
