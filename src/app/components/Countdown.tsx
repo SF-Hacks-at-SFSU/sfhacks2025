@@ -2,7 +2,12 @@
 
 import { useState, useEffect } from "react";
 
-function CountDown({ targetDate = "Apr 5, 2025 00:00:00" }) {
+const eventStartDate = new Date("Apr 4, 2025 00:00:00");
+const eventEndDate = new Date("Apr 6, 2025 00:00:00");
+
+const dateFormat = new Intl.DateTimeFormat(undefined, { dateStyle: "long" });
+
+function CountDown() {
 	const [timeRemaining, setTimeRemaining] = useState({
 		days: 0,
 		hours: 0,
@@ -17,7 +22,7 @@ function CountDown({ targetDate = "Apr 5, 2025 00:00:00" }) {
 
 		const calculateTime = () => {
 			const now = new Date().getTime();
-			const target = new Date(targetDate).getTime();
+			const target = new Date(eventStartDate).getTime();
 			const total = target - now;
 
 			if (total <= 0) {
@@ -41,7 +46,7 @@ function CountDown({ targetDate = "Apr 5, 2025 00:00:00" }) {
 		calculateTime();
 		const intervalId = setInterval(calculateTime, 1000);
 		return () => clearInterval(intervalId);
-	}, [targetDate]);
+	}, []);
 
 	interface TimeUnitProps {
 		value: number;
@@ -49,34 +54,46 @@ function CountDown({ targetDate = "Apr 5, 2025 00:00:00" }) {
 	}
 
 	function TimeUnit({ value, label }: TimeUnitProps) {
-		return (<div className="text-center">
-			<div className="text-4xl font-bold text-white mb-2">
-				{value > 9 ? value : `0${value}`}
+		return (
+			<div className="text-center">
+				<div className="text-3xl font-bold text-white mb-2">
+					{value > 9 ? value : `0${value}`}
+				</div>
+				<div className="text-sm text-gray-300">{label}</div>
 			</div>
-			<div className="text-sm text-gray-300">{label}</div>
-		</div>);
+		);
 	}
 
 	if (!isHydrated) return null;
 
 	return (
-		<div className="flex justify-center gap-8 p-6 bg-[#14153F] rounded-xl max-w-xl mx-auto">
-			<TimeUnit
-				value={timeRemaining.days}
-				label="Days"
-			/>
-			<TimeUnit
-				value={timeRemaining.hours}
-				label="Hours"
-			/>
-			<TimeUnit
-				value={timeRemaining.minutes}
-				label="Minutes"
-			/>
-			<TimeUnit
-				value={timeRemaining.seconds}
-				label="Seconds"
-			/>
+		<div className="flex justify-center gap-y-6 flex-col p-6 bg-[#14153F] rounded-xl max-w-xl mx-auto">
+			<p>
+				<time
+					className="text-4xl font-bold text-white"
+					dateTime={eventStartDate.toISOString()}
+				>
+					{dateFormat.formatRange(eventStartDate, eventEndDate)}
+				</time>
+			</p>
+			<div className="flex justify-center gap-8">
+				<TimeUnit
+					value={timeRemaining.days}
+					label="Days"
+				/>
+				<TimeUnit
+					value={timeRemaining.hours}
+					label="Hours"
+				/>
+				<TimeUnit
+					value={timeRemaining.minutes}
+					label="Minutes"
+				/>
+				<TimeUnit
+					value={timeRemaining.seconds}
+					label="Seconds"
+				/>
+			</div>
 		</div>
 	);
 }
