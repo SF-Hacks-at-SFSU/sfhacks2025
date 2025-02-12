@@ -173,12 +173,21 @@ main > * {
 	color: #ffffff;
 }
 
+@media (max-width: 580px) {
+	main {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	
+}
+
 hgroup {
     contain: content;
 
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
+	max-width: 544px;
+	padding: unset;
+	/* width auto is needed so that it works on release version for some reason */
+	width: auto;
 
     background: unset;
 }
