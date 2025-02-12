@@ -4,8 +4,8 @@ import "./styles.css";
 
 export default function Home() {
 	return (
-		<main className="">
-			<hgroup className="">
+		<main className="mainLandingPage">
+			<hgroup>
 				<h2 className="logo">
 					<Image
 						src="/logoNew-horizontal.png"
@@ -34,7 +34,7 @@ export default function Home() {
                         </button> */}
 			</hgroup>
 			<a
-				className="discordButton"
+				className="button discord"
 				href="https://discord.gg/P5PsDR6G7W"
 				target="_blank"
 			>
