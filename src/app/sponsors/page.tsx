@@ -1,7 +1,7 @@
 // import LogoAtlas from "./components/logoAtlas";
 import LogoContainer from "./components/LogoContainer";
 import sponsorsData from "@/custom-img-loader/sponsor-logos/data";
-import { SponsorsDatum } from "./types";
+import { SponsorsDatum } from "@/custom-img-loader/sponsor-logos/data";
 import Link from "next/link";
 
 const currentSponsors = (sponsorsData as SponsorsDatum[]).filter(

@@ -1,70 +1,74 @@
-import { SponsorsDatum } from "@/app/sponsors/types";
+export type SponsorsDatum = {
+	name: string
+	path: string
+	tier?: SponsorTier
+	isCurrent: boolean
+}
+
+enum SponsorTier {
+	Gold,
+	Platinum
+}
 
 const data: SponsorsDatum[] = [
 	{
 		name: "OpenAI",
 		path: "/sponsor-logos/past/OpenAI_Logo.png",
-		tier: "first",
 		isCurrent: false
 	},
 	{
 		name: "Google Cloud",
 		path: "/sponsor-logos/past/gcloud.png",
-		tier: "first",
 		isCurrent: false
 	},
 	{
 		name: "Browserbase",
 		path: "/sponsor-logos/past/browser-base.png",
-		tier: "first",
 		isCurrent: false
 	},
 	{
 		name: "Zuora",
 		path: "/sponsor-logos/past/Zuora_logo.png",
-		tier: "first",
 		isCurrent: false
 	},
 	{
 		name: "Notion",
 		path: "/sponsor-logos/past/Notion_logo.png",
-		tier: "first",
 		isCurrent: false
 	},
 	{
 		name: "Fireworks",
 		path: "/sponsor-logos/past/Fireworks.svg",
-		tier: "first",
 		isCurrent: false
 	},
 	{
 		name: "Fastly",
 		path: "/sponsor-logos/past/fastly-ar21.svg",
-		tier: "first",
+
 		isCurrent: false
 	},
 	{
 		name: "MongoDB",
 		path: "/sponsor-logos/past/MongoDB_White.svg",
-		tier: "first",
+
 		isCurrent: false
 	},
 	{
 		name: "ByteDance",
 		path: "/sponsor-logos/past/ByteDance_logo.png",
-		tier: "first",
+
 		isCurrent: false
 	},
 	{
 		name: "SFSU Department of Computer Science",
 		path: "/sponsor-logos/past/csdep_logo.svg",
-		tier: "first",
+
 		isCurrent: false
 	},
 	{
 		name: "SFSU College of Science and Engineering",
 		path: "/sponsor-logos/past/COSE_logo.svg",
-		tier: "first",
+
 		isCurrent: false
 	},
 	{
@@ -175,11 +179,13 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Associated Students",
 		path: "/sponsor-logos/current/AS.png",
+		tier: SponsorTier.Gold,
 		isCurrent: true
 	},
 	{
 		name: "Association for Computing Machinery",
 		path: "/sponsor-logos/current/ACM.svg",
+		tier: SponsorTier.Gold,
 		isCurrent: true
 	},
 	{

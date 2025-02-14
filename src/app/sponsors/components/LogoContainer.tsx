@@ -1,5 +1,5 @@
 import generateAtlases, { Atlas, OutputOptions } from "@/lib/atlasLoader";
-import type { SponsorsDatum } from "../types";
+import type { SponsorsDatum } from "@/custom-img-loader/sponsor-logos/data";
 import { LogoRow } from "./Logos";
 
 interface LogoAtlasProps {
