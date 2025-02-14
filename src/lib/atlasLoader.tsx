@@ -112,7 +112,7 @@ export default async function generateAtlases(
 	async function* spriteGenerator() {
 		let buffer: { data: Buffer; info: Sharp.OutputInfo };
 		for (const datum of atlasData) {
-			buffer = await Sharp(`${sharpInputPath}${datum.path}`)
+			buffer = await Sharp(`${sharpInputPath}/${datum.path}`)
 				.resize(undefined, atlasHeight)
 				// .png() // Not really necessary but just gonna keep it here anyways
 				.toBuffer({ resolveWithObject: true });
