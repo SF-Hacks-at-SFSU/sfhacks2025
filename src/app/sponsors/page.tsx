@@ -1,6 +1,6 @@
 // import LogoAtlas from "./components/logoAtlas";
 import LogoContainer from "./components/LogoContainer";
-import sponsorsData from "@/custom-img-loader/sponsor-logos/data.json";
+import sponsorsData from "@/custom-img-loader/sponsor-logos/data";
 import { SponsorsDatum } from "./types";
 import Link from "next/link";
 
