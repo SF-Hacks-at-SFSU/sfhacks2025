@@ -5,10 +5,15 @@ export type SponsorsDatum = {
 	isCurrent: boolean
 }
 
-enum SponsorTier {
-	Gold,
-	Platinum
-}
+export type SponsorTier = (typeof sponsorTier)[keyof (typeof sponsorTier)]
+
+const sponsorTier = {
+	specialThanks: "specialThanks",
+	bronze: "bronze",
+	silver: "silver",
+	gold: "gold",
+	platinum: "platinum"
+} as const
 
 const data: SponsorsDatum[] = [
 	{
@@ -179,13 +184,13 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Associated Students",
 		path: "sponsor-logos/current/AS.png",
-		tier: SponsorTier.Gold,
+		tier: "gold",
 		isCurrent: true
 	},
 	{
 		name: "Association for Computing Machinery",
 		path: "sponsor-logos/current/ACM.svg",
-		tier: SponsorTier.Gold,
+		tier: "gold",
 		isCurrent: true
 	},
 	{

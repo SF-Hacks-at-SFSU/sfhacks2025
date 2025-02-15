@@ -35,10 +35,10 @@
 	box-sizing: content-box;
 }
 
-.sponsorTier-0,
-.sponsorTier-1,
-.sponsorTier-2,
-.sponsorTier-3 {
+.sponsorTier-specialThanks,
+.sponsorTier-bronze,
+.sponsorTier-silver,
+.sponsorTier-gold {
 	height: 150px;
 	box-sizing: content-box;
 	background-origin: border-box;
@@ -78,7 +78,7 @@
 	}
 }
 
-.sponsorTier-3 {
+.sponsorTier-gold {
 	--tier-color-1: #f9f295;
 	--tier-color-2: #fbf59c;
 	--tier-color-3: #e0bd3e;

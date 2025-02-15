@@ -12,7 +12,7 @@ const currentSponsors = (sponsorsData as SponsorsDatum[]).filter(
 );
 
 const sponsorsGold = sponsorsData.filter(
-	({ isCurrent, tier }) => isCurrent && tier === SponsorTier.Gold
+	({ isCurrent, tier }) => isCurrent && tier === "gold"
 );
 
 const pastSponsors = (sponsorsData as SponsorsDatum[]).filter(
@@ -25,7 +25,7 @@ export default function SponsorsPage() {
 			<h1>Our Sponsors</h1>
 			<TieredSponsors
 				logoData={sponsorsGold}
-				tier={SponsorTier.Gold}
+				tier={"gold"}
 			></TieredSponsors>
 			{/* <LogoContainer
 				logoData={currentSponsors}
