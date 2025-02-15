@@ -8,11 +8,11 @@ export type SponsorsDatum = {
 export type SponsorTier = (typeof sponsorTier)[keyof (typeof sponsorTier)]
 
 export const sponsorTier = {
-	specialThanks: "specialThanks",
-	bronze: "bronze",
-	silver: "silver",
+	platinum: "platinum",
 	gold: "gold",
-	platinum: "platinum"
+	silver: "silver",
+	bronze: "bronze",
+	specialThanks: "specialThanks",
 } as const
 
 const data: SponsorsDatum[] = [
