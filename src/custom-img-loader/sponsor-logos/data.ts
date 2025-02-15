@@ -7,7 +7,7 @@ export type SponsorsDatum = {
 
 export type SponsorTier = (typeof sponsorTier)[keyof (typeof sponsorTier)]
 
-const sponsorTier = {
+export const sponsorTier = {
 	specialThanks: "specialThanks",
 	bronze: "bronze",
 	silver: "silver",
@@ -29,7 +29,8 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Browserbase",
 		path: "sponsor-logos/past/browser-base.png",
-		isCurrent: false
+		isCurrent: false,
+		tier: "gold"
 	},
 	{
 		name: "Zuora",
@@ -104,7 +105,8 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Management Leadership for Tomorrow",
 		path: "sponsor-logos/past/Colored_MLT_Logo.png",
-		isCurrent: false
+		isCurrent: false,
+		tier: "bronze"
 	},
 	{
 		name: "Desmos",
