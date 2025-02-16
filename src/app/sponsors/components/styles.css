@@ -39,10 +39,8 @@
 .sponsorTier-bronze,
 .sponsorTier-silver,
 .sponsorTier-gold {
-	height: 150px;
 	box-sizing: content-box;
 	background-origin: border-box;
-	
 
 	margin: 0.5rem;
 	border: transparent 0.75rem solid;
@@ -84,4 +82,5 @@
 	--tier-color-3: #e0bd3e;
 	--tier-color-4: #dfbd69;
 	--tier-color-5: #926f34;
+	height: 150px;
 }
