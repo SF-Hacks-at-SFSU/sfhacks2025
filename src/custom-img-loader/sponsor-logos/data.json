@@ -13,9 +13,9 @@
 	},
 	{
 		"name": "Browserbase",
-		"path": "/sponsor-logos/past/browser-base.png",
+		"path": "/sponsor-logos/current/BrowserBase.png",
 		"tier": "first",
-		"isCurrent": false
+		"isCurrent": true
 	},
 	{
 		"name": "Zuora",
@@ -37,9 +37,9 @@
 	},
 	{
 		"name": "Fastly",
-		"path": "/sponsor-logos/past/fastly-ar21.svg",
+		"path": "/sponsor-logos/current/Fastly.svg",
 		"tier": "first",
-		"isCurrent": false
+		"isCurrent": true
 	},
 	{
 		"name": "MongoDB",
@@ -55,9 +55,9 @@
 	},
 	{
 		"name": "SFSU Department of Computer Science",
-		"path": "/sponsor-logos/past/csdep_logo.svg",
+		"path": "/sponsor-logos/current/SFSU-CSDepartment.svg",
 		"tier": "first",
-		"isCurrent": false
+		"isCurrent": true
 	},
 	{
 		"name": "SFSU College of Science and Engineering",
@@ -192,7 +192,12 @@
 	},
 	{
 		"name": "Dead Eye Coffee Bar",
-		"path": "/sponsor-logos/current/DeadEye.svg",
+		"path": "/sponsor-logos/current/DeadEye.png",
+		"isCurrent": true
+	},
+	{
+		"name": "Inductive Automation",
+		"path": "/sponsor-logos/current/InductiveAutomation.png",
 		"isCurrent": true
 	}
 ]
