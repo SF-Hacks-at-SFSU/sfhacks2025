@@ -2,7 +2,7 @@ export type SponsorsDatum = {
 	name: string
 	path: string
 	isCurrent: boolean
-	
+
 	tier?: SponsorTier
 }
 
@@ -30,7 +30,9 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Browserbase",
 		path: "/sponsor-logos/current/BrowserBase.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "gold"
 	},
 	{
 		name: "Zuora",
@@ -50,7 +52,9 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Fastly",
 		path: "/sponsor-logos/current/Fastly.svg",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "bronze" // idk what an a la carte sponsorship level is but imma jsut put bronze
 	},
 	{
 		name: "MongoDB",
@@ -99,8 +103,10 @@ const data: SponsorsDatum[] = [
 	},
 	{
 		name: "Management Leadership for Tomorrow",
-		path: "/sponsor-logos/past/Colored_MLT_Logo.png",
-		isCurrent: true
+		path: "/sponsor-logos/current/MLT.png",
+		isCurrent: true,
+
+		tier: "bronze"
 	},
 	{
 		name: "Desmos",
@@ -200,12 +206,16 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Dead Eye Coffee Bar",
 		path: "/sponsor-logos/current/DeadEye.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "specialThanks"
 	},
 	{
 		name: "Inductive Automation",
 		path: "/sponsor-logos/current/InductiveAutomation.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "bronze"
 	}] as const
 
 export default data
