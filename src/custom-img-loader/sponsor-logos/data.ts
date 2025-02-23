@@ -30,7 +30,6 @@ const data: SponsorsDatum[] = [
 		name: "Browserbase",
 		path: "sponsor-logos/past/browser-base.png",
 		isCurrent: false,
-		tier: "gold"
 	},
 	{
 		name: "Zuora",
@@ -106,7 +105,6 @@ const data: SponsorsDatum[] = [
 		name: "Management Leadership for Tomorrow",
 		path: "sponsor-logos/past/Colored_MLT_Logo.png",
 		isCurrent: false,
-		tier: "bronze"
 	},
 	{
 		name: "Desmos",
@@ -186,13 +184,11 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Associated Students",
 		path: "sponsor-logos/current/AS.png",
-		tier: "gold",
 		isCurrent: true
 	},
 	{
 		name: "Association for Computing Machinery",
 		path: "sponsor-logos/current/ACM.svg",
-		tier: "gold",
 		isCurrent: true
 	},
 	{
