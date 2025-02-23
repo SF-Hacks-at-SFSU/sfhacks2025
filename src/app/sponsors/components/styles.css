@@ -41,39 +41,38 @@
 	& > a {
 		display: flex;
 		justify-content: center;
-		grid-auto-rows: min-content;
-		aspect-ratio: 1.5;
+		aspect-ratio: 1.75;
 		padding: 0.5rem;
 
 
 		& > img {
 			height: inherit;
 			max-height: 100%;
-
+			object-fit: contain;
 		}
-	}
-}
-
-.sponsorTier-platinum {
-	& > a {
-		flex: 0 1 calc(100% / 3);
 	}
 }
 
 .sponsorTier-gold {
 	& > a {
-		flex: 0 1 calc(80% / 3);
+		flex: 0 1 calc(100% / 3);
 	}
 }
 
 .sponsorTier-silver {
 	& > a {
-		flex: 0 1 calc(80% / 4);
+		flex: 0 1 calc(80% / 3);
 	}
 }
 
 .sponsorTier-bronze {
 	& > a {
-		flex: 0 1 calc(70% / 5);
+		flex: 0 1 calc(80% / 4);
+	}
+}
+
+.sponsorTier-specialThanks {
+	& > a {
+		flex: 0 1 calc(80% / 4);
 	}
 }
