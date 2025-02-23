@@ -69,7 +69,9 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Department of Computer Science",
 		path: "/sponsor-logos/current/SFSU-CSDepartment.svg",
-		isCurrent: true
+		isCurrent: true,
+		
+		tier: "gold"
 	},
 	{
 		name: "SFSU College of Science and Engineering",
