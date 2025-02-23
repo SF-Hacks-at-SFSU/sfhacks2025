@@ -16,18 +16,15 @@ export default function TieredSponsors({
 	tier,
 }: TieredSponsorsGridProps) {
 	return (
-		<div className={`tieredSponsorsGrid`}>
+		<div className={`tieredSponsorsGrid sponsorTier-${tier} ${name}`}>
 			{logoData.map((logoDatum, index) => (
-					<a
-          className={`sponsorTier-${tier} ${name}`}
-          key={index}>
-						<img
-							alt={logoDatum.name}
-							src={`${logoDatum.path}`}
-							// height={50}
-							// width={100}
-						></img>
-					</a>
+				<a key={index}>
+					<img
+						// img must be used instead of Image because of the dynamic src url
+						alt={logoDatum.name}
+						src={`${logoDatum.path}`}
+					></img>
+				</a>
 			))}
 		</div>
 	);
