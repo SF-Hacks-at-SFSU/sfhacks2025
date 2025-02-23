@@ -18,7 +18,11 @@ export default function TieredSponsors({
 	return (
 		<div className={`tieredSponsorsGrid sponsorTier-${tier} ${name}`}>
 			{logoData.map((logoDatum, index) => (
-				<a key={index}>
+				<a 
+				key={index}
+				href={logoDatum.url}
+				target="_blank"
+				>
 					<img
 						// img must be used instead of Image because of the dynamic src url
 						alt={logoDatum.name}
