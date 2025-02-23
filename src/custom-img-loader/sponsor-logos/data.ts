@@ -4,6 +4,7 @@ export type SponsorsDatum = {
 	isCurrent: boolean
 
 	tier?: SponsorTier
+	url?: string
 }
 
 export type SponsorTier = (typeof sponsorTier)[keyof (typeof sponsorTier)]
@@ -32,7 +33,8 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/current/BrowserBase.png",
 		isCurrent: true,
 
-		tier: "gold"
+		tier: "gold",
+		url: "https://www.browserbase.com/"
 	},
 	{
 		name: "Zuora",
@@ -54,7 +56,8 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/current/Fastly.svg",
 		isCurrent: true,
 
-		tier: "bronze" // idk what an a la carte sponsorship level is but imma jsut put bronze
+		tier: "bronze", // idk what an a la carte sponsorship level is but imma jsut put bronze
+		url: "https://www.fastly.com/"
 	},
 	{
 		name: "MongoDB",
@@ -70,8 +73,10 @@ const data: SponsorsDatum[] = [
 		name: "SFSU Department of Computer Science",
 		path: "/sponsor-logos/current/SFSU-CSDepartment.svg",
 		isCurrent: true,
-		
-		tier: "gold"
+
+		tier: "gold",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://cs.sfsu.edu"
 	},
 	{
 		name: "SFSU College of Science and Engineering",
@@ -108,7 +113,8 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/current/MLT.png",
 		isCurrent: true,
 
-		tier: "bronze"
+		tier: "bronze",
+		url: "https://mlt.org/career-prep/"
 	},
 	{
 		name: "Desmos",
@@ -210,14 +216,18 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/current/DeadEye.png",
 		isCurrent: true,
 
-		tier: "specialThanks"
+		tier: "specialThanks",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://deadeyecoffeebar.com"
 	},
 	{
 		name: "Inductive Automation",
 		path: "/sponsor-logos/current/InductiveAutomation.png",
 		isCurrent: true,
 
-		tier: "bronze"
+		tier: "bronze",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://inductiveautomation.com" 
 	}] as const
 
 export default data
