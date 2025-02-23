@@ -11,8 +11,8 @@
 }
 
 .discord:hover {
-  filter: unset;
-  color: white;
+	filter: unset;
+	color: white;
 	background-color: #5865f2;
 }
 

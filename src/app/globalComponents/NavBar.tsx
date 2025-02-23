@@ -7,16 +7,16 @@ import { useState } from "react";
 
 // Set menu links here
 const NAV_LINKS = [
-  {
-    name: "Sponsors",
-    href: "/sponsors",
-    newTab: false,
-  },
-  {
-    name: "Code Jams!",
-    href: "https://sfhacks-code-jams-2024.devpost.com/project-gallery",
-    newTab: true,
-  },
+	{
+		name: "Sponsors",
+		href: "/sponsors",
+		newTab: false,
+	},
+	{
+		name: "Code Jams!",
+		href: "https://sfhacks-code-jams-2024.devpost.com/project-gallery",
+		newTab: true,
+	},
 	{
     name: "SF Hacks 2024",
     href: "https://sfhacks-2024.devpost.com",
