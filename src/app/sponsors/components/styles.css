@@ -29,3 +29,55 @@
 		background-position-x: 0px;
 	}
 }
+
+.tieredSponsorsGrid {
+	width: 100%;
+	box-sizing: content-box;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	& > a {
+		display: flex;
+		justify-content: center;
+		aspect-ratio: 1.75;
+		padding: 0.5rem;
+		transition: scale 0.2s ease-out;
+
+		&:hover {
+			scale: 1.15;
+		}
+
+
+		& > img {
+			height: inherit;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+.sponsorTier-gold {
+	& > a {
+		flex: 0 1 calc(100% / 3);
+	}
+}
+
+.sponsorTier-silver {
+	& > a {
+		flex: 0 1 calc(90% / 3);
+	}
+}
+
+.sponsorTier-bronze {
+	& > a {
+		flex: 0 1 calc(80% / 4);
+	}
+}
+
+.sponsorTier-specialThanks {
+	& > a {
+		flex: 0 1 calc(75% / 4);
+	}
+}
