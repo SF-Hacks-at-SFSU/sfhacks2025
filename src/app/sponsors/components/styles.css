@@ -66,7 +66,7 @@
 
 .sponsorTier-silver {
 	& > a {
-		flex: 0 1 calc(80% / 3);
+		flex: 0 1 calc(90% / 3);
 	}
 }
 
@@ -78,6 +78,6 @@
 
 .sponsorTier-specialThanks {
 	& > a {
-		flex: 0 1 calc(80% / 4);
+		flex: 0 1 calc(75% / 4);
 	}
 }
