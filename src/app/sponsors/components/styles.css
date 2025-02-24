@@ -43,6 +43,11 @@
 		justify-content: center;
 		aspect-ratio: 1.75;
 		padding: 0.5rem;
+		transition: scale 0.2s ease-out;
+
+		&:hover {
+			scale: 1.15;
+		}
 
 
 		& > img {
