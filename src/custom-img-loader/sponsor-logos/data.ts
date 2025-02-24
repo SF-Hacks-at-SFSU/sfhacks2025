@@ -164,7 +164,11 @@ const data: SponsorsDatum[] = [
 	{
 		name: "StandOut Stickers",
 		path: "/sponsor-logos/current/stand-out-stickers-logo.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "specialThanks",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://www.standoutstickers.com"
 	},
 	{
 		name: "Sticker Mule",
@@ -194,22 +198,37 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Associated Students",
 		path: "/sponsor-logos/current/AS.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "specialThanks",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://asi.sfsu.edu"
 	},
 	{
 		name: "Association for Computing Machinery",
 		path: "/sponsor-logos/current/ACM.svg",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "specialThanks",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://www.instagram.com/acm.sfsu"
 	},
 	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
 		path: "/sponsor-logos/current/IE.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "silver",
+		url: "https://cob.sfsu.edu/initiatives-centers/innovation-entrepreneurship-programs"
 	},
 	{
 		name: "Lam Family College Of Business at San Francisco State University",
 		path: "/sponsor-logos/current/lamFamily.png",
-		isCurrent: true
+		isCurrent: true,
+
+		tier: "specialThanks",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://cob.sfsu.edu"
 	},
 	{
 		name: "Dead Eye Coffee Bar",
