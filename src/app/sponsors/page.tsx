@@ -1,4 +1,3 @@
-import LogoContainer from "./components/LogoContainer";
 import sponsorsData, {
 	sponsorTier,
 	SponsorTier,
@@ -15,10 +14,6 @@ const sponsorsByTier = Object.values(sponsorTier).reduce(
 		return accumulator;
 	},
 	{} as Record<SponsorTier, SponsorsDatum[]>
-);
-
-const pastSponsors = (sponsorsData as SponsorsDatum[]).filter(
-	({ isCurrent }) => !isCurrent
 );
 
 export default function SponsorsPage() {
@@ -57,15 +52,6 @@ export default function SponsorsPage() {
 			>
 				Sponsor Us!
 			</Link>
-			<h2>Past Sponsors</h2>
-			<LogoContainer
-				className="pastSponsors"
-				logoData={pastSponsors}
-				outputOptions={{
-					outputFileName: "past-sponsors",
-					outputDir: "/logo-atlases",
-				}}
-			></LogoContainer>
 		</main>
 	);
 }
