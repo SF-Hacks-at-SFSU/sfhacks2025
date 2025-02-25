@@ -3,13 +3,13 @@ import React from "react";
 import FAQ from "./components/Faqs";
 
 function page() {
-	return (
-		<div className="h-screen">
-			<div className=""></div>
-
-			<FAQ />
-		</div>
-	);
-};
+  return (
+    <main className="h-screen">
+      <h1 className="faq-banner-text">Frequently Asked Questions!</h1>
+      <div className="faq-banner"></div>
+      <FAQ />
+    </main>
+  );
+}
 
 export default page;
