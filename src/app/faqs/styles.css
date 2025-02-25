@@ -1,115 +1,34 @@
-.faq-banner {
-	max-width: 45%;
-	margin: 0 auto;
-	background-color: #edc6fa;
-	padding: 20px 0px;
-	border-radius: 20px;
-	text-align: center;
-	overflow: hidden;
+.faqContainer {
+	width: 100%;
 }
 
-/* Styling is nwo controled by global.css */
-.faq-banner-text {
-	/* color:#16133d;
-    font-weight: 300;
-    font-size: 2.5rem; */
-	/*text-shadow:5px 5px 5px black;*/
-}
+.faqQuestion {
+	margin: 1rem auto;
+	background-color: var(--background-color);
 
-.faq-main {
-	max-width: 60em;
-  width: 100%;
-	/* margin: 3rem auto; */
-	/* background-color: #edc6fa; */
-	padding: 20px 0px 20px 40px;
-	border-radius: 30px;
-}
+	& > div {
+		text-align: start;
+		text-indent: 2rem;
+		padding: 1rem;
+	}
 
-.faq-tab {
-	color: #fff5d9;
-	max-width: 12%;
-}
+	& > summary {
+		max-width: unset;
+		width: 100%;
 
-#faq-tab1 {
-	background-color: #ffff;
-	border-radius: 30px;
-	padding: 0px 0px 10px 10px;
-}
+		font-size: large;
+		font-weight: bold;
 
-#faq-tab2 {
-	background-color: #254d70;
-	border-radius: 30px;
-	padding: 0px 0px 10px 10px;
-}
+		padding: 0.5rem;
 
-.faq-questions {
-	/* color: #16133d; */
-	/* font-weight: 400;
-	font-size: 1.3rem; */
-	margin: 1rem;
-}
+		cursor: pointer;
 
-.faq-ques {
-	cursor: pointer;
-}
-.answer-visible {
-	/* color is now controled by global.css under "main > *"  */
-	/* color: #16133d; */
-	font-size: 1rem;
-	margin: 0.5rem;
-	border-style: solid;
-	margin-bottom: 1.5rem;
-}
-
-.faq-list {
-	list-style-type: disc;
+		background-color: var(--background-color-solid);
+	}
 }
 
 @media only screen and (max-width: 768px) {
-	.faq-banner {
-		max-width: 85%;
-		margin: 1.5rem auto;
-		padding: 20px 0px;
-		border-radius: 20px;
-		text-align: center;
-		overflow: hidden;
-	}
-
-	.faq-banner-text {
-		/* color: #16133d; */
-		/* font-weight: 300;
-		font-size: 2rem; */
-		/* text-shadow:5px 5px 5px black; */
-	}
-
-	.faq-main {
-		/* max-width: 80%; */
-		margin: 1rem auto;
-		padding: 10px;
-		border-radius: 30px;
-	}
-
-	.faq-questions {
-		/* color: #16133d; */
-		/* font-weight: 400; */
-		/* font-size: 1.3rem; */
-		margin: 2rem;
-	}
-
-	.answer-visible {
-		margin-bottom: 40px;
-	}
 }
 
 @media only screen and (max-width: 425px) {
-	.faq-questions {
-		/* color: #16133d; */
-		font-weight: 400;
-		font-size: 1rem;
-		/* margin: 2rem; */
-	}
-	.answer-visible {
-		font-size: 1rem;
-		margin-bottom: 40px;
-	}
 }

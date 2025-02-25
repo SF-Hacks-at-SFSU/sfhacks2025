@@ -4,52 +4,17 @@ import React, { useState } from "react";
 import "../styles.css";
 
 function FAQ() {
-	// Added a default value to the `open` state variable.
-	const [activeAccordion, setActiveAccordion] = useState(-1);
-
-	// Added a `handleClose` function to close the FAQ item.
-	const handleClose = () => setActiveAccordion(-1);
-
-	// Added a `handleToggle` function to toggle the FAQ item open and closed.
-	const handleToggle = (accordionIndex: number) => {
-		if (activeAccordion === accordionIndex) {
-			handleClose();
-		} else {
-			setActiveAccordion(accordionIndex);
-		}
-	};
-
-	const [isOpen, setIsOpen] = useState(false);
-	const handleToggleNav = () => {
-		setIsOpen(!isOpen);
-	};
-
 	return (
-		<main>
-			<h1 className="faq-banner-text">Frequently Asked Questions!</h1>
-			<div className="faq-banner"></div>
-			<div className="faq-main">
-				{data.map((question, questionIndex) => (
-					<div key={questionIndex}>
-						<div
-							className="faq-questions"
-							onClick={() => handleToggle(questionIndex)}
-						>
-							<ul className="faq-list">
-								<li className="faq-ques">
-									{question.question} <span>+</span>
-								</li>
-							</ul>
-						</div>
-						{activeAccordion === questionIndex && (
-							<div className="answer-visible p-3 rounded-md">
-								{question.answer}
-							</div>
-						)}
-					</div>
-				))}
-			</div>
-		</main>
+		<ul className="faqContainer">
+			{data.map((question, questionIndex) => (
+				<li key={questionIndex}>
+					<details className="faqQuestion">
+						<summary>{question.question}</summary>
+						<div>{question.answer}</div>
+					</details>
+				</li>
+			))}
+		</ul>
 	);
 }
 
@@ -86,10 +51,10 @@ const data: qnaType[] = [
 	//   question: 'What’s the cost for attendance?',
 	//   answer: 'It’s a free event hosted by the SF Hacks Team at San Francisco State University.'
 	// },
-	// {
-	//   question: 'Is there travel reimbursements?',
-	//   answer: 'Unfortunately, we will not be able to reimburse travel costs.'
-	// },
+	{
+		question: "Is there travel reimbursements?",
+		answer: "Unfortunately, we will not be able to reimburse travel costs.",
+	},
 	{
 		question: "Do I work by myself or with teams?",
 		answer:
@@ -140,15 +105,16 @@ const data: qnaType[] = [
 	{
 		question: "Where can I contact you for any questions or support?",
 		answer: (
-			<p className="">
-				{" "}
+			<p>
 				You may email us at{" "}
-				<a
-					href="mailto:sfhacksteam@gmail.com"
-					className=" pointer-events-auto text-sfPink hover:underline"
-				>
-					sfhacksteam@gmail.com{" "}
-				</a>
+				<span>
+					<a
+						href="mailto:sfhacksteam@gmail.com"
+						className=" pointer-events-auto text-sfPink hover:underline"
+					>
+						sfhacksteam@gmail.com
+					</a>
+				</span>
 			</p>
 		),
 	},
