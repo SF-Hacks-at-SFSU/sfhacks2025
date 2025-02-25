@@ -4,45 +4,17 @@ import React, { useState } from "react";
 import "../styles.css";
 
 function FAQ() {
-	// Added a default value to the `open` state variable.
-	const [activeAccordion, setActiveAccordion] = useState(-1);
-
-	// Added a `handleClose` function to close the FAQ item.
-	const handleClose = () => setActiveAccordion(-1);
-
-	// Added a `handleToggle` function to toggle the FAQ item open and closed.
-	const handleToggle = (accordionIndex: number) => {
-		if (activeAccordion === accordionIndex) {
-			handleClose();
-		} else {
-			setActiveAccordion(accordionIndex);
-		}
-	};
-
-	const [isOpen, setIsOpen] = useState(false);
-	const handleToggleNav = () => {
-		setIsOpen(!isOpen);
-	};
-
 	return (
-		<div className="faq-main">
-			<ul>
-				{data.map((question, questionIndex) => (
-					<li
-						key={questionIndex}
-						className="faq-questions"
-						onClick={() => handleToggle(questionIndex)}
-					>
-						{question.question}
-						{activeAccordion === questionIndex ? (
-							<p className="answer-visible p-3 rounded-md">
-								{question.answer}
-							</p>
-						) : null}
-					</li>
-				))}
-			</ul>
-		</div>
+		<ul className="faqContainer">
+			{data.map((question, questionIndex) => (
+				<li key={questionIndex}>
+					<details className="faqQuestion">
+						<summary>{question.question}</summary>
+						<div>{question.answer}</div>
+					</details>
+				</li>
+			))}
+		</ul>
 	);
 }
 
@@ -133,15 +105,16 @@ const data: qnaType[] = [
 	{
 		question: "Where can I contact you for any questions or support?",
 		answer: (
-			<p className="">
-				{" "}
+			<p>
 				You may email us at{" "}
-				<a
-					href="mailto:sfhacksteam@gmail.com"
-					className=" pointer-events-auto text-sfPink hover:underline"
-				>
-					sfhacksteam@gmail.com{" "}
-				</a>
+				<span>
+					<a
+						href="mailto:sfhacksteam@gmail.com"
+						className=" pointer-events-auto text-sfPink hover:underline"
+					>
+						sfhacksteam@gmail.com
+					</a>
+				</span>
 			</p>
 		),
 	},

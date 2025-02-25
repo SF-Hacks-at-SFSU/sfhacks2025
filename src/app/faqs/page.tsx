@@ -4,9 +4,8 @@ import FAQ from "./components/Faqs";
 
 function page() {
   return (
-    <main className="h-screen">
-      <h1 className="faq-banner-text">Frequently Asked Questions!</h1>
-      <div className="faq-banner"></div>
+    <main>
+      <h1>Frequently Asked Questions!</h1>
       <FAQ />
     </main>
   );
