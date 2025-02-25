@@ -3,13 +3,12 @@ import React from "react";
 import FAQ from "./components/Faqs";
 
 function page() {
-	return (
-		<div className="h-screen">
-			<div className=""></div>
-
-			<FAQ />
-		</div>
-	);
-};
+  return (
+    <main>
+      <h1>Frequently Asked Questions!</h1>
+      <FAQ />
+    </main>
+  );
+}
 
 export default page;
