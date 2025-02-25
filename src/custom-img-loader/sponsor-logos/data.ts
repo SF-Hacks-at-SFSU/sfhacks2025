@@ -168,7 +168,7 @@ const data: SponsorsDatum[] = [
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
-		url: "https://www.standoutstickers.com"
+		url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
 	},
 	{
 		name: "Sticker Mule",
