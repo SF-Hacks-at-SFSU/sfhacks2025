@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import "../styles.css";
 
 function FAQ() {
@@ -26,8 +24,13 @@ type qnaType = {
 const data: qnaType[] = [
 	{
 		question: "What is a Hack-a-thon? ",
-		answer:
-			"A hackathon is a 24-hour event where individuals get together for a short period of time to collaborate on a project. Participants work rapidly and often work in groups to achieve their tasks.",
+		answer: (
+			<p>
+				A hackathon is a 48-hour event where individuals get together for a
+				short period of time to collaborate on a project. Participants work
+				rapidly and often work in groups to achieve their tasks.
+			</p>
+		),
 	},
 	{
 		question: "I have no prior hacking experience, can I still participate?",
