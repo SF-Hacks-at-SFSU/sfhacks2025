@@ -1,0 +1,31 @@
+.sponsorLogo {
+	backdrop-filter: blur(4px);
+}
+
+.logoRow {
+	margin: 1.75rem 0;
+	max-width: 100%;
+	height: 70px;
+
+	/* background-position-x: 0; */
+	mask-image: linear-gradient(to left, #ffffff00 0, #ffffff 4rem),
+		linear-gradient(to right, #ffffff00 0, #ffffff 4rem);
+	mask-composite: intersect;
+
+	animation: 10s linear 0s infinite logo-slide;
+}
+
+.pastSponsors > * {
+	filter: grayscale(60%);
+	transition: filter 0.25s;
+}
+
+.pastSponsors > *:hover {
+	filter: none;
+}
+
+@keyframes logo-slide {
+	0% {
+		background-position-x: 0px;
+	}
+}
