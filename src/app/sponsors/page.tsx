@@ -22,7 +22,12 @@ export default function SponsorsPage() {
 	return (
 		<main>
 			<h1>Our Sponsors</h1>
-
+			<Link
+				href="/sponsors/why-sponsor"
+				className="button"
+			>
+				Sponsor Us!
+			</Link>
 			{
 				// The following code just generates sponsor icons, grouped by tiers, for all possible tiers.
 				Object.keys(sponsorsByTier).map((currentTier) => {
@@ -47,13 +52,6 @@ export default function SponsorsPage() {
 					outputDir: "/logo-atlases",
 				}}
 			></LogoContainer> */}
-
-			<Link
-				href="/sponsors/why-sponsor"
-				className="button"
-			>
-				Sponsor Us!
-			</Link>
 		</main>
 	);
 }
