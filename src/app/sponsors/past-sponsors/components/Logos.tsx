@@ -1,9 +1,7 @@
 "use client";
 
-import "./styles.css";
 import { Atlas } from "@/lib/atlasLoader";
 import type { Property } from "csstype";
-import { useState } from "react";
 
 interface LogoRowProps {
   atlasData: Atlas;
