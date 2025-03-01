@@ -20,7 +20,7 @@
 .DS_Store
 *.pem
 
-# debug
+# debug P
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -35,3 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .vscode/settings.json
+package-lock.json
