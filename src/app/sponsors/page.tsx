@@ -6,6 +6,7 @@ import sponsorsData, {
 import { SponsorsDatum } from "@/custom-img-loader/sponsor-logos/data";
 import Link from "next/link";
 import TieredSponsors from "./components/TieredSponsorsGrid";
+import "./styles.css";
 
 const sponsorsByTier = Object.values(sponsorTier).reduce(
 	(accumulator, currentTier) => {
