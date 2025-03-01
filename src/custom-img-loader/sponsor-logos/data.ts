@@ -56,7 +56,7 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/current/Fastly.svg",
 		isCurrent: true,
 
-		tier: "bronze", // idk what an a la carte sponsorship level is but imma jsut put bronze
+		tier: "specialThanks", // idk what an a la carte sponsorship level is but imma jsut put bronze
 		url: "https://www.fastly.com/"
 	},
 	{
