@@ -168,7 +168,7 @@ const data: SponsorsDatum[] = [
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
-		url: "https://www.standoutstickers.com"
+		url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
 	},
 	{
 		name: "Sticker Mule",
@@ -247,6 +247,15 @@ const data: SponsorsDatum[] = [
 		tier: "bronze",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
 		url: "https://inductiveautomation.com" 
-	}] as const
+	},
+	{
+		name: "CodePath",
+		path: "/sponsor-logos/current/CodePath.png",
+		isCurrent: true,
+
+		tier: "bronze",
+		url: "https://www.codepath.org" 
+	}
+] as const
 
 export default data

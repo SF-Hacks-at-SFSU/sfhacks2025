@@ -1,0 +1,6 @@
+{
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "development"
+    ],
+    "prettier.useTabs": true
+}

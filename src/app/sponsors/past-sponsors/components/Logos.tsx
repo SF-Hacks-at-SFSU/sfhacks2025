@@ -18,7 +18,7 @@ export function LogoRow({
       style={{
         // overflow: "scroll hidden",
         backgroundImage: `url(${atlasFilePath})`,
-        backgroundSize: "auto 100px",
+        backgroundSize: "auto 70px",
         animationDuration: `${(width / height) * 15}s`,
         animationDirection: animationDirection,
         backgroundPositionX: `${width}px`,

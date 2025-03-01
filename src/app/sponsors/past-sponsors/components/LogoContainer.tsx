@@ -12,7 +12,7 @@ export default async function LogoContainer({
   logoData,
   outputOptions,
 }: LogoAtlasProps) {
-  const atlases = await generateAtlases(logoData, 4, 400, outputOptions);
+  const atlases = await generateAtlases(logoData, 8, 100, outputOptions);
 
   return (
     <div
