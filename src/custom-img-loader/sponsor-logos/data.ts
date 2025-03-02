@@ -19,8 +19,8 @@ export const sponsorTier = {
 
 const data: SponsorsDatum[] = [
 	{
-		name: "Browserbase",
-		path: "/sponsor-logos/current/BrowserBase.png",
+		name: "Browserbase Stagehand",
+		path: "/sponsor-logos/current/BrowserBase-Stagehand.svg",
 		isCurrent: true,
 
 		tier: "gold",
