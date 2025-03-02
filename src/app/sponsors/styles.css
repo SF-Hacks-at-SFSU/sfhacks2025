@@ -121,11 +121,11 @@ a[href^="#"] {
 		display: flex;
 		justify-content: center;
 		aspect-ratio: 1.5;
-		padding: 0.5rem;
+		padding: 0.75rem;
 		transition: scale 0.2s ease-out;
 
 		&:hover {
-			scale: 1.15;
+			scale: 1.05;
 		}
 
 		& > img {
