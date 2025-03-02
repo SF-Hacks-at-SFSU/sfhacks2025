@@ -159,3 +159,39 @@ a[href^="#"] {
 		flex: 0 1 calc(100% / 6);
 	}
 }
+
+@media (max-width: 70rem) {
+	main {
+		padding-inline: 0rem;
+	}
+
+	.tieredSponsorsGrid {
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 35rem) {
+	.sponsorTier-gold {
+		& > a {
+			flex: 0 1 calc(100% / 1);
+		}
+	}
+
+	.sponsorTier-silver {
+		& > a {
+			flex: 0 1 calc(100% / 2);
+		}
+	}
+
+	.sponsorTier-bronze {
+		& > a {
+			flex: 0 1 calc(100% / 3);
+		}
+	}
+
+	.sponsorTier-specialThanks {
+		& > a {
+			flex: 0 1 calc(100% / 4);
+		}
+	}
+}
