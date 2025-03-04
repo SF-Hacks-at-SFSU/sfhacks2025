@@ -154,6 +154,39 @@ const data: SponsorsDatum[] = [
 		url: ""
 	},
 	{
+		name: "SFSU Society of Women Engineers",
+		path: "/sponsor-logos/current/SFSUSWE.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU ColorStack Club",
+		path: "/sponsor-logos/current/SFSUColorStack.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU Cybersecurity Club",
+		path: "/sponsor-logos/current/SFSUCybersecurity.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU 3D Printing and Design Club",
+		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
+		isCurrent: true,
+
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
 		name: "OpenAI",
 		path: "/sponsor-logos/past/OpenAI_Logo.png",
 		isCurrent: false
