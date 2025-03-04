@@ -18,33 +18,5 @@
 
 /* This css is not being used */
 .countdown {
-	table-layout: fixed;
-	border-collapse: collapse;
-	contain: content;
-
-	background-color: #16133d41;
-	border-radius: 8px;
-	backdrop-filter: blur(4px);
-
-	color: #ffffff;
-
-	width: 100%;
-
-	& thead th,
-	td {
-		/* convert this to margin for child element */
-		/* padding: 0 0.5em; */
-		width: 3em;
-	}
-
-	& thead th {
-		background-color: #16133d;
-		font-size: normal;
-		font-weight: normal;
-	}
-
-	& tbody td {
-		font-size: 2.8em;
-		font-weight: bolder;
-	}
+	background-color: var(--background-color-element-opaque);
 }

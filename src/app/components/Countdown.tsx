@@ -67,7 +67,7 @@ function CountDown() {
 	if (!isHydrated) return null;
 
 	return (
-		<div className="flex justify-center gap-y-6 flex-col p-6 bg-[#14153F] rounded-xl max-w-xl mx-auto">
+		<div className="countdown flex justify-center gap-y-6 flex-col p-6 rounded-xl max-w-xl mx-auto">
 			<p>
 				<time
 					className="text-4xl font-bold text-white"
