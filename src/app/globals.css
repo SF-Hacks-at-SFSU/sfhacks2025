@@ -120,6 +120,11 @@ fff5d9
 	--background-color: rgb(
 		from var(--palette-1) r g b / var(--background-opacity)
 	);
+	--background-color-element-opaque: #16133d;
+	/* --background-color-element-opqaue: #2e2145; */
+	--background-color-element: rgb(
+		from var(--background-color-element-opaque) r g b / var(--background-opacity)
+	);
 
 	--rootPadding: 1rem;
 	--rootChildMargin: 1rem;
@@ -176,7 +181,7 @@ main {
 		margin: var(--rootChildMargin) auto;
 		padding: var(--rootPadding);
 
-		background-color: var(--background-color);
+		background-color: var(--background-color-element);
 
 		color: #ffffff;
 	}
@@ -221,7 +226,7 @@ h3 {
 	font-weight: bold;
 	color: #ffffff;
 
-	background-color: var(--background-color-solid);
+	background-color: var(--background-color-element-opaque);
 }
 
 h1 {
@@ -255,7 +260,7 @@ p {
 
 	padding: 0.25em 1em;
 
-	background-color: #16133d;
+	background-color: var(--background-color-element-opaque);
 
 	font-weight: bold;
 	color: #ffffff;
