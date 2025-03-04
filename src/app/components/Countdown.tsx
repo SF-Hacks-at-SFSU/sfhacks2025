@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-const eventStartDate = new Date("Apr 4, 2025 00:00:00");
-const eventEndDate = new Date("Apr 6, 2025 00:00:00");
+const eventStartDate = new Date("Apr 4, 2025 14:00:00-08:00");
+const eventEndDate = new Date("Apr 6, 2025 14:00:00-08:00");
 
 const dateFormat = new Intl.DateTimeFormat(undefined, { dateStyle: "long" });
 
