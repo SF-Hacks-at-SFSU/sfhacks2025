@@ -1,5 +1,6 @@
 .faqContainer {
 	width: 100%;
+	backdrop-filter: blur(4px);
 }
 
 .faqQuestion {
@@ -23,7 +24,9 @@
 
 		cursor: pointer;
 
+		/* background-color: #8c74b0; */
 		background-color: var(--background-color-solid);
+		
 	}
 }
 

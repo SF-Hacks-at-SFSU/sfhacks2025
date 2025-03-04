@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-const eventStartDate = new Date("Apr 4, 2025 00:00:00");
-const eventEndDate = new Date("Apr 6, 2025 00:00:00");
+const eventStartDate = new Date("Apr 4, 2025 14:00:00-08:00");
+const eventEndDate = new Date("Apr 6, 2025 14:00:00-08:00");
 
 const dateFormat = new Intl.DateTimeFormat(undefined, { dateStyle: "long" });
 
@@ -56,7 +56,7 @@ function CountDown() {
 	function TimeUnit({ value, label }: TimeUnitProps) {
 		return (
 			<div className="text-center">
-				<div className="text-3xl font-bold text-white mb-2">
+				<div className="text-3xl font-bold mb-2">
 					{value > 9 ? value : `0${value}`}
 				</div>
 				<div className="text-sm text-gray-300">{label}</div>
@@ -67,10 +67,10 @@ function CountDown() {
 	if (!isHydrated) return null;
 
 	return (
-		<div className="flex justify-center gap-y-6 flex-col p-6 bg-[#14153F] rounded-xl max-w-xl mx-auto">
+		<div className="countdown flex justify-center gap-y-6 flex-col p-6 rounded-xl max-w-xl mx-auto">
 			<p>
 				<time
-					className="text-4xl font-bold text-white"
+					className="text-4xl font-bold"
 					dateTime={eventStartDate.toISOString()}
 				>
 					{dateFormat.formatRange(eventStartDate, eventEndDate)}

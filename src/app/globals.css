@@ -116,10 +116,17 @@ fff5d9
 	--palette-5: #fff5d9;
 
 	--background-opacity: 0.675;
-	--background-color-solid: rgb(from var(--palette-1) r g b);
+	/* --background-color-solid: rgb(from var(--palette-1) r g b); */
+	--background-color-solid: #171324;
 	--background-color: rgb(
 		from var(--palette-1) r g b / var(--background-opacity)
 	);
+	/* --background-color-element-opaque: #16133d; */
+	--background-color-element-opaque: #261d4b;
+	--background-color-element: rgb(
+		from var(--background-color-element-opaque) r g b / var(--background-opacity)
+	);
+	--hover-color: #4a3790;
 
 	--rootPadding: 1rem;
 	--rootChildMargin: 1rem;
@@ -131,9 +138,9 @@ body {
 
 	
 	background-image: linear-gradient(
-			#16133d00 90vh,
-			#16133d80 97vh,
-			#16133dff 100vh
+			rgb(from var(--background-color-solid) r g b / 0) 90vh,
+			rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
+			rgb(from var(--background-color-solid) r g b / 1.0) 100vh
 		),
 		url("/webdevCityBackground-01.svg");
 	background-repeat: no-repeat;
@@ -176,7 +183,7 @@ main {
 		margin: var(--rootChildMargin) auto;
 		padding: var(--rootPadding);
 
-		background-color: var(--background-color);
+		background-color: var(--background-color-element);
 
 		color: #ffffff;
 	}
@@ -221,7 +228,7 @@ h3 {
 	font-weight: bold;
 	color: #ffffff;
 
-	background-color: var(--background-color-solid);
+	background-color: var(--background-color-element-opaque);
 }
 
 h1 {
@@ -255,7 +262,7 @@ p {
 
 	padding: 0.25em 1em;
 
-	background-color: #16133d;
+	background-color: var(--background-color-element-opaque);
 
 	font-weight: bold;
 	color: #ffffff;
@@ -264,7 +271,7 @@ p {
 }
 
 .button:hover {
-	background-color: #59558f;
+	background-color: var(--hover-color);
 	scale: 1.1;
 }
 

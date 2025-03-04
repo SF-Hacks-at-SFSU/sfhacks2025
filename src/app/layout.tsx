@@ -29,7 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body
         className={`${inter.className}`}
-        style={{ backgroundColor: "#16133d" }}
+        style={{ backgroundColor: "var(--background-color-solid)" }}
       >
         <Navbar />
 
