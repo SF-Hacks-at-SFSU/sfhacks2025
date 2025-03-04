@@ -127,7 +127,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU Computer Science Research",
@@ -135,7 +135,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU Algorithms Club",
@@ -143,7 +143,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU Bit Bots Club",
@@ -151,7 +151,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU Society of Women Engineers",
@@ -159,7 +159,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU ColorStack Club",
@@ -167,7 +167,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU Cybersecurity Club",
@@ -175,7 +175,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU 3D Printing and Design Club",
@@ -183,7 +183,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU SparkSF Club",
@@ -191,7 +191,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "SFSU Data Science Society",
@@ -199,7 +199,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "specialThanks",
-		url: ""
+		url: undefined
 	},
 	{
 		name: "OpenAI",
