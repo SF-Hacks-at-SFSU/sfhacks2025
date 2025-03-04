@@ -44,12 +44,6 @@ export default function SponsorsPage() {
             );
         })
       }
-      <Link
-        href="/sponsors/past-sponsors"
-        className="button"
-      >
-        Our Past Sponsors
-      </Link>
     </main>
   );
 }
