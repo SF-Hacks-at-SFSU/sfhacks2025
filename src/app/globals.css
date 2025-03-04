@@ -126,6 +126,7 @@ fff5d9
 	--background-color-element: rgb(
 		from var(--background-color-element-opaque) r g b / var(--background-opacity)
 	);
+	--hover-color: #4a3790;
 
 	--rootPadding: 1rem;
 	--rootChildMargin: 1rem;
@@ -270,7 +271,7 @@ p {
 }
 
 .button:hover {
-	background-color: #59558f;
+	background-color: var(--hover-color);
 	scale: 1.1;
 }
 
