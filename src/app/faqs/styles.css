@@ -4,7 +4,7 @@
 
 .faqQuestion {
 	margin: 1rem auto;
-	background-color: var(--background-color-element);
+	background-color: var(--background-color);
 
 	& > div {
 		text-align: start;
@@ -23,7 +23,9 @@
 
 		cursor: pointer;
 
-		background-color: var(--background-color-element-opaque);
+		/* background-color: #8c74b0; */
+		background-color: var(--background-color-solid);
+		
 	}
 }
 

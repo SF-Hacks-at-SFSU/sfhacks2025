@@ -116,12 +116,13 @@ fff5d9
 	--palette-5: #fff5d9;
 
 	--background-opacity: 0.675;
-	--background-color-solid: rgb(from var(--palette-1) r g b);
+	/* --background-color-solid: rgb(from var(--palette-1) r g b); */
+	--background-color-solid: #171324;
 	--background-color: rgb(
 		from var(--palette-1) r g b / var(--background-opacity)
 	);
-	--background-color-element-opaque: #16133d;
-	/* --background-color-element-opqaue: #2e2145; */
+	/* --background-color-element-opaque: #16133d; */
+	--background-color-element-opaque: #261d4b;
 	--background-color-element: rgb(
 		from var(--background-color-element-opaque) r g b / var(--background-opacity)
 	);
