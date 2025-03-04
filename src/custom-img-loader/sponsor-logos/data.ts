@@ -122,6 +122,38 @@ const data: SponsorsDatum[] = [
 		url: "https://deadeyecoffeebar.com"
 	},
 	{
+		name: "SFSU Game Development Club",
+		path: "/sponsor-logos/current/SFSUGameDev.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU Computer Science Research",
+		path: "/sponsor-logos/current/SFSUCSResearch.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU Algorithms Club",
+		path: "/sponsor-logos/current/SFSUAlgorithms.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU Bit Bots Club",
+		path: "/sponsor-logos/current/SFSUBitBots.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
 		name: "OpenAI",
 		path: "/sponsor-logos/past/OpenAI_Logo.png",
 		isCurrent: false
