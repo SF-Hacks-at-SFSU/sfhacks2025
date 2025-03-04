@@ -182,6 +182,21 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
 		isCurrent: true,
 
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU SparkSF Club",
+		path: "/sponsor-logos/current/SFSUSparkSF.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: ""
+	},
+	{
+		name: "SFSU Data Science Society",
+		path: "/sponsor-logos/current/SFSUDSS.svg",
+		isCurrent: true,
 
 		tier: "specialThanks",
 		url: ""
