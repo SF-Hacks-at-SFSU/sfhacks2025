@@ -131,9 +131,9 @@ body {
 
 	
 	background-image: linear-gradient(
-			#16133d00 90vh,
-			#16133d80 97vh,
-			#16133dff 100vh
+			rgb(from var(--background-color-solid) r g b / 0) 90vh,
+			rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
+			rgb(from var(--background-color-solid) r g b / 1.0) 100vh
 		),
 		url("/webdevCityBackground-01.svg");
 	background-repeat: no-repeat;
