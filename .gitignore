@@ -15,6 +15,7 @@
 
 # production
 /build
+/public/logo-atlases/
 
 # misc
 .DS_Store
