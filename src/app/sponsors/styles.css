@@ -114,6 +114,7 @@ a[href^="#"] {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 
 	background-color: var(--background-color-solid);
 
