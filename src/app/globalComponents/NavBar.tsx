@@ -117,13 +117,13 @@ function NavLinks({ className = "" }: NavLinksProps) {
 				</div>
 
 				{/* Register Button */}
-				<NavLink
-					href={REGISTER_LINK.href}
-					newTab={true}
-					className="px-6 py-2 text-white transition-all duration-200 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-purple-500/25 hover:scale-105 active:scale-95"
+				<a
+					className="button discord"
+					href="https://discord.gg/P5PsDR6G7W"
+					target="_blank"
 				>
-					{REGISTER_LINK.name}
-				</NavLink>
+					Discord{" "}
+				</a>
 			</div>
 		</div>
 	);

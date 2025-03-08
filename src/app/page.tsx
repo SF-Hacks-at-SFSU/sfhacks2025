@@ -33,13 +33,6 @@ export default function Home() {
                         </a>
                         </button> */}
 			</hgroup>
-			<a
-				className="button discord"
-				href="https://discord.gg/P5PsDR6G7W"
-				target="_blank"
-			>
-				Discord{" "}
-			</a>
 			{/* <div className="w-95vw items-center align-contents-center flex flex-col md-gap-6">
 				<div className="mainLandingPage flex flex-col gap-2 w-1/3 h-max items-center ">
 					
