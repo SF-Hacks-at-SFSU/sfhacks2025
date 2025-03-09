@@ -128,7 +128,8 @@ fff5d9
 	);
 	--hover-color: #4a3790;
 
-	--rootPadding: 1rem;
+	--rootPaddingInline: 1em;
+	--rootPaddingBlock: 0.3em;
 	--rootChildMargin: 1rem;
 }
 
@@ -181,7 +182,8 @@ main {
 		max-width: 60rem;
 
 		margin: var(--rootChildMargin) auto;
-		padding: var(--rootPadding);
+		padding-inline: var(--rootPaddingInline);
+		padding-block: var(--rootPaddingBlock);
 
 		background-color: var(--background-color-element);
 
@@ -221,7 +223,8 @@ h2,
 h3 {
 	max-width: fit-content;
 
-	padding: 1rem;
+	padding-inline: var(--rootPaddingInline);
+	padding-block: var(--rootPaddingBlock);
 	margin-inline: auto;
 
 	text-align: center;
@@ -260,7 +263,8 @@ p {
 	border-radius: 1em;
 	font-size: x-large;
 
-	padding: 0.25em 1em;
+	padding-inline: var(--rootPaddingInline);
+	padding-block: var(--rootPaddingBlock);
 
 	background-color: var(--background-color-element-opaque);
 
