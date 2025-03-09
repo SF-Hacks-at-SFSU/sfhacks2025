@@ -4,7 +4,7 @@ import "./styles.css";
 
 export default function Home() {
 	return (
-		<main className="mainLandingPage">
+		<main id="home">
 			<hgroup>
 				<h2 className="logo">
 					<Image
