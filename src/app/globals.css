@@ -289,3 +289,11 @@ p {
 	/* translate: 0 -0.5em; */
 	animation: 2s ease-in-out 0.25s infinite alternate hover;
 }
+
+strong {
+	@apply text-3xl font-bold;
+
+	&[class~="criticalInfo"] {
+		@apply text-4xl;
+	}
+}
