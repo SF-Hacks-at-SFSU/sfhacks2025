@@ -186,14 +186,7 @@ const data: SponsorsDatum[] = [
 		tier: "specialThanks",
 		url: undefined
 	},
-	{
-		name: "Jam",
-		path: "/sponsor-logos/current/jam.png",
-		isCurrent: true,
-
-		tier: "specialThanks",
-		url: "https://jam.dev/"
-	},
+	
 	{
 		name: "SFSU 3D Printing and Design Club",
 		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
