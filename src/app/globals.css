@@ -1,3 +1,5 @@
+@layer base, components, utilities;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -124,7 +126,8 @@ fff5d9
 	/* --background-color-element-opaque: #16133d; */
 	--background-color-element-opaque: #261d4b;
 	--background-color-element: rgb(
-		from var(--background-color-element-opaque) r g b / var(--background-opacity)
+		from var(--background-color-element-opaque) r g b /
+			var(--background-opacity)
 	);
 	--hover-color: #4a3790;
 
@@ -137,11 +140,10 @@ body {
 	min-height: 100vh;
 	min-width: 100vw;
 
-	
 	background-image: linear-gradient(
 			rgb(from var(--background-color-solid) r g b / 0) 90vh,
 			rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
-			rgb(from var(--background-color-solid) r g b / 1.0) 100vh
+			rgb(from var(--background-color-solid) r g b / 1) 100vh
 		),
 		url("/webdevCityBackground-01.svg");
 	background-repeat: no-repeat;
@@ -176,6 +178,8 @@ main {
 	align-content: center;
 	align-items: center;
 
+	gap: var(--rootChildMargin);
+
 	height: 100%;
 
 	padding: 2rem 1rem;
@@ -183,7 +187,6 @@ main {
 	& > * {
 		max-width: 60rem;
 
-		margin: var(--rootChildMargin) auto;
 		padding-inline: var(--rootPaddingInline);
 		padding-block: var(--rootPaddingBlock);
 
@@ -209,7 +212,6 @@ main {
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
 	}
-	
 }
 
 hgroup {
@@ -264,8 +266,6 @@ p {
 
 	font-size: large;
 	text-align: center;
-
-	backdrop-filter: blur(4px);
 }
 
 .button {
@@ -308,5 +308,32 @@ strong {
 
 	&[class~="criticalInfo"] {
 		@apply text-4xl;
+	}
+}
+
+@layer components {
+	.card {
+		padding: 0;
+		writing-mode: horizontal-tb;
+
+		> h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			display: block;
+			width: 100%;
+
+			border-end-start-radius: 0;
+			border-end-end-radius: 0;
+
+			margin: 0;
+		}
+
+		> * {
+			display: inline-block;
+			padding-inline: var(--rootPaddingInline);
+			padding-block: var(--rootPaddingBlock);
+		}
 	}
 }
