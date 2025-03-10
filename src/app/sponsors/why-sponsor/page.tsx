@@ -10,7 +10,7 @@ export default function WhySponsorPage() {
 				innovation, collaboration, and creativity.
 			</p>
 			<div className="customGridContainer">
-				<section>
+				<section className="card">
 					<h3>Promote Your Brand</h3>
 					<p className="text-center">
 						Showcase your organization to a global audience of tech-savvy
@@ -18,7 +18,7 @@ export default function WhySponsorPage() {
 						leader in innovation.
 					</p>
 				</section>
-				<section>
+				<section className="card">
 					<h3>Access Top Talent</h3>
 					<p>
 						Connect with some of the brightest minds in tech and discover
@@ -26,14 +26,14 @@ export default function WhySponsorPage() {
 						project.
 					</p>
 				</section>
-				<section>
+				<section className="card">
 					<h3>Engage with Hackers</h3>
 					<p>
 						Host workshops, sponsor challenge tracks, and provide proprietary
 						tools to guide hackers in creating impactful projects.
 					</p>
 				</section>
-				<section>
+				<section className="card">
 					<h3>Support Innovation</h3>
 					<p>
 						Play a crucial role in advancing technology by providing mentorship,
