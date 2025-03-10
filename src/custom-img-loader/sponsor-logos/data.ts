@@ -36,6 +36,15 @@ const data: SponsorsDatum[] = [
 		url: "https://cs.sfsu.edu"
 	},
 	{
+		name: "TensorStack",
+		path: "/sponsor-logos/current/TensorStax.svg",
+		isCurrent: true,
+
+		tier: "silver",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://tensorstax.com/"
+	},
+	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
 		path: "/sponsor-logos/current/IE.png",
 		isCurrent: true,
@@ -195,6 +204,7 @@ const data: SponsorsDatum[] = [
 		tier: "specialThanks",
 		url: undefined
 	},
+	
 	{
 		name: "SFSU 3D Printing and Design Club",
 		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
@@ -349,6 +359,7 @@ const data: SponsorsDatum[] = [
 		path: "/sponsor-logos/past/xyz-logo-color.svg",
 		isCurrent: false
 	},
+
 ] as const
 
 export default data
