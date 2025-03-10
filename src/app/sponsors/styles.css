@@ -116,12 +116,9 @@ a[href^="#"] {
 	justify-content: center;
 	align-items: center;
 
-	background-color: var(--background-color-element-opaque);
-
 	& > a {
 		display: flex;
 		justify-content: center;
-		aspect-ratio: 1.5;
 		padding: 0.75rem;
 		transition: scale 0.2s ease-out;
 
@@ -130,7 +127,8 @@ a[href^="#"] {
 		}
 
 		& > img {
-			height: inherit;
+			aspect-ratio: 1.5;
+
 			width: 100%;
 			max-height: 100%;
 			object-fit: contain;
