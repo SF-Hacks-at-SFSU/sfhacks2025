@@ -5,7 +5,6 @@ import "./styles.css";
 export default function Home() {
 	return (
 		<main id="home">
-			<hgroup>
 				<h2 className="logo">
 					<Image
 						src="/logoNew-horizontal.png"
@@ -19,8 +18,14 @@ export default function Home() {
 						}}
 					/>
 				</h2>
+<span className="card">
+				<h3>Theme</h3>
+				<strong>Tech For Good</strong>
+			</span>
+			<div className="card">
+				<h3>Date</h3>
 				<CountDown />
-			</hgroup>
+</div>
 		</main>
 	);
 }
