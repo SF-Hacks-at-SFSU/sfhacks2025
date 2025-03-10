@@ -44,7 +44,7 @@ const data: SponsorsDatum[] = [
 		url: "https://cob.sfsu.edu/initiatives-centers/innovation-entrepreneurship-programs"
 	},
 	{
-		name: "Innovation & Entrepreneurship at San Francisco State University",
+		name: "TensorStax",
 		path: "/sponsor-logos/current/TensorStax.svg",
 		isCurrent: true,
 
