@@ -11,7 +11,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.customGridContainer {
 		grid-template-columns: 1fr;
 	}

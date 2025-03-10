@@ -53,6 +53,14 @@ const data: SponsorsDatum[] = [
 		url: "https://cob.sfsu.edu/initiatives-centers/innovation-entrepreneurship-programs"
 	},
 	{
+		name: "Innovation & Entrepreneurship at San Francisco State University",
+		path: "/sponsor-logos/current/TensorStax.svg",
+		isCurrent: true,
+
+		tier: "silver",
+		url: "https://tensorstax.com/"
+	},
+	{
 		name: "Management Leadership for Tomorrow",
 		path: "/sponsor-logos/current/MLT.png",
 		isCurrent: true,
@@ -77,6 +85,16 @@ const data: SponsorsDatum[] = [
 		tier: "bronze",
 		url: "https://www.codepath.org" 
 	},
+	//
+	{
+		name: "Lam-Larsen Initiative in Emerging Technologies",
+		path: "/sponsor-logos/current/LamLarsen.png",
+		isCurrent: true,
+
+		tier: "bronze",
+		url: "https://www.codepath.org" 
+	},
+	//
 	{
 		name: "Fastly",
 		path: "/sponsor-logos/current/Fastly.svg",
@@ -304,11 +322,6 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Kaiser Permanente",
 		path: "/sponsor-logos/past/Kaiser_Permanente.png",
-		isCurrent: false
-	},
-	{
-		name: "Lam-Larsen Initiative in Emerging Technologies",
-		path: "/sponsor-logos/past/LamLarsen.png",
 		isCurrent: false
 	},
 	{

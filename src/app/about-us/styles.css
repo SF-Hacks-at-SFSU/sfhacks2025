@@ -19,7 +19,8 @@
 		overflow: scroll;
     border-radius: 0;
 
-		padding: 0 1rem;
+		padding-inline: 1rem;
+		padding-block: 0;
     
 		mask-image: linear-gradient(to left, #ffffff00 0, #ffffff 1rem),
 			linear-gradient(to right, #ffffff00 0, #ffffff 1rem);
@@ -55,7 +56,9 @@
 		}
 
 		& div:last-child {
-			padding: 0 1em 0.4em;
+			padding-inline: var(--rootPaddingInline);
+			padding-block-start: var(--rootPaddingBlock);
+			padding-block-end: 0.5rem;
 		}
 	}
 

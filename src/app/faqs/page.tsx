@@ -1,13 +1,11 @@
 import React from "react";
 import FAQ from "./components/Faqs";
 
-function page() {
+export default function FAQPage() {
   return (
     <main>
       <h1>Frequently Asked Questions!</h1>
       <FAQ />
     </main>
   );
-}
-
-export default page;
+};
