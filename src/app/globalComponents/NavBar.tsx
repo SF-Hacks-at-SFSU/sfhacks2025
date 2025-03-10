@@ -141,7 +141,7 @@ function MobileMenu({ isOpen, handleToggle, className = "" }: MobileMenuProps) {
 			{/* Mobile Menu Button */}
 			<button
 				onClick={handleToggle}
-				className="fixed top-4 right-4 z-50 p-2 text-[#13123e] transition-colors duration-200 rounded-lg backdrop-blur-sm"
+				className="fixed top-4 right-4 z-50 p-2 text-[#13123e] transition-colors duration-200 rounded-lg backdrop-blur-xs"
 			>
 				{isOpen ? <X size={32} /> : <Menu size={32} />}
 			</button>
@@ -178,7 +178,7 @@ function MobileMenu({ isOpen, handleToggle, className = "" }: MobileMenuProps) {
 						{/* Register Button */}
 						<NavLink
 							href={REGISTER_LINK.href}
-							className="px-8 py-3 mt-4 text-white transition-all duration-200 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-purple-500/25 hover:scale-105 active:scale-95"
+							className="px-8 py-3 mt-4 text-white transition-all duration-200 bg-linear-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-purple-500/25 hover:scale-105 active:scale-95"
 							onClick={handleToggle}
 							newTab={true}
 						>
