@@ -36,15 +36,6 @@ const data: SponsorsDatum[] = [
 		url: "https://cs.sfsu.edu"
 	},
 	{
-		name: "TensorStack",
-		path: "/sponsor-logos/current/TensorStax.svg",
-		isCurrent: true,
-
-		tier: "silver",
-		// This link was grapped directly from their page because I couldn't find it in the Notion document
-		url: "https://tensorstax.com/"
-	},
-	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
 		path: "/sponsor-logos/current/IE.png",
 		isCurrent: true,
