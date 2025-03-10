@@ -198,7 +198,7 @@
 	h1 {
 		max-width: 544px;
 
-		margin-top: 4rem;
+		margin-block: 4rem 3rem;
 
 		font-size: xxx-large;
 	}
@@ -215,7 +215,9 @@
 		contain: content;
 
 		font-size: large;
-		text-align: center;
+
+		/* text-align: center; */
+		text-indent: 2rem;
 	}
 
 	.button {
