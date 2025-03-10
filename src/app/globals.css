@@ -193,6 +193,13 @@ main {
 	& * {
 		border-radius: var(--border-radius);
 	}
+
+	& > strong,
+	.criticalInfo {
+		background-color: var(--background-color-element-opaque);
+		padding-inline: var(--rootPaddingInline);
+		padding-block: var(--rootPaddingBlock);
+	}
 }
 
 @media (max-width: 580px) {

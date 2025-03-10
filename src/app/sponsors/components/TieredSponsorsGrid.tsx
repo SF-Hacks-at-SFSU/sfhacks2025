@@ -16,7 +16,7 @@ export default function TieredSponsors({
 	tier,
 }: TieredSponsorsGridProps) {
 	return (
-		<div className={`tieredSponsorsGrid sponsorTier-${tier} ${name}`}>
+		<div className={`criticalInfo tieredSponsorsGrid sponsorTier-${tier} ${name}`}>
 			{logoData.map((logoDatum, index) => (
 				<a 
 				key={index}

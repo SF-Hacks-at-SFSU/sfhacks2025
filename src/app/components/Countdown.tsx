@@ -55,11 +55,11 @@ function CountDown() {
 
 	function TimeUnit({ value, label }: TimeUnitProps) {
 		return (
-			<div className="text-center">
-				<div className="text-3xl font-bold mb-2">
+			<div className="timeUnit text-center">
+				<strong className="mb-2">
 					{value > 9 ? value : `0${value}`}
-				</div>
-				<div className="text-sm text-gray-300">{label}</div>
+				</strong>
+				<div>{label}</div>
 			</div>
 		);
 	}
@@ -68,14 +68,15 @@ function CountDown() {
 
 	return (
 		<div className="countdown flex justify-center gap-y-6 flex-col p-6 rounded-xl max-w-xl mx-auto">
-			<p>
+			<strong
+					className="criticalInfo"			
+			>
 				<time
-					className="text-4xl font-bold"
 					dateTime={eventStartDate.toISOString()}
 				>
 					{dateFormat.formatRange(eventStartDate, eventEndDate)}
 				</time>
-			</p>
+			</strong>
 			<div className="flex justify-center gap-8">
 				<TimeUnit
 					value={timeRemaining.days}
