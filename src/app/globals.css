@@ -173,6 +173,8 @@ nav {
 main {
 	display: flex;
 	flex-direction: column;
+	align-content: center;
+	align-items: center;
 
 	height: 100%;
 
@@ -228,7 +230,7 @@ hgroup {
 h1,
 h2,
 h3 {
-	max-width: fit-content;
+	width: fit-content;
 
 	padding-inline: var(--rootPaddingInline);
 	padding-block: var(--rootPaddingBlock);
