@@ -13,8 +13,8 @@ const NAV_LINKS = [
 		newTab: false,
 	},
 	{
-		name: "Change Teams",
-		href: "https://tally.so/r/wkZ2Yr",
+		name: "SF Hacks",
+		href: "https://www.instagram.com/sf.hacks/",
 		newTab: true,
 	},
 	{
