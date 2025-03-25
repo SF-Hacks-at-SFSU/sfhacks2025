@@ -19,8 +19,8 @@ export const sponsorTier = {
 
 const data: SponsorsDatum[] = [
 	{
-		name: "Browserbase Stagehand",
-		path: "/sponsor-logos/current/BrowserBase-Stagehand.svg",
+		name: "Browserbase",
+		path: "/sponsor-logos/current/BrowserBase.png",
 		isCurrent: true,
 
 		tier: "gold",
@@ -34,6 +34,24 @@ const data: SponsorsDatum[] = [
 		tier: "gold",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
 		url: "https://cs.sfsu.edu"
+	},
+	{
+		name: "Gilead Sciences",
+		path: "/sponsor-logos/current/Gilead.svg",
+		isCurrent: true,
+
+		tier: "gold",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://www.gilead.com"
+	},
+	{
+		name: "SFSU College of Science and Engineering",
+		path: "/sponsor-logos/current/CoSE.svg",
+		isCurrent: true,
+
+		tier: "gold",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://cose.sfsu.edu"
 	},
 	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
@@ -66,7 +84,7 @@ const data: SponsorsDatum[] = [
 
 		tier: "bronze",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
-		url: "https://inductiveautomation.com" 
+		url: "https://inductiveautomation.com"
 	},
 	{
 		name: "CodePath",
@@ -74,7 +92,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "bronze",
-		url: "https://www.codepath.org" 
+		url: "https://www.codepath.org"
 	},
 	//
 	{
@@ -83,7 +101,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "bronze",
-		url: "https://www.codepath.org" 
+		url: "https://www.codepath.org"
 	},
 	//
 	{
@@ -195,7 +213,7 @@ const data: SponsorsDatum[] = [
 		tier: "specialThanks",
 		url: undefined
 	},
-	
+
 	{
 		name: "SFSU 3D Printing and Design Club",
 		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
@@ -215,6 +233,14 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Data Science Society",
 		path: "/sponsor-logos/current/SFSUDSS.svg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: undefined
+	},
+	{
+		name: "Delta Sigma Pi Delta Omicron",
+		path: "/sponsor-logos/current/DeltaSigmaPi_DeltaOmicron.jpg",
 		isCurrent: true,
 
 		tier: "specialThanks",
@@ -253,11 +279,6 @@ const data: SponsorsDatum[] = [
 	{
 		name: "ByteDance",
 		path: "/sponsor-logos/past/ByteDance_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "SFSU College of Science and Engineering",
-		path: "/sponsor-logos/past/COSE_logo.svg",
 		isCurrent: false
 	},
 	{
