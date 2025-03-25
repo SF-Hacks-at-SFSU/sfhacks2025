@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./globalComponents/NavBar";
 import { MLHBanner } from "./globalComponents/MLHBanner";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* renamed Huy's bg-webdev-temp to rootBackground */}
         {children}
 				<MLHBanner></MLHBanner>
+        <Analytics></Analytics>
       </body>
     </html>
   );

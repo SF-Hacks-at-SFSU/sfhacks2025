@@ -13,13 +13,13 @@ const NAV_LINKS = [
 		newTab: false,
 	},
 	{
-		name: "Change Teams",
-		href: "https://tally.so/r/wkZ2Yr",
+		name: "SF Hacks",
+		href: "https://www.instagram.com/sf.hacks/",
 		newTab: true,
 	},
 	{
-		name: "SF Hacks 2024",
-		href: "https://sfhacks-2024.devpost.com",
+		name: "Handbook",
+		href: "https://docs.google.com/document/d/1Ecz-rSa1G3D9gjdr-WvC0qk9GFsEri1OL5VFNBakgG8/edit?tab=t.0#heading=h.5mlg45992779",
 		newTab: true,
 	},
 	{
