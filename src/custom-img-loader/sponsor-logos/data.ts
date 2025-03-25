@@ -239,6 +239,14 @@ const data: SponsorsDatum[] = [
 		url: undefined
 	},
 	{
+		name: "Delta Sigma Pi Delta Omicron",
+		path: "/sponsor-logos/current/DeltaSigmaPi_DeltaOmicron.jpg",
+		isCurrent: true,
+
+		tier: "specialThanks",
+		url: undefined
+	},
+	{
 		name: "OpenAI",
 		path: "/sponsor-logos/past/OpenAI_Logo.png",
 		isCurrent: false
