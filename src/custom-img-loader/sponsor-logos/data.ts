@@ -36,6 +36,15 @@ const data: SponsorsDatum[] = [
 		url: "https://cs.sfsu.edu"
 	},
 	{
+		name: "Gilead Sciences",
+		path: "/sponsor-logos/current/Gilead.svg",
+		isCurrent: true,
+
+		tier: "gold",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://www.gilead.com"
+	},
+	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
 		path: "/sponsor-logos/current/IE.png",
 		isCurrent: true,
@@ -66,7 +75,7 @@ const data: SponsorsDatum[] = [
 
 		tier: "bronze",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
-		url: "https://inductiveautomation.com" 
+		url: "https://inductiveautomation.com"
 	},
 	{
 		name: "CodePath",
@@ -74,7 +83,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "bronze",
-		url: "https://www.codepath.org" 
+		url: "https://www.codepath.org"
 	},
 	//
 	{
@@ -83,7 +92,7 @@ const data: SponsorsDatum[] = [
 		isCurrent: true,
 
 		tier: "bronze",
-		url: "https://www.codepath.org" 
+		url: "https://www.codepath.org"
 	},
 	//
 	{
@@ -195,7 +204,7 @@ const data: SponsorsDatum[] = [
 		tier: "specialThanks",
 		url: undefined
 	},
-	
+
 	{
 		name: "SFSU 3D Printing and Design Club",
 		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
