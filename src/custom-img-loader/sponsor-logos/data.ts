@@ -45,6 +45,15 @@ const data: SponsorsDatum[] = [
 		url: "https://www.gilead.com"
 	},
 	{
+		name: "SFSU College of Science and Engineering",
+		path: "/sponsor-logos/current/CoSE.svg",
+		isCurrent: true,
+
+		tier: "gold",
+		// This link was grapped directly from their page because I couldn't find it in the Notion document
+		url: "https://cose.sfsu.edu"
+	},
+	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
 		path: "/sponsor-logos/current/IE.png",
 		isCurrent: true,
@@ -262,11 +271,6 @@ const data: SponsorsDatum[] = [
 	{
 		name: "ByteDance",
 		path: "/sponsor-logos/past/ByteDance_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "SFSU College of Science and Engineering",
-		path: "/sponsor-logos/past/COSE_logo.svg",
 		isCurrent: false
 	},
 	{
