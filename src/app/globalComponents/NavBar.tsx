@@ -8,11 +8,6 @@ import { useState } from "react";
 // Set menu links here
 const NAV_LINKS = [
 	{
-		name: "Schedule",
-		href: "/schedule",
-		newTab: false,
-	},
-	{
 		name: "Sponsors",
 		href: "/sponsors",
 		newTab: false,
@@ -20,6 +15,11 @@ const NAV_LINKS = [
 	{
 		name: "SF Hacks",
 		href: "https://www.instagram.com/sf.hacks/",
+		newTab: true,
+	},
+	{
+		name: "Handbook",
+		href: "https://docs.google.com/document/d/1Ecz-rSa1G3D9gjdr-WvC0qk9GFsEri1OL5VFNBakgG8/edit?tab=t.0#heading=h.5mlg45992779",
 		newTab: true,
 	},
 	{
