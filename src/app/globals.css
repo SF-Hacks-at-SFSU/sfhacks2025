@@ -215,9 +215,9 @@
 		contain: content;
 
 		font-size: large;
-
-		/* text-align: center; */
 		text-indent: 2rem;
+		/* text-align: center; */
+		
 	}
 
 	.button {
