@@ -7,6 +7,7 @@ import sponsorsData, {
 } from "@/custom-img-loader/sponsor-logos/data";
 import { SponsorsDatum } from "@/custom-img-loader/sponsor-logos/data";
 import TieredSponsors from "./components/TieredSponsorsGrid";
+import TitleSponsorCard from "./TitleSponsorCard"
 
 const sponsorsByTier = Object.values(sponsorTier).reduce(
   (accumulator, currentTier) => {
@@ -28,6 +29,14 @@ export default function SponsorsPage() {
       >
         Sponsor Us!
       </Link>
+
+      <div className="py-7 w-full h-auto bg-transparent"
+     >
+        <TitleSponsorCard/>
+      </div>
+      
+
+
       {
         // The following code just generates sponsor icons, grouped by tiers, for all possible tiers.
         Object.keys(sponsorsByTier).map((currentTier) => {
