@@ -8,14 +8,12 @@ export default function TitleSponsorCard() {
 
 	return (
 		<div className="relative w-full max-w-5xl mx-auto">
-			
 			<div className="absolute -top-5 left-1/2 -translate-x-1/2 z-10">
 				<div className="px-6 py-2 border-2 border-white bg-[#261D4B] text-white font-bold text-sm shadow-md rounded-full">
 					Title Sponsor
 				</div>
 			</div>
 
-			
 			<div className="block w-full h-auto rounded-3xl border-2 border-white shadow-2xl bg-[#261D4B] p-10 pt-14 transition-shadow">
 				<div className="flex flex-col items-center justify-center space-y-8">
 					{showInfo ? (
@@ -31,7 +29,6 @@ export default function TitleSponsorCard() {
 								live, work, and connect.
 							</p>
 
-							
 							<div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mt-8">
 								<div className="relative w-full md:w-1/2 aspect-[4/3]">
 									<Image
@@ -48,13 +45,11 @@ export default function TitleSponsorCard() {
 									and have him complete certain tasks.
 									<br />
 									<br />
-									OpenMind's founder, Jan, says his children often ask Frenchie
-									for help on math homework, and Frenchie even loves chasing
-									squirrels!
+									Kids often ask Frenchie for help on math homework, and
+									Frenchie even loves chasing squirrels!
 								</p>
 							</div>
 
-							
 							<div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mt-10">
 								<div className="relative w-full md:w-1/2 aspect-[4/3] order-2 md:order-1">
 									<Image
@@ -74,7 +69,13 @@ export default function TitleSponsorCard() {
 								</p>
 							</div>
 
-                            <a href = "https://www.openmind.org" target = "_blank" className="underline underline-offset-auto cursor-pointer hover:text-sf-pink duration-150">openmind.org</a>
+							<a
+								href="https://www.openmind.org"
+								target="_blank"
+								className="underline underline-offset-auto cursor-pointer hover:text-sf-pink duration-150"
+							>
+								openmind.org
+							</a>
 
 							<button
 								onClick={() => setShowInfo(false)}
