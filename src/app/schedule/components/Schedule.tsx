@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import React from "react";
 import { useState } from "react";
 import EventObject from "./Event";
