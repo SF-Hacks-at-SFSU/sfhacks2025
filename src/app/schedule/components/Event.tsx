@@ -3,8 +3,17 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { EventDatum } from "../data";
 
 interface EventObjectProps {
-	event: EventDatum;
+	event: EventDatum
 }
+
+export type EventType = {
+	startTime: Date;
+	endTime: Date;
+	id: string;
+	eventName: string;
+	locations: string[];
+	type: string;
+};
 
 const EventObject = ({
 	event: { start, end, name, description },
