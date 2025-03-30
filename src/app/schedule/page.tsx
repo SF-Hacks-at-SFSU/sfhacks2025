@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import "./styles.css";
 import EventObject, { EventType } from "./components/Event";
-import Schedule from "./components/Schedule";
+import Schedule, { NewScheduleComponent } from "./components/Schedule";
 import { parse } from "csv-parse/sync";
 import { readFileSync } from "node:fs";
 
@@ -10,19 +10,17 @@ const eventCsv = readFileSync(`${process.cwd()}/public/eventData.csv`);
 const scheduleCsv = readFileSync(`${process.cwd()}/public/scheduleData.csv`);
 const events = new Map<string, EventType>();
 
-
 export default function SchedulePage() {
 	return (
-		<main>
-			<hgroup>
-				<h1>Schedule</h1>
-				<p>
+		<main id="schedulePage">
+			<h1>Schedule</h1>
+			{/* <p>
 					<strong>
-						Disclaimer: Some workshops on day 1 have overlapping times
+						Disclaimer: Some workshops have overlapping times
 					</strong>
-				</p>
-			</hgroup>
+				</p> */}
 
+			<NewScheduleComponent eventsMap={events}></NewScheduleComponent>
 			<Schedule></Schedule>
 		</main>
 	);

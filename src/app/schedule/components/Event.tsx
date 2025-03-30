@@ -2,10 +2,9 @@ import React from "react";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { EventDatum } from "../data";
 
-interface EventObjectProps {
-	event: EventDatum
+interface NewEventObjectProps {
+	event: EventType;
 }
-
 export type EventType = {
 	startTime: Date;
 	endTime: Date;
@@ -14,6 +13,35 @@ export type EventType = {
 	locations: string[];
 	type: string;
 };
+
+const dateTimeFormat = new Intl.DateTimeFormat(undefined, {
+	timeZoneName: "short",
+	weekday: "short",
+	hour12: true,
+	hour: "numeric",
+	minute: "2-digit",
+});
+
+export function NewEventComponent({
+	event: { eventName, startTime, endTime, locations, type },
+}: NewEventObjectProps) {
+	return (
+		<div className="card event">
+			<hgroup>
+				<h3>{eventName}</h3>
+				<time dateTime={startTime.toISOString()}>
+					{dateTimeFormat.formatRange(startTime, endTime)}
+				</time>
+			</hgroup>
+			<p>Event Type: {type}</p>
+			<p>Location: {locations.join(", ")}</p>
+		</div>
+	);
+}
+
+interface EventObjectProps {
+	event: EventDatum;
+}
 
 const EventObject = ({
 	event: { start, end, name, description },
