@@ -2,7 +2,7 @@
 import Image from "next/image";
 import "./styles.css";
 import EventObject from "./components/Event";
-import Schedule from "./components/Schedule2";
+import Schedule from "./components/Schedule";
 
 export default function SchedulePage() {
 	return (
