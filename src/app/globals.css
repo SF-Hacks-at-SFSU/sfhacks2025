@@ -239,6 +239,10 @@
 			background-color: var(--hover-color);
 			scale: 1.1;
 		}
+
+		&:focus {
+			outline: auto		;
+		}
 	}
 
 	.specialButton {
