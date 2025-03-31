@@ -10,13 +10,28 @@
 		& .scrollContainer {
 			max-height: 60vh;
 			overflow-y: scroll;
-			display: flow-root;
+
+
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+
 		}
+	}
+
+	.timeslot {
+    width: 100%;
+
+		margin-block: var(--rootChildMargin);
+
+		gap: var(--rootChildMargin);
+
+		border-radius: 0;
 	}
 
 	.event {
 		width: 100%;
-		margin-block: var(--rootChildMargin);
+		margin-block-end: var(--rootChildMargin);
 
 		background-color: var(--background-color-element);
 

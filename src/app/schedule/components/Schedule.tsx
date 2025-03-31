@@ -55,6 +55,12 @@ export function NewScheduleComponent({
 	);
 }
 
+const timeFormat = new Intl.DateTimeFormat(undefined, {
+	hour12: true,
+	hour: "2-digit",
+	minute: "2-digit",
+});
+
 const Schedule = () => {
 	//general, workshop 1, 2
 
