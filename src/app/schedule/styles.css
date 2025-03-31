@@ -4,6 +4,8 @@
 @layer components {
 	.schedule {
 		width: 100%;
+		/* Very important for the active events to scroll into the right position in the contianer */
+		contain: content;
 
 		& .scrollContainer {
 			max-height: 60vh;

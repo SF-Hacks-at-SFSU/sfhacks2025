@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 import EventObject, { EventType, NewEventComponent } from "./Event";
 import { day1, day2, day3 } from "../data";
+import useInterval from "@/lib/useInterval";
 
 interface scheduleComponentProps {
 	eventsMap: Map<string, EventType>;
@@ -12,12 +13,36 @@ export function NewScheduleComponent({
 	eventsMap: events,
 }: scheduleComponentProps) {
 	const eventsArray = Array.from(events.values());
+	const scrollContainerRef = useRef<HTMLDivElement>(null);
+	const [activeEventId, setActiveEventId] = useState<EventType["id"]>();
 
 	eventsArray.sort((a, b) => a.startTime.getTime() - b.startTime.getTime());
 
+	function getActiveEvent() {
+		return eventsArray.find(
+			(event) =>
+				Date.now() <=
+				event.startTime.getTime()
+		);
+	}
+
+	useEffect(() => {
+		const activeElement = document.getElementById(getActiveEvent()?.id ?? "");
+
+    scrollContainerRef.current?.scrollTo({top: activeElement?.offsetTop})
+	}, []);
+
+	useInterval(() => {
+		const firstActiveEvent = getActiveEvent();
+		setActiveEventId(firstActiveEvent?.id);
+	}, 60 /* seconds */ * 1000 /* ms */);
+
 	return (
 		<div className="schedule">
-			<div className="scrollContainer">
+			<div
+				className="scrollContainer"
+				ref={scrollContainerRef}
+			>
 				{eventsArray.map((event) => (
 					<NewEventComponent
 						event={event}

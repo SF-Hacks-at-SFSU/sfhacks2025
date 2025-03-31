@@ -23,10 +23,13 @@ const dateTimeFormat = new Intl.DateTimeFormat(undefined, {
 });
 
 export function NewEventComponent({
-	event: { eventName, startTime, endTime, locations, type },
+	event: { eventName, startTime, endTime, locations, type, id },
 }: NewEventObjectProps) {
 	return (
-		<div className="card event">
+		<div
+			className="card event"
+			id={id}
+		>
 			<hgroup>
 				<h3>{eventName}</h3>
 				<time dateTime={startTime.toISOString()}>
