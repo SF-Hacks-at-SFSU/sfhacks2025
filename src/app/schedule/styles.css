@@ -4,14 +4,14 @@
 @layer components {
 	.schedule {
 		width: 100%;
-		max-height: 60vh;
-		overflow-y: scroll;
-		display: flow-root;
 
-    & .scrollContainer {
-      
-    }
+		& .scrollContainer {
+			max-height: 60vh;
+			overflow-y: scroll;
+			display: flow-root;
+		}
 	}
+
 	.event {
 		width: 100%;
 		margin-block: var(--rootChildMargin);
