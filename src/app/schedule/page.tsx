@@ -3,7 +3,7 @@ import 'server-only';
 
 import "./styles.css";
 import EventObject, { EventType } from "./components/Event";
-import Schedule, { NewScheduleComponent } from "./components/Schedule";
+import Schedule from "./components/Schedule";
 import { parse } from "csv-parse/sync";
 import { readFileSync } from "node:fs";
 
@@ -21,8 +21,7 @@ export default function SchedulePage() {
 					</strong>
 				</p> */}
 
-			<NewScheduleComponent eventsMap={events}></NewScheduleComponent>
-			<Schedule></Schedule>
+			<Schedule eventsMap={events}></Schedule>
 		</main>
 	);
 }
