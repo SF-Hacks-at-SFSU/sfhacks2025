@@ -1,4 +1,5 @@
 import Image from "next/image";
+import 'server-only';
 
 import "./styles.css";
 import EventObject, { EventType } from "./components/Event";
