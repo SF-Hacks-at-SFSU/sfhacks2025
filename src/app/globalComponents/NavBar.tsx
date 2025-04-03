@@ -13,9 +13,9 @@ const NAV_LINKS = [
 		newTab: false,
 	},
 	{
-		name: "SF Hacks",
-		href: "https://www.instagram.com/sf.hacks/",
-		newTab: true,
+		name: "Schedule",
+		href: "/schedule",
+		newTab: false,
 	},
 	{
 		name: "Handbook",
