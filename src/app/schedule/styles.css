@@ -1,0 +1,52 @@
+#schedulePage {
+}
+
+@layer components {
+	.schedule {
+		width: 100%;
+    max-width: 45rem;
+		/* Very important for the active events to scroll into the right position in the contianer */
+		contain: content;
+
+		& .scrollContainer {
+			max-height: 60vh;
+			overflow-y: scroll;
+
+
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+
+		}
+	}
+
+	.timeslot {
+    width: 100%;
+
+		margin-block: var(--rootChildMargin);
+
+		gap: var(--rootChildMargin);
+
+		border-radius: 0;
+	}
+
+	.event {
+		width: 100%;
+		margin-block-end: var(--rootChildMargin);
+
+		background-color: var(--background-color-element);
+
+		& hgroup,
+		h3 {
+			width: 100%;
+			max-width: none;
+		}
+
+		& hgroup > time {
+			text-align: start;
+		}
+	}
+
+	.active {
+	}
+}

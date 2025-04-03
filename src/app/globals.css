@@ -181,7 +181,8 @@
 
 	h1,
 	h2,
-	h3 {
+	h3,
+	hgroup {
 		width: fit-content;
 
 		padding-inline: var(--rootPaddingInline);
@@ -238,6 +239,10 @@
 			background-color: var(--hover-color);
 			scale: 1.1;
 		}
+
+		&:focus {
+			outline: auto		;
+		}
 	}
 
 	.specialButton {
@@ -265,13 +270,20 @@
 }
 
 @layer components {
+	.label {
+		padding-inline: var(--rootPaddingInline);
+		padding-block: var(--rootPaddingBlock);
+
+		background-color: var(--background-color-element-opaque);
+	}
 	.card {
 		padding: 0;
 		> h1,
 		h2,
 		h3,
 		h4,
-		h5 {
+		h5,
+		hgroup {
 			display: block;
 			width: 100%;
 
@@ -282,7 +294,7 @@
 		}
 
 		> * {
-			display: inline-block;
+			display: block;
 			padding-inline: var(--rootPaddingInline);
 			padding-block: var(--rootPaddingBlock);
 		}
