@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useState } from "react";
 import type { EventType } from "./Event";
 import NewEventComponent from "./Event";
@@ -18,19 +18,15 @@ export default function Schedule({
 
 	eventsArray.sort((a, b) => a.startTime.getTime() - b.startTime.getTime());
 
-	function getActiveEvent() {
-		return eventsArray.find(
-			(event) =>
-				Date.now() <=
-				event.startTime.getTime()
-		);
-	}
+	const getActiveEvent = useCallback(() => {
+		return eventsArray.find((event) => Date.now() <= event.startTime.getTime());
+	}, [eventsArray]);
 
 	useEffect(() => {
 		const activeElement = document.getElementById(getActiveEvent()?.id ?? "");
 
-    scrollContainerRef.current?.scrollTo({top: activeElement?.offsetTop})
-	}, []);
+		scrollContainerRef.current?.scrollTo({ top: activeElement?.offsetTop });
+	}, [getActiveEvent]);
 
 	useInterval(() => {
 		const firstActiveEvent = getActiveEvent();
@@ -60,4 +56,3 @@ const timeFormat = new Intl.DateTimeFormat(undefined, {
 	hour: "2-digit",
 	minute: "2-digit",
 });
-
