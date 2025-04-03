@@ -105,6 +105,15 @@ const data: SponsorsDatum[] = [
 	},
 	//
 	{
+		name: "Momen",
+		path: "/sponsor-logos/current/Momen.svg",
+		isCurrent: true,
+
+		tier: "bronze",
+		url: "https://momen.app"
+	},
+	//
+	{
 		name: "Fastly",
 		path: "/sponsor-logos/current/Fastly.svg",
 		isCurrent: true,

@@ -1,0 +1,45 @@
+﻿Name,Locations,Type,Detail,ID
+Momen Workshop,Frenchie Room,Workshop,,EVT-43
+BIt Bots Workshop,OM1 Room,Workshop,,EVT-27
+3D Printing Workshop,Iris Room,Workshop,,EVT-26
+LinkedIn Workshop,OM1 Room,Workshop,,EVT-24
+OpenMind Workshop 2,Iris Room,Workshop,,EVT-23
+I&E Workshop,OM1 Room,Workshop,,EVT-21
+OpenMind Workshop 1,Frenchie Room,Workshop,,EVT-15
+MLH GitHub Copilot Workshop,OM1 Room,Workshop,,EVT-2
+GenAI Workshop,Iris Room,Workshop,,EVT-1
+Bob Ross Painting,Frenchie Room,Mini Event,,EVT-28
+Outdoor Games,Outdoors,Mini Event,,EVT-18
+Movie Night,Main Venue,Mini Event,,EVT-17
+Board Game Night,Frenchie Room,Mini Event,,EVT-16
+"SF Trivia Night ",Iris Room,Mini Event,,EVT-4
+Tech Entrepreneur Panel,Frenchie Room,Panel,,EVT-25
+Alumni Panel,OM1 Room,Panel,,EVT-19
+LGBTQIA+ in Tech Panel,Frenchie Room,Panel,,EVT-3
+Opening Ceremony,Main Venue,General,,EVT-38
+Check-Ins,Main Venue,General,,EVT-37
+Project Expo,Main Venue,General,,EVT-36
+Winner Announcement,Main Venue,General,,EVT-35
+Keynote,Main Venue,General,,EVT-34
+Closing Ceremony,Main Venue,General,,EVT-33
+Judging Deliberation,,General,,EVT-32
+Judging Period,Main Venue,General,,EVT-31
+Submission Deadline,,General,,EVT-30
+Judges Arrive,,General,,EVT-29
+MLH Together Meetup,Frenchie Room,General,,EVT-22
+Midnight Snack,Main Venue,Food,,EVT-44
+Sunday Lunch,Main Venue,Food,,EVT-12
+Sunday Breakfast,Main Venue,Food,,EVT-11
+Saturday Dinner,Main Venue,Food,,EVT-10
+Saturday Lunch,Main Venue,Food,,EVT-9
+Saturday Breakfast,Main Venue,Food,,EVT-8
+Friday Dinner,Main Venue,Food,,EVT-5
+Saturday Night Sleep,"Frenchie Room, Iris Room, OM1 Room",Sleep,Iris is occupied by Board Game Night until Sunday at 00:00,EVT-41
+Friday Night Sleep,"Frenchie Room, Iris Room, OM1 Room",Sleep,Frenchie is occupied by Board Game Night until Friday at 23:00,EVT-40
+Doors Close SAT,,Other,,EVT-46
+Doors Open SUN,,Other,,EVT-45
+Doors Open SAT,,Other,,EVT-42
+Team Building Activity,,Other,,EVT-39
+Game Dev,Iris Room,Other,,EVT-20
+Doors Close FRI,,Other,,EVT-14
+Doors Open FRI,,Other,,EVT-13
