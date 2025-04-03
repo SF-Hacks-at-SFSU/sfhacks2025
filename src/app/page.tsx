@@ -18,8 +18,35 @@ export default function Home() {
 					}}
 				/>
 			</h2>
+
+			
+
+			
+			{
+				/*
+				<span className="card">
+				<h3>Cohosted by</h3>
+				<a href = "https://www.openmind.org" target="_blank">
+					<Image src = "/sponsor-logos/current/OpenMind.svg" alt = "Openmind logo" width = {400} height = {300} style={{padding: "20px"}} />
+				</a>
+				
+				
+
+			</span>
+				*/
+			}
+
+			<p className="bg-transparent text-black text-2xl font-bold ">Cohosted by: </p>
+			<a href = "https://www.openmind.org" target="_blank" className="bg-transparent pb-5	">
+					
+					<Image src = "/sponsor-logos/current/OpenMind(black).svg" className = "bg-transparent" alt = "Openmind logo" width = {400} height = {300}   />
+
+					
+					
+			</a>
+			
 			<span className="card">
-				<h3>Theme</h3>
+				<h3 className="">Theme</h3>
 				<strong>Tech For Good</strong>
 			</span>
 			<div className="card">
