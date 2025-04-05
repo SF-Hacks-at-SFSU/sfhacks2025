@@ -30,7 +30,12 @@ export default function EventComponent({
 		>
 			<hgroup>
 				<h3>{eventName}</h3>
-				<time dateTime={startTime.toISOString()}>
+				<time
+					dateTime={startTime.toISOString()}
+					// I just have to use it. That's what NextJs seems to be suggesting
+					// https://nextjs.org/docs/messages/react-hydration-error#solution-3-using-suppresshydrationwarning
+					suppressHydrationWarning={true}
+				>
 					{dateTimeFormat.formatRange(startTime, endTime)}
 				</time>
 			</hgroup>
