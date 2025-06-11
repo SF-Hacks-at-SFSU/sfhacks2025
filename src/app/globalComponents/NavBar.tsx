@@ -12,26 +12,28 @@ const NAV_LINKS = [
 		href: "/past-sponsors", // We really need a better system for handling routes than just renaming the routes manually
 		newTab: false,
 	},
-	{
-		name: "Schedule",
-		href: "/schedule",
-		newTab: false,
-	},
-	{
-		name: "Handbook",
-		href: "https://docs.google.com/document/d/1Ecz-rSa1G3D9gjdr-WvC0qk9GFsEri1OL5VFNBakgG8/edit?tab=t.0#heading=h.5mlg45992779",
-		newTab: true,
-	},
+	// Hiding schedule and handbook for now since we don't need it
+	// {
+	// 	name: "Schedule",
+	// 	href: "/schedule",
+	// 	newTab: false,
+	// },
+	// {
+	// 	name: "Handbook",
+	// 	href: "https://docs.google.com/document/d/1Ecz-rSa1G3D9gjdr-WvC0qk9GFsEri1OL5VFNBakgG8/edit?tab=t.0#heading=h.5mlg45992779",
+	// 	newTab: true,
+	// },
 	{
 		name: "Our Team",
 		href: "/about-us",
 		newTab: false,
 	},
-	{
-		name: "FAQs",
-		href: "/faqs",
-		newTab: false,
-	},
+	// Hiding FAQ page as well since we also don't need it
+	// {
+	// 	name: "FAQs",
+	// 	href: "/faqs",
+	// 	newTab: false,
+	// },
 ];
 
 // Set registration link here
@@ -116,13 +118,21 @@ function NavLinks({ className = "" }: NavLinksProps) {
 					))}
 				</div>
 
-				{/* Register Button */}
 				<a
 					className="button discord"
 					href="https://discord.gg/P5PsDR6G7W"
 					target="_blank"
 				>
 					Discord{" "}
+				</a>
+
+				{/* Register Button */}
+				{/* This button is being defined twice right now, one in the desktop navbar and the other in the mobile navbar*/}
+				<a
+					href={REGISTER_LINK.href}
+					className="button text-white bg-linear-to-r from-purple-500 to-pink-500 shadow-lg hover:shadow-purple-500/25 active:scale-95"
+				>
+					{REGISTER_LINK.name}
 				</a>
 			</div>
 		</div>
@@ -176,6 +186,7 @@ function MobileMenu({ isOpen, handleToggle, className = "" }: MobileMenuProps) {
 						))}
 
 						{/* Register Button */}
+						{/* This button is being defined twice right now, one in the desktop navbar and the other in the mobile navbar*/}
 						<NavLink
 							href={REGISTER_LINK.href}
 							className="px-8 py-3 mt-4 text-white transition-all duration-200 bg-linear-to-r from-purple-500 to-pink-500 rounded-full shadow-lg hover:shadow-purple-500/25 hover:scale-105 active:scale-95"
