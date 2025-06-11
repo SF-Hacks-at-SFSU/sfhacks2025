@@ -77,7 +77,7 @@ function CountDown() {
 					{dateFormat.formatRange(eventStartDate, eventEndDate)}
 				</time>
 			</strong>
-			<div className="flex justify-center gap-8">
+			{/* <div className="flex justify-center gap-8">
 				<TimeUnit
 					value={timeRemaining.days}
 					label="Days"
@@ -94,7 +94,7 @@ function CountDown() {
 					value={timeRemaining.seconds}
 					label="Seconds"
 				/>
-			</div>
+			</div> Hiding the countdown timer for now */}
 		</div>
 	);
 }
