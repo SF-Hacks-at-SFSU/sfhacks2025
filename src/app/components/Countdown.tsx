@@ -2,10 +2,14 @@
 
 import { useState, useEffect } from "react";
 
-const eventStartDate = new Date("Apr 4, 2025 14:00:00-08:00");
-const eventEndDate = new Date("Apr 6, 2025 14:00:00-08:00");
+const eventStartDate = new Date("Feb 01, 2026 14:00:00-08:00"); // NOTE: This is not the precise date, The day is the 1st just to avoid parsing error
+const eventEndDate = new Date("Feb 01, 2026 14:00:00-08:00");
 
-const dateFormat = new Intl.DateTimeFormat(undefined, { dateStyle: "long" });
+const dateFormat = new Intl.DateTimeFormat(
+	undefined,
+	// { dateStyle: "long" } Use this once we have the precise date
+	{ month: "long", year: "numeric" } // Using this date format for now since we don't have the precise date yet
+);
 
 function CountDown() {
 	const [timeRemaining, setTimeRemaining] = useState({
@@ -56,9 +60,7 @@ function CountDown() {
 	function TimeUnit({ value, label }: TimeUnitProps) {
 		return (
 			<div className="timeUnit text-center">
-				<strong className="mb-2">
-					{value > 9 ? value : `0${value}`}
-				</strong>
+				<strong className="mb-2">{value > 9 ? value : `0${value}`}</strong>
 				<div>{label}</div>
 			</div>
 		);
@@ -68,12 +70,8 @@ function CountDown() {
 
 	return (
 		<div className="countdown flex justify-center gap-y-6 flex-col p-6 rounded-xl max-w-xl mx-auto">
-			<strong
-					className="criticalInfo"			
-			>
-				<time
-					dateTime={eventStartDate.toISOString()}
-				>
+			<strong className="criticalInfo">
+				<time dateTime={eventStartDate.toISOString()}>
 					{dateFormat.formatRange(eventStartDate, eventEndDate)}
 				</time>
 			</strong>
