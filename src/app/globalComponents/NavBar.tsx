@@ -8,8 +8,8 @@ import { useState } from "react";
 // Set menu links here
 const NAV_LINKS = [
 	{
-		name: "Sponsors",
-		href: "/sponsors",
+		name: "Past Sponsors",
+		href: "/past-sponsors", // We really need a better system for handling routes than just renaming the routes manually
 		newTab: false,
 	},
 	{
