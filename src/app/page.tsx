@@ -18,7 +18,7 @@ export default function Home() {
 					}}
 				/>
 			</h2>
-			<p className="bg-transparent text-black text-2xl font-bold ">
+			{/* <p className="bg-transparent text-black text-2xl font-bold ">
 				Cohosted by:{" "}
 			</p>
 			<a
@@ -33,7 +33,7 @@ export default function Home() {
 					width={400}
 					height={300}
 				/>
-			</a>
+			</a> Hiding title sponsor for now*/}
 			{/* <span className="card">
 				<h3>Theme</h3>
 				<strong>Tech For Good</strong>
