@@ -18,10 +18,10 @@ export default function Home() {
 					}}
 				/>
 			</h2>
-			<span className="card">
+			{/* <span className="card">
 				<h3>Theme</h3>
 				<strong>Tech For Good</strong>
-			</span>
+			</span> Hiding the theme for now until the theme for 2026 is ready to be published*/}
 			<div className="card">
 				<h3>Date</h3>
 				<CountDown />
