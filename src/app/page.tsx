@@ -13,42 +13,31 @@ export default function Home() {
 					height={92 * 2}
 					style={{
 						backgroundColor: "#fff5d980",
-							backdropFilter: "blur(4px)",
+						backdropFilter: "blur(4px)",
 						borderRadius: "16px",
 					}}
 				/>
 			</h2>
-
-			
-
-			
-			{
-				/*
-				<span className="card">
-				<h3>Cohosted by</h3>
-				<a href = "https://www.openmind.org" target="_blank">
-					<Image src = "/sponsor-logos/current/OpenMind.svg" alt = "Openmind logo" width = {400} height = {300} style={{padding: "20px"}} />
-				</a>
-				
-				
-
-			</span>
-				*/
-			}
-
-			<p className="bg-transparent text-black text-2xl font-bold ">Cohosted by: </p>
-			<a href = "https://www.openmind.org" target="_blank" className="bg-transparent pb-5	">
-					
-					<Image src = "/sponsor-logos/current/OpenMind(black).svg" className = "bg-transparent" alt = "Openmind logo" width = {400} height = {300}   />
-
-					
-					
+			<p className="bg-transparent text-black text-2xl font-bold ">
+				Cohosted by:{" "}
+			</p>
+			<a
+				href="https://www.openmind.org"
+				target="_blank"
+				className="bg-transparent pb-5	"
+			>
+				<Image
+					src="/sponsor-logos/current/OpenMind(black).svg"
+					className="bg-transparent"
+					alt="Openmind logo"
+					width={400}
+					height={300}
+				/>
 			</a>
-			
-			<span className="card">
-				<h3 className="">Theme</h3>
+			{/* <span className="card">
+				<h3>Theme</h3>
 				<strong>Tech For Good</strong>
-			</span>
+			</span> Hiding the theme for now until the theme for 2026 is ready to be published*/}
 			<div className="card">
 				<h3>Date</h3>
 				<CountDown />
