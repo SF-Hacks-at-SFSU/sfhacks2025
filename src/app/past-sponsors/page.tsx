@@ -25,7 +25,7 @@ export default function PastSponsorsPage() {
     <main>
       <h1>Our Past Sponsors</h1>
       <Link
-        href="/sponsors/why-sponsor"
+        href="/past-sponsors/why-sponsor"
         className="button"
       >
         Sponsor Us!
