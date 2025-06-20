@@ -1,6 +1,8 @@
 {
-    "githubPullRequests.ignoredPullRequestBranches": [
-        "development"
-    ],
-    "prettier.useTabs": true
+	"githubPullRequests.ignoredPullRequestBranches": ["development"],
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+	"vs-code-prettier-eslint.prettierLast": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
