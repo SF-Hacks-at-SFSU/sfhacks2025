@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@next/bundle-analyzer": "^15.0.3",
@@ -38,7 +39,10 @@
 		"eslint": "^9.29.0",
 		"eslint-config-next": "^15.3.3",
 		"eslint-config-prettier": "^10.1.5",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.2",
 		"postcss": "^8.5.3",
+		"prettier": "3.5.3",
 		"tailwindcss": "^4.0.17",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.34.0"
