@@ -39,7 +39,7 @@ const NAV_LINKS = [
 // Set registration link here
 const REGISTER_LINK = {
 	name: "Register",
-	href: "https://tally.so/r/mBq9vK",
+	href: "https://tally.so/r/nrRZRN",
 };
 
 interface NavLinkProps {
