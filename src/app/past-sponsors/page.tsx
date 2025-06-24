@@ -12,19 +12,20 @@ import TitleSponsorCard from "./TitleSponsorCard"
 const sponsorsByTier = Object.values(sponsorTier).reduce(
   (accumulator, currentTier) => {
     accumulator[currentTier] = sponsorsData.filter(
-      ({ isCurrent, tier }) => isCurrent && tier && tier === currentTier
+      // Currently we don't filter out past sponsors because we don't have current sponsors
+      ({ isCurrent, tier }) => /*isCurrent &&*/ tier && tier === currentTier
     );
     return accumulator;
   },
   {} as Record<SponsorTier, SponsorsDatum[]>
 );
 
-export default function SponsorsPage() {
+export default function PastSponsorsPage() {
   return (
     <main>
-      <h1>Our Sponsors</h1>
+      <h1>Our Past Sponsors</h1>
       <Link
-        href="/sponsors/why-sponsor"
+        href="/past-sponsors/why-sponsor"
         className="button"
       >
         Sponsor Us!

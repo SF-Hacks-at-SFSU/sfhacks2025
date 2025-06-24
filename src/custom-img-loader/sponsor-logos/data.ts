@@ -21,7 +21,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Browserbase",
 		path: "/sponsor-logos/current/BrowserBase.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "gold",
 		url: "https://www.browserbase.com/"
@@ -29,7 +29,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Department of Computer Science",
 		path: "/sponsor-logos/current/SFSU-CSDepartment.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "gold",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -38,7 +38,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Gilead Sciences",
 		path: "/sponsor-logos/current/Gilead.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "gold",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -47,7 +47,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU College of Science and Engineering",
 		path: "/sponsor-logos/current/CoSE.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "gold",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -56,7 +56,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Innovation & Entrepreneurship at San Francisco State University",
 		path: "/sponsor-logos/current/IE.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "silver",
 		url: "https://cob.sfsu.edu/initiatives-centers/innovation-entrepreneurship-programs"
@@ -64,7 +64,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "TensorStax",
 		path: "/sponsor-logos/current/TensorStax.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "silver",
 		url: "https://tensorstax.com/"
@@ -72,7 +72,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Management Leadership for Tomorrow",
 		path: "/sponsor-logos/current/MLT.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "bronze",
 		url: "https://mlt.org/career-prep/"
@@ -80,7 +80,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Inductive Automation",
 		path: "/sponsor-logos/current/InductiveAutomation.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "bronze",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -89,7 +89,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "CodePath",
 		path: "/sponsor-logos/current/CodePath.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "bronze",
 		url: "https://www.codepath.org"
@@ -98,7 +98,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Lam-Larsen Initiative in Emerging Technologies",
 		path: "/sponsor-logos/current/LamLarsen.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "bronze",
 		url: "https://www.codepath.org"
@@ -107,7 +107,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Momen",
 		path: "/sponsor-logos/current/Momen.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "bronze",
 		url: "https://momen.app"
@@ -116,7 +116,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Fastly",
 		path: "/sponsor-logos/current/Fastly.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks", // idk what an a la carte sponsorship level is but imma jsut put bronze
 		url: "https://www.fastly.com/"
@@ -124,7 +124,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "StandOut Stickers",
 		path: "/sponsor-logos/current/stand-out-stickers-logo.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -133,7 +133,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Associated Students",
 		path: "/sponsor-logos/current/AS.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -142,7 +142,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Association for Computing Machinery",
 		path: "/sponsor-logos/current/ACM.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -151,7 +151,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Lam Family College Of Business at San Francisco State University",
 		path: "/sponsor-logos/current/lamFamily.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -160,7 +160,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Dead Eye Coffee Bar",
 		path: "/sponsor-logos/current/DeadEye.png",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		// This link was grapped directly from their page because I couldn't find it in the Notion document
@@ -169,7 +169,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Game Development Club",
 		path: "/sponsor-logos/current/SFSUGameDev.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -177,7 +177,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Computer Science Research",
 		path: "/sponsor-logos/current/SFSUCSResearch.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -185,7 +185,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Algorithms Club",
 		path: "/sponsor-logos/current/SFSUAlgorithms.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -193,7 +193,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Bit Bots Club",
 		path: "/sponsor-logos/current/SFSUBitBots.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -201,7 +201,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Society of Women Engineers",
 		path: "/sponsor-logos/current/SFSUSWE.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -209,7 +209,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU ColorStack Club",
 		path: "/sponsor-logos/current/SFSUColorStack.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -217,7 +217,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Cybersecurity Club",
 		path: "/sponsor-logos/current/SFSUCybersecurity.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -226,7 +226,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU 3D Printing and Design Club",
 		path: "/sponsor-logos/current/SFSU3DPrinting.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -234,7 +234,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU SparkSF Club",
 		path: "/sponsor-logos/current/SFSUSparkSF.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -242,7 +242,7 @@ const data: SponsorsDatum[] = [
 	{
 		name: "SFSU Data Science Society",
 		path: "/sponsor-logos/current/SFSUDSS.svg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
@@ -250,135 +250,10 @@ const data: SponsorsDatum[] = [
 	{
 		name: "Delta Sigma Pi Delta Omicron",
 		path: "/sponsor-logos/current/DeltaSigmaPi_DeltaOmicron.jpg",
-		isCurrent: true,
+		isCurrent: false,
 
 		tier: "specialThanks",
 		url: undefined
-	},
-	{
-		name: "OpenAI",
-		path: "/sponsor-logos/past/OpenAI_Logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Google Cloud",
-		path: "/sponsor-logos/past/gcloud.png",
-		isCurrent: false
-	},
-	{
-		name: "Zuora",
-		path: "/sponsor-logos/past/Zuora_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Notion",
-		path: "/sponsor-logos/past/Notion_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Fireworks",
-		path: "/sponsor-logos/past/Fireworks.svg",
-		isCurrent: false
-	},
-	{
-		name: "MongoDB",
-		path: "/sponsor-logos/past/MongoDB_White.svg",
-		isCurrent: false
-	},
-	{
-		name: "ByteDance",
-		path: "/sponsor-logos/past/ByteDance_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Art of Problem Solving",
-		path: "/sponsor-logos/past/AOPS_Logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Axure",
-		path: "/sponsor-logos/past/Axure_logo_400.svg",
-		isCurrent: false
-	},
-	{
-		name: "Balsamiq",
-		path: "/sponsor-logos/past/balsamiq_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Celcius",
-		path: "/sponsor-logos/past/Celcius_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Cisco",
-		path: "/sponsor-logos/past/Cisco_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Desmos",
-		path: "/sponsor-logos/past/Desmos_logo.svg",
-		isCurrent: false
-	},
-	{
-		name: "echo3D",
-		path: "/sponsor-logos/past/Echo3D_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Games For Love",
-		path: "/sponsor-logos/past/Games_For_Love_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Humane",
-		path: "/sponsor-logos/past/Humane_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Ike's",
-		path: "/sponsor-logos/past/Ikes_logo.svg",
-		isCurrent: false
-	},
-	{
-		name: "Kaiser Permanente",
-		path: "/sponsor-logos/past/Kaiser_Permanente.png",
-		isCurrent: false
-	},
-	{
-		name: "Marvell",
-		path: "/sponsor-logos/past/Marvell_Logo.svg",
-		isCurrent: false
-	},
-	{
-		name: "Neurelo",
-		path: "/sponsor-logos/past/Neurelo_logo.png",
-		isCurrent: false
-	},
-	{
-		name: "Sticker Mule",
-		path: "/sponsor-logos/past/Sticker_Mule_logo.svg",
-		isCurrent: false
-	},
-	{
-		name: "Vectara",
-		path: "/sponsor-logos/past/Vectara_Logo.svg",
-		isCurrent: false
-	},
-	{
-		name: "Verb",
-		path: "/sponsor-logos/past/Verb_logo.svg",
-		isCurrent: false
-	},
-	{
-		name: "Workday",
-		path: "/sponsor-logos/past/Workday_logo.png",
-		isCurrent: false
-	},
-	{
-		name: ".xyz",
-		path: "/sponsor-logos/past/xyz-logo-color.svg",
-		isCurrent: false
 	},
 
 ] as const

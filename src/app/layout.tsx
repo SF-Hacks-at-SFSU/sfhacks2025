@@ -36,7 +36,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
         {/* renamed Huy's bg-webdev-temp to rootBackground */}
         {children}
-				<MLHBanner></MLHBanner>
+				{/* <MLHBanner></MLHBanner> The Banner is hidden until we get the new version for 2026*/}
         <Analytics></Analytics>
       </body>
     </html>

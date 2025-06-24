@@ -10,7 +10,7 @@ export default function TitleSponsorCard() {
 		<div className="relative w-full max-w-5xl mx-auto">
 			<div className="absolute -top-5 left-1/2 -translate-x-1/2 z-10">
 				<div className="px-6 py-2 border-2 border-white bg-[#261D4B] text-white font-bold text-sm shadow-md rounded-full">
-					Title Sponsor
+					Previous Title Sponsor
 				</div>
 			</div>
 
