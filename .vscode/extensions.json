@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"mechatroner.rainbow-csv",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
+	]
+}
