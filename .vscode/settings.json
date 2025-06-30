@@ -1,5 +1,15 @@
 {
 	"githubPullRequests.ignoredPullRequestBranches": ["development"],
 	"vs-code-prettier-eslint.prettierLast": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"next.config.ts": "next-env.d.ts",
+		"tsconfig.json": "tsconfig.*.json, jsconfig*.json",
+		"package.json": "package-lock.json, *.config.mjs, *.config.js"
+	},
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	// If you are changing these quote rules, don't forget to update quote rules in prettier.config.mjs
+	"html.completion.attributeDefaultValue": "doublequotes",
+	"javascript.preferences.quoteStyle": "double",
+	"typescript.preferences.quoteStyle": "double",
 }
