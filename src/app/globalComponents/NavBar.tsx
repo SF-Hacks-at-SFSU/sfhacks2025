@@ -28,12 +28,11 @@ const NAV_LINKS = [
 		href: "/about-us",
 		newTab: false,
 	},
-	// Hiding FAQ page as well since we also don't need it
-	// {
-	// 	name: "FAQs",
-	// 	href: "/faqs",
-	// 	newTab: false,
-	// },
+	{
+		name: "FAQs",
+		href: "/faqs",
+		newTab: false,
+	},
 ];
 
 // Set registration link here
