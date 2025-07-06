@@ -79,7 +79,7 @@ export default async function generateAtlases(
 	}
 
 	async function saveBufferToFile() {
-		let atlasOutputPath = `${outputDir}/${outputFileName}-${atlasOutputIndex}.${outputFileType}`;
+		let atlasOutputPath = `${outputDir}/${outputFileName}-${atlasOutputIndex}.${outputFileType as string}`;
 
 		await Sharp({
 			create: {
