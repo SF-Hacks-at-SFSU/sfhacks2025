@@ -9,12 +9,12 @@
  * Typescript ESLint Docs on config: https://typescript-eslint.io/getting-started/typed-linting
  */
 
-import { flatConfig as pluginNext } from '@next/eslint-plugin-next';
+import { flatConfig as pluginNext } from "@next/eslint-plugin-next";
 /** Just leaving this here in case you want to use the config */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 
-import tseslint from 'typescript-eslint';
+import tseslint from "typescript-eslint";
 
 export default tseslint.config(
 	/**
@@ -24,8 +24,8 @@ export default tseslint.config(
 	 * prettier-eslint v17: https://github.com/prettier/prettier-eslint/releases
 	 */
 	{
-		name: 'config-sfhacks',
-		ignores: ['.next/**'],
+		name: "config-sfhacks",
+		ignores: [".next/**"],
 
 		extends: [
 			pluginNext.coreWebVitals,
@@ -38,12 +38,12 @@ export default tseslint.config(
 			// eslintConfigPrettier,
 		],
 		rules: {
-			'no-compare-neg-zero': 'error',
-			'prefer-const': 'warn',
-			'@typescript-eslint/no-base-to-string': 'error',
-			'@typescript-eslint/no-unused-vars': 'warn',
-			'@typescript-eslint/no-empty-object-type': 'warn',
-			'@typescript-eslint/no-unused-vars': 'warn',
+			"no-compare-neg-zero": "error",
+			"prefer-const": "warn",
+			"@typescript-eslint/no-base-to-string": "error",
+			"@typescript-eslint/no-unused-vars": "warn",
+			"@typescript-eslint/no-empty-object-type": "warn",
+			"@typescript-eslint/no-unused-vars": "warn",
 		},
 		languageOptions: {
 			parserOptions: {

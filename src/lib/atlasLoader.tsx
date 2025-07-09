@@ -34,7 +34,7 @@ export default async function generateAtlases(
 	atlasData: AtlasData[],
 	maxImgsPerRow: number,
 	height: number,
-  outputOptions: OutputOptions,
+	outputOptions: OutputOptions,
 	options: Options = {}
 ): Promise<Atlas[]> {
 	const {
@@ -79,7 +79,7 @@ export default async function generateAtlases(
 	}
 
 	async function saveBufferToFile() {
-		let atlasOutputPath = `${outputDir}/${outputFileName}-${atlasOutputIndex}.${outputFileType as string}`;
+		const atlasOutputPath = `${outputDir}/${outputFileName}-${atlasOutputIndex}.${outputFileType as string}`;
 
 		await Sharp({
 			create: {
@@ -131,7 +131,7 @@ export default async function generateAtlases(
 			atlasOutputWidth += buffer.info.width;
 			spriteXOffset += buffer.info.width;
 			atlasOutputWidth += height * 0.75; // both fo these are for temporary padding
-      spriteXOffset += height * 0.75;
+			spriteXOffset += height * 0.75;
 
 			yield datum;
 		}

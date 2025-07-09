@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from "next/image";
-import 'server-only';
+import "server-only";
 
 import "./styles.css";
 import EventObject, { EventType } from "./components/Event";
@@ -58,7 +58,7 @@ parse(scheduleCsv, {
 			let eventDatum: EventType | undefined;
 
 			// record.location is initially just a string, so this line turns it into a proper string array
-			for (let eventId of record.eventIds.split(",")) {
+			for (const eventId of record.eventIds.split(",")) {
 				eventDatum = events.get(eventId);
 				if (eventDatum) {
 					// I am aware that the CSV Parser is able to parse date via cast date and cast, but for simplicity, I'm doing the casting on the record level
