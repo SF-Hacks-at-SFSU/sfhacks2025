@@ -2,7 +2,8 @@
 	"compilerOptions": {
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@nextConfig": ["./next.config.ts"]
 		},
 		"forceConsistentCasingInFileNames": true,
 		"allowJs": true,
