@@ -1,13 +1,14 @@
 import Image from "next/image";
 import CountDown from "./components/Countdown";
 import "./styles.css";
+import nextConfig from "@nextConfig";
 
 export default function Home() {
 	return (
 		<main id="home">
 			<h2 className="logo">
 				<Image
-					src="/logoNew-horizontal.png"
+					src={`${nextConfig.basePath}/logoNew-horizontal.png`}
 					alt="SF Hacks Logo"
 					width={272 * 2}
 					height={92 * 2}

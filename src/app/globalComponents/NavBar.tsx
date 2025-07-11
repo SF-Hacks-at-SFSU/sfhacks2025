@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import nextConfig from "@nextConfig";
 
 // Set menu links here
 const NAV_LINKS = [
@@ -96,7 +97,7 @@ function NavLinks({ className = "" }: NavLinksProps) {
 					className="hidden md:block"
 				>
 					<Image
-						src="/logoNew-vertical.png"
+						src={`${nextConfig.basePath}/logoNew-vertical.png`}
 						alt="SF Hacks logo"
 						width={40}
 						height={40}

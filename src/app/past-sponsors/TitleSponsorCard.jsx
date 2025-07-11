@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import nextConfig from "@nextConfig";
 
 export default function TitleSponsorCard() {
 	const [showInfo, setShowInfo] = useState(false);
@@ -32,7 +33,7 @@ export default function TitleSponsorCard() {
 							<div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mt-8">
 								<div className="relative w-full md:w-1/2 aspect-[4/3]">
 									<Image
-										src="/sponsor-logos/current/FRENCHIE.png"
+										src={`${nextConfig.basePath}/sponsor-logos/current/FRENCHIE.png`}
 										alt="Frenchie the robodog"
 										fill
 										className="rounded-xl object-contain"
@@ -53,7 +54,7 @@ export default function TitleSponsorCard() {
 							<div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mt-10">
 								<div className="relative w-full md:w-1/2 aspect-[4/3] order-2 md:order-1">
 									<Image
-										src="/sponsor-logos/current/IRIS.png"
+										src={`${nextConfig.basePath}/sponsor-logos/current/IRIS.png`}
 										alt="Iris the humanoid"
 										fill
 										className="rounded-xl object-contain"
@@ -94,7 +95,7 @@ export default function TitleSponsorCard() {
 									className="relative w-full h-64 md:h-80 lg:h-96 pb-20 block"
 								>
 									<Image
-										src="/sponsor-logos/current/OpenMind.svg"
+										src={`${nextConfig.basePath}/sponsor-logos/current/OpenMind.svg`}
 										alt="Sponsor Logo"
 										layout="fill"
 										objectFit="contain"
