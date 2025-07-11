@@ -12,6 +12,6 @@ declare namespace NodeJS {
 		 * Theoretically, this is the environment variable GitHub Pages outputs for the website
 		 * @see https://github.com/nextjs/deploy-github-pages/blob/main/next.config.ts
 		 */
-		PAGES_BASE_PATH: string;
+		GITHUB_PAGES_BASE_PATH: string;
 	}
 }
