@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "./globalComponents/NavBar";
 import { MLHBanner } from "./globalComponents/MLHBanner";
 import { Analytics } from "@vercel/analytics/react";
-import nextConfig from "@nextConfig";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
 				rgb(from var(--background-color-solid) r g b / 1) 100vh
 			),
-			url("${nextConfig.basePath}/webdevCityBackground-01.svg")`,
+			url("${process.env.GITHUB_PAGES_BASE_PATH}/webdevCityBackground-01.svg")`,
 				}}
 			>
 				<Navbar />
