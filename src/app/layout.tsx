@@ -5,18 +5,19 @@ import { MLHBanner } from "./globalComponents/MLHBanner";
 import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata = {
 	title: "SF Hacks 2025",
 	description: "Bigger, Better, with more Air Fryers",
 	icons: {
 		// I honestly don't have a good reason to use ico files here but might as well
-		icon: "/favicon.ico",
-		shortcut: "/favicon.ico",
-		apple: "/icon.png",
+		icon: `${basePath}/favicon.ico`,
+		shortcut: `${basePath}/favicon.ico`,
+		apple: `${basePath}/icon.png`,
 		other: {
-			rel: "apple-touch-icon-precomposed",
-			url: "/icon.png",
+			rel: `${basePath}apple-touch-icon-precomposed`,
+			url: `${basePath}/icon.png`,
 		},
 	},
 };
@@ -37,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
 				rgb(from var(--background-color-solid) r g b / 1) 100vh
 			),
-			url("${process.env.GITHUB_PAGES_BASE_PATH}/webdevCityBackground-01.svg")`,
+			url("${basePath}/webdevCityBackground-01.svg")`,
 				}}
 			>
 				<Navbar />

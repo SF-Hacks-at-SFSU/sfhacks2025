@@ -77,8 +77,8 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          GITHUB_PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
-
+          # If you rename this variable, make sure to update the process.env type definition in types/global.d.ts
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

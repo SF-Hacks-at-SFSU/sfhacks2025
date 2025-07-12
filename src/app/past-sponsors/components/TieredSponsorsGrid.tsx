@@ -28,7 +28,7 @@ export default function TieredSponsors({
 					<img
 						// img must be used instead of Image because of the dynamic src url
 						alt={logoDatum.name}
-						src={`${process.env.GITHUB_PAGES_BASE_PATH}${logoDatum.path}`}
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${logoDatum.path}`}
 					></img>
 				</a>
 			))}
