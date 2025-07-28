@@ -7,7 +7,7 @@ export default function Home() {
 		<main id="home">
 			<h2 className="logo">
 				<Image
-					src="/logoNew-horizontal.png"
+					src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logoNew-horizontal.png`}
 					alt="SF Hacks Logo"
 					width={272 * 2}
 					height={92 * 2}
