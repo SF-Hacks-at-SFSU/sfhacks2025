@@ -12,6 +12,7 @@ const dateFormat = new Intl.DateTimeFormat(
 	{ month: "long", year: "numeric" } // Using this date format for now since we don't have the precise date yet
 );
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface CountDownProps {
 	// targetTime: Date
 }
@@ -24,6 +25,7 @@ export default function CountDown({}: CountDownProps) {
 		eventStarted ? eventEndDateTime : eventCheckInDateTime
 	).getTime();
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [timeRemaining, setTimeRemaining] = useState({
 		days: -1,
 		hours: -1,
@@ -57,8 +59,9 @@ export default function CountDown({}: CountDownProps) {
 		label: string;
 	}
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	function TimeUnit({ value, label }: TimeUnitProps) {
-		return (isHydrated && (value >= 0)) ? (
+		return isHydrated && value >= 0 ? (
 			<div className="timeUnit text-center">
 				<strong className="mb-2">{value > 9 ? value : `0${value}`}</strong>
 				<div>{label}</div>
