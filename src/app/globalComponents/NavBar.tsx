@@ -96,7 +96,7 @@ function NavLinks({ className = "" }: NavLinksProps) {
 					className="hidden md:block"
 				>
 					<Image
-						src="/logoNew-vertical.png"
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo-vertical.png`}
 						alt="SF Hacks logo"
 						width={40}
 						height={40}

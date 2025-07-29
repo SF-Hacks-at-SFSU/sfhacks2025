@@ -1,8 +1,11 @@
-import Image from "next/image";
-import 'server-only';
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import "server-only";
 
 import "./styles.css";
-import EventObject, { EventType } from "./components/Event";
+import { EventType } from "./components/Event";
 import Schedule from "./components/Schedule";
 import { parse } from "csv-parse/sync";
 import { readFileSync } from "node:fs";
@@ -54,7 +57,7 @@ parse(scheduleCsv, {
 			let eventDatum: EventType | undefined;
 
 			// record.location is initially just a string, so this line turns it into a proper string array
-			for (let eventId of record.eventIds.split(",")) {
+			for (const eventId of record.eventIds.split(",")) {
 				eventDatum = events.get(eventId);
 				if (eventDatum) {
 					// I am aware that the CSV Parser is able to parse date via cast date and cast, but for simplicity, I'm doing the casting on the record level

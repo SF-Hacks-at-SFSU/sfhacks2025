@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Suspense } from "react";
+import React from "react";
 import type * as aboutUsTypes from "../types";
 
 interface AvatarProps {
@@ -11,7 +11,8 @@ export default function Avatar({ member }: AvatarProps) {
 		<div className="avatar">
 			<div>
 				<Image
-					src={member.img}
+					// Can't use nextJS's configuration to access the base path
+					src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${member.img}`}
 					fill={true}
 					alt={member.name}
 					sizes="5em 10em 20em"

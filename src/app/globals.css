@@ -90,12 +90,6 @@
 		min-height: 100vh;
 		min-width: 100vw;
 
-		background-image: linear-gradient(
-				rgb(from var(--background-color-solid) r g b / 0) 90vh,
-				rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
-				rgb(from var(--background-color-solid) r g b / 1) 100vh
-			),
-			url("/webdevCityBackground-01.svg");
 		background-repeat: no-repeat;
 		background-position: top;
 		background-size: auto 100vh;
@@ -216,9 +210,8 @@
 		contain: content;
 
 		font-size: large;
-		
+
 		/* text-align: center; */
-		
 	}
 
 	.button {
@@ -241,7 +234,7 @@
 		}
 
 		&:focus {
-			outline: auto		;
+			outline: auto;
 		}
 	}
 
