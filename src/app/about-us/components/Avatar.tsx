@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Suspense } from "react";
+import React from "react";
 import type * as aboutUsTypes from "../types";
 
 interface AvatarProps {

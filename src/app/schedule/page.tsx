@@ -2,11 +2,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import Image from "next/image";
 import "server-only";
 
 import "./styles.css";
-import EventObject, { EventType } from "./components/Event";
+import { EventType } from "./components/Event";
 import Schedule from "./components/Schedule";
 import { parse } from "csv-parse/sync";
 import { readFileSync } from "node:fs";
