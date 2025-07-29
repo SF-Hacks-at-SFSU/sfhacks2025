@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				rgb(from var(--background-color-solid) r g b / 0.5) 97vh,
 				rgb(from var(--background-color-solid) r g b / 1) 100vh
 			),
-			url("${basePath}/webdevCityBackground-01.svg")`,
+			url("${basePath}/background.svg")`,
 				}}
 			>
 				<Navbar />

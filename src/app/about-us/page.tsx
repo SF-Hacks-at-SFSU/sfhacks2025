@@ -8,14 +8,14 @@ const members: aboutUsTypes.member[] = [
 	{ name: "Justine", img: "/team/justine.jpg" },
 	{ name: "Louella", img: "/team/louella.jpg" },
 	{ name: "Hillary", img: "/team/hillary.jpg" },
-	{ name: "Michelle", img: "/team/michelle.png" },
+	{ name: "Michelle", img: "/team/michelle.jpg" },
 	{ name: "Declan", img: "/team/declan.jpg" },
 	{ name: "Caedyn", img: "/team/caedyn.jpg" },
 	{ name: "Marco", img: "/team/marco.jpg" },
 	{ name: "Ashley", img: "/team/ashley.jpg" },
 	{ name: "Ria", img: "/team/ria.jpg" },
 	{ name: "Kurt", img: "/team/kurt.jpg" },
-	{ name: "Vireak", img: "/team/v.JPG" },
+	{ name: "Vireak", img: "/team/v.jpg" },
 	{ name: "Brandon", img: "/team/brandon.jpg" },
 	{ name: "Matthew", img: "/team/matthew.jpg" },
 	{ name: "Gavin", img: "/team/gavin.jpg" },
@@ -24,20 +24,20 @@ const members: aboutUsTypes.member[] = [
 	{ name: "Christian", img: "/team/christian.jpg" },
 	{ name: "Stella", img: "/team/stella.jpg" },
 	{ name: "John", img: "/team/john.jpg" },
-	{ name: "Trish", img: "/team/trish.png" },
+	{ name: "Trish", img: "/team/trish.jpg" },
 	{ name: "William", img: "/team/william.jpg" },
 	{ name: "Keith", img: "/team/keith.jpg" },
 	{ name: "Malhar", img: "/team/malhar.jpg" },
 	{ name: "Nalia", img: "/team/nalia.jpg" },
 	{ name: "Rishita", img: "/team/rishita.jpg" },
-	{ name: "Said", img: "/team/said.png" },
-	{ name: "Sukrit", img: "/team/sukrit.png" },
+	{ name: "Said", img: "/team/said.jpg" },
+	{ name: "Sukrit", img: "/team/sukrit.jpg" },
 	{ name: "Trenton", img: "/team/trenton.jpg" },
 	{ name: "Maxwell", img: "/team/maxwell.jpg" },
 	{ name: "Jim", img: "/team/jim.jpg" },
 	{ name: "James", img: "/team/james.jpg" },
 	{ name: "Akim", img: "/team/akim.jpg" },
-	{ name: "Avinh", img: "/team/avinh.png" },
+	{ name: "Avinh", img: "/team/avinh.jpg" },
 	{ name: "Kushvi", img: "/team/kushvi" }, //needs image
 	{ name: "Om", img: "/team/om" }, //needs image
 	{ name: "Krrish", img: "/team/krrish" }, //needs image
@@ -191,7 +191,10 @@ export default function Page() {
 				and outreach.
 			</p>
 			<h2>Meet Our Team</h2>
-			<Teams teams={teams} members={members} />
+			<Teams
+				teams={teams}
+				members={members}
+			/>
 		</main>
 	);
 }

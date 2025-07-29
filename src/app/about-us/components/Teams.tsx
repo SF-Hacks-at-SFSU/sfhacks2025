@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Attributes } from "react";
+import React from "react";
 import Avatar from "./Avatar";
 import { useState } from "react";
 import type * as aboutUsTypes from "../types";
