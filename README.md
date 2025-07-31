@@ -1,3 +1,8 @@
+# ⛔️DEPRECATED⛔️
+This repository is no longer maintained. It is archived for future reference.
+
+The source code for SF Hacks 2025 is used as a template for [SF Hacks 2026](https://github.com/SF-Hacks-at-SFSU/sf-hacks-2026).
+
 ## Introduction
 
 Welcome to the SF Hacks Website repository, where all the terrible college student code start.
